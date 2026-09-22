@@ -7,6 +7,7 @@ MIT 1.125 Agentic Computing Apprenticeship — Problem Set 01.
 
 **Live site:** _(Codex Sites URL — add after publishing)_  
 **Mirror:** https://yilinjiang7.github.io/mit1.125/pset1/site/  
+**Demo video:** _(added after recording)_  
 **Repository:** https://github.com/YilinJiang7/mit1.125
 
 ---
@@ -43,6 +44,20 @@ conflict.
 
 ---
 
+## Opening the site
+
+`site/index.html` needs no server, no build step and no network. Every byte it uses —
+the data, the basemap, the fonts, the interaction code — is inside that one file, so
+double-clicking it works. If you would rather serve it:
+
+```bash
+python3 -m http.server 8000 --directory site
+```
+
+Then open <http://localhost:8000/>.
+
+---
+
 ## Reproducing the analysis
 
 Python 3.9+ only. The download and slimming steps need nothing but the standard
@@ -75,6 +90,35 @@ year's row count against MassDOT's own `returnCountOnly` total and shouts if the
   that assumes "a short page means the end of the data" silently keeps 1,000 of 6,169
   rows. The script fetches the full `OBJECTID` list first, then pulls records in ID
   batches.
+
+## Verification
+
+The scoring is checked against MassDOT's own published cluster layers, which carry a
+pre-computed `EPDO` value. Re-deriving it with
+`(NUM_K_A + NUM_B_C) x 21 + NUM_O x 1` reproduces their number on every cluster:
+
+| Official layer | Clusters in the three cities | EPDO reproduced | Located within 75 m |
+|---|---|---|---|
+| Top 200 Crash Clusters 2021–2023 | 11 | 11 | 11 |
+| HSIP all-mode 2021–2023 | 61 | 61 | 61 |
+| HSIP bicycle 2014–2023 | 37 | 37 | 35 |
+| HSIP pedestrian 2014–2023 | 24 | 24 | 18 |
+| **Total** | **133** | **133** | **125** |
+
+The 8 that did not match on location are all pedestrian or bicycle clusters, where
+MassDOT uses a 100 m radius over a 10-year window — a wider net than the 25 m, 5-year
+clustering used here, so the difference is expected.
+
+`clean_and_score.py` writes this comparison to `data/out/official_comparison.csv`, and
+`fetch_crashes.py` reconciles each year's row count against MassDOT's own
+`returnCountOnly` total, so a silently truncated download fails loudly.
+
+Which raises the obvious question: if MassDOT already publishes a priority list, why
+build this? Because theirs is statewide, and only **11 of its Top 200 clusters** fall in
+these three cities. The rest are suburban arterials. A city budget needs a ranking
+computed inside the city, against that city's own traffic.
+
+---
 
 ### The AADT placeholder
 
@@ -140,6 +184,16 @@ the site's **Data & method** and **Limits & reflection** tabs.
 | [City of Cambridge ACS by neighbourhood](https://data.cambridgema.gov/d/jabj-v7kz) | Cambridge population, context only | — |
 
 Data accessed 21 September 2026.
+
+---
+
+## A note on what this is
+
+An educational project for a course, not an official product of MassDOT, Boston,
+Cambridge or Somerville, and not a safety audit. The rankings are a screening list —
+places worth sending an engineer to look at. They are not a finding that any particular
+intersection is unsafe. Source data remain attributed to MassDOT and the Massachusetts
+RMV.
 
 ---
 
