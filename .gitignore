@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Scratch / duplicates
+Claude outputs/
+
+# Codex Sites publish artefacts (regenerated on every publish)
+pset1/site/dist/
+pset1/site/.openai/
+
+# Everything the pset1 scripts generate: raw download (~120 MB), slimmed data,
+# analysis outputs, page payload. Re-create with scripts/ steps 1-4.
+pset1/data/
