@@ -5,9 +5,9 @@ MassDOT crash records from 2021–2025.
 
 MIT 1.125 Agentic Computing Apprenticeship — Problem Set 01.
 
-**Live site:** _(Codex Sites URL — add after publishing)_  
+**Live site:** https://street-risk-boston-cambridge-somerville.yilin-jiang.chatgpt.site/  
 **Mirror:** https://yilinjiang7.github.io/mit1.125/pset1/site/  
-**Demo video:** _(added after recording)_  
+**Demo video:** https://youtu.be/YL_1ogZsPz0  
 **Repository:** https://github.com/YilinJiang7/mit1.125
 
 ---

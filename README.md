@@ -10,9 +10,9 @@ Yilin Jiang · yilin_jiang@fas.harvard.edu
 
 | # | Title | What it is | Live | Code |
 |---|---|---|---|---|
-| 01 | **Where to Fix the Streets First** | A crash-prioritisation tool for Boston, Cambridge and Somerville, built on 37,929 MassDOT crash records from 2021–2025 | _(Codex Sites URL)_ · [GitHub Pages mirror](https://yilinjiang7.github.io/mit1.125/pset1/site/) | [`pset1/`](pset1/) |
+| 01 | **Where to Fix the Streets First** | A crash-prioritisation tool for Boston, Cambridge and Somerville, built on 37,929 MassDOT crash records from 2021–2025 | [Live site](https://street-risk-boston-cambridge-somerville.yilin-jiang.chatgpt.site/) · [GitHub Pages mirror](https://yilinjiang7.github.io/mit1.125/pset1/site/) | [`pset1/`](pset1/) |
 
-**PSet 01 demo video:** _(added after recording)_
+**PSet 01 demo video:** [Five-minute walkthrough](https://youtu.be/YL_1ogZsPz0)
 
 Each problem set folder is self-contained: the scripts that produce the data, the
 dataset itself, the published site, and a README explaining how to reproduce every
