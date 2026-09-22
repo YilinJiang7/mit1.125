@@ -12,6 +12,21 @@ MIT 1.125 Agentic Computing Apprenticeship — Problem Set 01.
 
 ---
 
+## Deliverables — where each one is
+
+| # | Deliverable | Where to find it |
+|---|---|---|
+| 1 | **The published Site** | <https://street-risk-boston-cambridge-somerville.yilin-jiang.chatgpt.site/> |
+| 2 | **The collected dataset**, CSV | [Download the zip](https://street-risk-boston-cambridge-somerville.yilin-jiang.chatgpt.site/data/pset1-road-safety-data.zip) — 15 CSV files, 2.9 MB. On the site: **Data & method → Downloads**. |
+| 3 | **One-page data and methodology note** | [Data & method tab](https://street-risk-boston-cambridge-somerville.yilin-jiang.chatgpt.site/#method) — how the data was collected, what was discarded and why, the scoring formula, and a definition for every field in the dataset |
+| 4 | **Five-minute presentation** | <https://youtu.be/YL_1ogZsPz0> — also linked from **Data & method → Downloads** |
+| 5 | **Short reflection** | [Limits & reflection tab](https://street-risk-boston-cambridge-somerville.yilin-jiang.chatgpt.site/#reflection) — six limitations, then what the data supports and what it cannot prove |
+
+Every link above also works on the GitHub Pages mirror — swap the host for
+<https://yilinjiang7.github.io/mit1.125/pset1/site/>. The dataset, the code and the site are all in this repository too.
+
+---
+
 ## What it does
 
 A municipal safety engineer has a fixed budget and several thousand intersections.
