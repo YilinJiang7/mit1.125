@@ -75,14 +75,14 @@ python3 scripts/build_site_data.py           # 4. dictionary, payload, and the p
 Each script works out its own paths from where it sits, so it does not matter which
 directory you run them from.
 
-Step 4 also writes `site/index.html` itself: it takes `site/_template.html`, inlines
-`data/build/data.json` and the base64 basemap, and writes the finished self-contained
-page. Edit the template, never `index.html`.
+Step 4 also produces `site/index.html`: it reads `site/_template.html`, inlines
+`data/build/data.json` and the base64 basemap into it, and writes the finished
+self-contained page. `_template.html` is the source; `index.html` is generated from it.
 
 Every number on the site comes out of these four scripts. `fetch_crashes.py` checks each
 year's row count against MassDOT's own `returnCountOnly` total and shouts if they differ.
 
-### Two traps in the MassDOT API, recorded so nobody repeats them
+### Two traps in the MassDOT API
 
 - The 2023 service is `MASSDOT_ODP_OPEN_2023v` — **with a trailing `v`**. The predictable
   name returns 404.
@@ -95,7 +95,7 @@ year's row count against MassDOT's own `returnCountOnly` total and shouts if the
 
 The scoring is checked against MassDOT's own published cluster layers, which carry a
 pre-computed `EPDO` value. Re-deriving it with
-`(NUM_K_A + NUM_B_C) x 21 + NUM_O x 1` reproduces their number on every cluster:
+`(NUM_K_A + NUM_B_C) × 21 + NUM_O × 1` reproduces their number on every cluster:
 
 | Official layer | Clusters in the three cities | EPDO reproduced | Located within 75 m |
 |---|---|---|---|
@@ -120,7 +120,7 @@ computed inside the city, against that city's own traffic.
 
 ---
 
-### The AADT placeholder
+## The AADT placeholder
 
 4,822 crashes (12.7%) carry the identical AADT value **1,154** with an empty
 `AADT_DERIV`, almost always on roads classed `Local`. It is a statewide placeholder for
@@ -140,10 +140,10 @@ scripts/
   build_site_data.py   4. field dictionary, page payload, and the finished index.html
 
 site/
-  _template.html       the page before data is inlined - edit this one
+  _template.html       the page source, before the data is inlined into it
   index.html           the published site: five tabs, self-contained, data inlined
   method.html          redirect kept for older links -> index.html#method
-  data/                the collected dataset, zipped - this is the deliverable
+  data/                the collected dataset, zipped — the submitted deliverable
 
 data/                  everything the scripts generate. None of it is committed.
   raw/                 MassDOT download, ~120 MB      (step 1)
@@ -152,8 +152,8 @@ data/                  everything the scripts generate. None of it is committed.
   build/               data.json + basemap.png        (step 4)
 ```
 
-Both HTML pages are fully self-contained: no CDN, no external fonts, no API calls at
-run time. They work from a web host, from GitHub Pages, or straight off a USB stick.
+`index.html` is fully self-contained: no CDN, no external fonts, no API calls at run
+time. It works from a web host, from GitHub Pages, or straight off a USB stick.
 
 ---
 
