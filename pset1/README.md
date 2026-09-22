@@ -44,20 +44,6 @@ conflict.
 
 ---
 
-## Opening the site
-
-`site/index.html` needs no server, no build step and no network. Every byte it uses —
-the data, the basemap, the fonts, the interaction code — is inside that one file, so
-double-clicking it works. If you would rather serve it:
-
-```bash
-python3 -m http.server 8000 --directory site
-```
-
-Then open <http://localhost:8000/>.
-
----
-
 ## Reproducing the analysis
 
 Python 3.9+ only. The download and slimming steps need nothing but the standard
@@ -152,8 +138,10 @@ data/                  everything the scripts generate. None of it is committed.
   build/               data.json + basemap.png        (step 4)
 ```
 
-`index.html` is fully self-contained: no CDN, no external fonts, no API calls at run
-time. It works from a web host, from GitHub Pages, or straight off a USB stick.
+`index.html` is fully self-contained: the data, the basemap, the fonts and the
+interaction code are all inside that one file. No CDN, no build step, no API calls at
+run time, no server needed — it opens by double-clicking it, and works just as well
+from a web host, from GitHub Pages, or off a USB stick.
 
 ---
 
