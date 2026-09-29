@@ -17,3 +17,6 @@ pset1/site/.openai/
 # Everything the pset1 scripts generate: raw download (~120 MB), slimmed data,
 # analysis outputs, page payload. Re-create with scripts/ steps 1-4.
 pset1/data/
+
+# Course handout (the professor's material, not my work)
+pset2/ps02.pdf

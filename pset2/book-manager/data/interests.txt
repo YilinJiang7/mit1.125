@@ -1,0 +1,10 @@
+# My interests — one per line:  interest | keywords
+# Keywords are matched against each catalog book's genre and tags.
+# Edit this file to change what recommend_from_interests.sh optimizes for.
+AI & agent engineering    | ai, agents, machine learning, software
+Data science & statistics | statistics, data, probability, forecasting, causality
+Psychology                | psychology, decision-making, mind, behavior
+Sociology                 | sociology, society, inequality, community
+History                   | history, civilization, war, empire
+Fiction                   | fiction, novel
+Mystery & suspense        | mystery, detective, crime, suspense

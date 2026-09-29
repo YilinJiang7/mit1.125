@@ -1,0 +1,101 @@
+# Offline book catalog: the knowledge the recommendation agents fall back on when
+# Codex is not available, and a local source for fetch_book_metadata.sh.
+# Format:  title | author | genre | year | tags (comma-separated)
+
+# --- AI & Computing
+The Alignment Problem | Brian Christian | AI & Computing | 2020 | ai, machine learning, ethics, agents
+Human Compatible | Stuart Russell | AI & Computing | 2019 | ai, agents, safety, ethics
+AI Engineering | Chip Huyen | AI & Computing | 2025 | ai, agents, software, machine learning
+The Master Algorithm | Pedro Domingos | AI & Computing | 2015 | ai, machine learning, data
+Gödel, Escher, Bach | Douglas Hofstadter | AI & Computing | 1979 | ai, mind, math, philosophy
+Designing Data-Intensive Applications | Martin Kleppmann | AI & Computing | 2017 | software, data, systems
+The Pragmatic Programmer | Andrew Hunt & David Thomas | AI & Computing | 1999 | software, craft
+Life 3.0 | Max Tegmark | AI & Computing | 2017 | ai, future, society
+
+# --- Data Science & Statistics
+The Book of Why | Judea Pearl & Dana Mackenzie | Data Science & Statistics | 2018 | statistics, causality, ai
+Naked Statistics | Charles Wheelan | Data Science & Statistics | 2013 | statistics, data
+How to Lie with Statistics | Darrell Huff | Data Science & Statistics | 1954 | statistics, data, media
+Weapons of Math Destruction | Cathy O'Neil | Data Science & Statistics | 2016 | data, ai, inequality, society
+The Theory That Would Not Die | Sharon Bertsch McGrayne | Data Science & Statistics | 2011 | statistics, probability, history
+Superforecasting | Philip E. Tetlock & Dan Gardner | Data Science & Statistics | 2015 | forecasting, probability, decision-making
+Statistical Rethinking | Richard McElreath | Data Science & Statistics | 2015 | statistics, causality, probability
+The Art of Statistics | David Spiegelhalter | Data Science & Statistics | 2019 | statistics, data, probability
+
+# --- Psychology
+Influence | Robert B. Cialdini | Psychology | 1984 | psychology, behavior, persuasion
+The Righteous Mind | Jonathan Haidt | Psychology | 2012 | psychology, morality, society
+Man's Search for Meaning | Viktor E. Frankl | Psychology | 1946 | psychology, meaning, history
+Noise | Daniel Kahneman & Olivier Sibony & Cass R. Sunstein | Psychology | 2021 | psychology, decision-making, statistics
+Mindset | Carol S. Dweck | Psychology | 2006 | psychology, learning, behavior
+Flow | Mihaly Csikszentmihalyi | Psychology | 1990 | psychology, mind, happiness
+The Body Keeps the Score | Bessel van der Kolk | Psychology | 2014 | psychology, mind, health
+
+# --- Sociology
+The Presentation of Self in Everyday Life | Erving Goffman | Sociology | 1956 | sociology, society, behavior
+Evicted | Matthew Desmond | Sociology | 2016 | sociology, inequality, cities
+Outliers | Malcolm Gladwell | Sociology | 2008 | sociology, success, society
+The Death and Life of Great American Cities | Jane Jacobs | Sociology | 1961 | cities, community, society
+Alone Together | Sherry Turkle | Sociology | 2011 | sociology, technology, community
+
+# --- History
+Guns, Germs, and Steel | Jared Diamond | History | 1997 | history, civilization, geography
+The Silk Roads | Peter Frankopan | History | 2015 | history, trade, empire
+SPQR | Mary Beard | History | 2015 | history, empire, rome
+The Guns of August | Barbara W. Tuchman | History | 1962 | history, war
+The Making of the Atomic Bomb | Richard Rhodes | History | 1986 | history, war, science
+Homo Deus | Yuval Noah Harari | History | 2016 | history, future, ai
+
+# --- Fiction
+Never Let Me Go | Kazuo Ishiguro | Fiction | 2005 | fiction, novel, memory
+Klara and the Sun | Kazuo Ishiguro | Fiction | 2021 | fiction, novel, ai
+Pachinko | Min Jin Lee | Fiction | 2017 | fiction, novel, family, history
+One Hundred Years of Solitude | Gabriel García Márquez | Fiction | 1967 | fiction, novel, family
+Norwegian Wood | Haruki Murakami | Fiction | 1987 | fiction, novel, memory
+Stoner | John Williams | Fiction | 1965 | fiction, novel, work
+
+# --- Mystery
+The Murder of Roger Ackroyd | Agatha Christie | Mystery | 1926 | mystery, detective, crime
+And Then There Were None | Agatha Christie | Mystery | 1939 | mystery, suspense, crime
+The Hound of the Baskervilles | Arthur Conan Doyle | Mystery | 1902 | mystery, detective
+The Devotion of Suspect X | Keigo Higashino | Mystery | 2005 | mystery, detective, math
+Gone Girl | Gillian Flynn | Mystery | 2012 | mystery, suspense, crime
+The Big Sleep | Raymond Chandler | Mystery | 1939 | mystery, detective, crime
+The Name of the Rose | Umberto Eco | Mystery | 1980 | mystery, history, detective
+
+# --- Science Fiction
+The Three-Body Problem | Liu Cixin | Science Fiction | 2008 | science fiction, science, history
+Dune | Frank Herbert | Science Fiction | 1965 | science fiction, ecology, empire
+Foundation | Isaac Asimov | Science Fiction | 1951 | science fiction, empire, forecasting
+Exhalation | Ted Chiang | Science Fiction | 2019 | science fiction, ai, philosophy
+The Left Hand of Darkness | Ursula K. Le Guin | Science Fiction | 1969 | science fiction, society
+
+# --- Outside the usual (discovery material)
+Leaves of Grass | Walt Whitman | Poetry | 1855 | poetry, nature
+Devotions | Mary Oliver | Poetry | 2017 | poetry, nature, attention
+Ways of Seeing | John Berger | Art & Design | 1972 | art, visual culture
+The Design of Everyday Things | Don Norman | Art & Design | 1988 | design, behavior
+Salt, Fat, Acid, Heat | Samin Nosrat | Food | 2017 | cooking, food
+Kitchen Confidential | Anthony Bourdain | Food | 2000 | food, memoir
+Braiding Sweetgrass | Robin Wall Kimmerer | Nature | 2013 | nature, ecology, indigenous knowledge
+Silent Spring | Rachel Carson | Nature | 1962 | nature, ecology, environment
+H Is for Hawk | Helen Macdonald | Nature | 2014 | nature, grief, memoir
+This Is Your Brain on Music | Daniel J. Levitin | Music | 2006 | music, brain
+Just Kids | Patti Smith | Music | 2010 | music, art, memoir
+Born to Run | Christopher McDougall | Sports | 2009 | running, sports
+Open | Andre Agassi | Sports | 2009 | tennis, memoir
+In Patagonia | Bruce Chatwin | Travel | 1977 | travel, landscape
+Meditations | Marcus Aurelius | Philosophy | 180 | philosophy, stoicism
+The Myth of Sisyphus | Albert Camus | Philosophy | 1942 | philosophy, meaning
+Zen and the Art of Motorcycle Maintenance | Robert M. Pirsig | Philosophy | 1974 | philosophy, craft
+The Gene | Siddhartha Mukherjee | Science | 2016 | science, biology, history
+The Selfish Gene | Richard Dawkins | Science | 1976 | science, biology, evolution
+Poor Economics | Abhijit V. Banerjee & Esther Duflo | Economics | 2011 | economics, poverty, data
+Educated | Tara Westover | Memoir | 2018 | memoir, education, family
+When Breath Becomes Air | Paul Kalanithi | Memoir | 2016 | memoir, medicine, meaning
+Persepolis | Marjane Satrapi | Graphic Novel | 2000 | graphic novel, memoir, history
+Maus | Art Spiegelman | Graphic Novel | 1986 | graphic novel, history, war
+How Not to Be Wrong | Jordan Ellenberg | Math | 2014 | math, statistics, thinking
+Fermat's Last Theorem | Simon Singh | Math | 1997 | math, history
+How to Avoid a Climate Disaster | Bill Gates | Climate | 2021 | climate, energy, policy
+The Ministry for the Future | Kim Stanley Robinson | Climate | 2020 | climate, fiction, policy
