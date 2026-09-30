@@ -33,7 +33,8 @@ if ideas=$("$HERE/ask_codex.sh" "$prompt"); then
 fi
 
 echo "discovery agent: offline catalog" >&2
-sleep "${BOOK_THINK_SECONDS:-$((RANDOM % 3 + 1))}"   # simulated think time, so progress is visible
+sleep "${BOOK_THINK_SECONDS:-4}"   # simulated think time (2/3/4 s per agent), so the progress line
+                                   # shows the agents finishing one by one
 
 # Offline: shuffle the catalog, drop anything whose genre or tags touch the comfort zone,
 # and keep the first book from each remaining genre.

@@ -40,7 +40,8 @@ if ideas=$("$HERE/ask_codex.sh" "$prompt"); then
 fi
 
 echo "history agent: offline catalog" >&2
-sleep "${BOOK_THINK_SECONDS:-$((RANDOM % 3 + 1))}"   # simulated think time, so progress is visible
+sleep "${BOOK_THINK_SECONDS:-2}"   # simulated think time (2/3/4 s per agent), so the progress line
+                                   # shows the agents finishing one by one
 
 # Offline: walk the liked books best-first, and for each one take the next catalog
 # book of the same genre. Round-robin, so one favourite cannot fill the whole list.

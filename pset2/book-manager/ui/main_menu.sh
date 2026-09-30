@@ -1,30 +1,35 @@
 #!/bin/bash
 # UI layer: main application menu.
-#   in:  $1 = a status line to show under the title (the workflow layer builds it)
-#   out: the chosen action on stdout: browse | add | search | update | recommend | goal | quit
-# Interaction only: this file never touches data and never decides what happens next.
+# Loops: draw the banner (with a status line the library workflow computes), let the user
+# choose with Gum, open the matching screen. Interaction only: no data access, no logic.
 
-source "$(dirname "$0")/theme.sh"
+HERE="$(cd "$(dirname "$0")" && pwd)"
+LIBRARY="$HERE/library_screen.sh"
+RECOMMEND="$HERE/recommendations_screen.sh"
+WORKFLOW="$HERE/../workflows/manage_library.sh"
+source "$HERE/theme.sh"
 
-clear >&2   # stdout is reserved for the answer
-gum style --border double --border-foreground "$ACCENT" --padding "1 4" --margin "1 2" --align center \
-  "$(title "📚  Yilin's Book Manager")" "" "$(hint "${1:-}")" >&2
+while true; do
+  clear
+  gum style --border double --border-foreground "$ACCENT" --padding "1 4" --margin "1 2" --align center \
+    "$(title "📚  Yilin's Book Manager")" "" "$(hint "$("$WORKFLOW" summary)")"
 
-choice=$(gum choose --cursor.foreground "$ACCENT" --header "  What would you like to do?" --height 10 \
-  "📚  Browse library" \
-  "➕  Add a book" \
-  "🔍  Search library" \
-  "📝  Update a book" \
-  "✨  Get recommendations" \
-  "🎯  Reading goal & takeaways" \
-  "👋  Quit")
+  choice=$(gum choose --cursor.foreground "$ACCENT" --header "  What would you like to do?" --height 10 \
+    "📚  Browse library" \
+    "➕  Add a book" \
+    "🔍  Search library" \
+    "📝  Update a book" \
+    "✨  Get recommendations" \
+    "🎯  Reading goal & takeaways" \
+    "👋  Quit")
 
-case "$choice" in
-  *Browse*)          echo browse ;;
-  *Add*)             echo add ;;
-  *Search*)          echo search ;;
-  *Update*)          echo update ;;
-  *recommendations*) echo recommend ;;
-  *goal*)            echo goal ;;
-  *)                 echo quit ;;     # Quit, Esc or Ctrl+C
-esac
+  case "$choice" in
+    *Browse*)          "$LIBRARY" browse ;;
+    *Add*)             "$LIBRARY" add ;;
+    *Search*)          "$LIBRARY" search ;;
+    *Update*)          "$LIBRARY" update ;;
+    *recommendations*) "$RECOMMEND" show ;;
+    *goal*)            "$LIBRARY" goal ;;
+    *)                 clear; echo "Happy reading! 📖"; exit 0 ;;   # Quit, Esc or Ctrl+C
+  esac
+done

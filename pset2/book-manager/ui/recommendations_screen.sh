@@ -1,53 +1,45 @@
 #!/bin/bash
-# UI layer: display recommendation progress and final results.
+# UI layer: the recommendations screen.
 #
-#   header BRAIN                       title + which brain the agents use (codex / offline)
-#   progress TICK SECONDS NAME=STATE…  one live status line, redrawn in place (\r)
-#   progress-end                       finish the live line
-#   agent NAME COUNT SECONDS BRAIN     one summary row per finished agent
-#   total SECONDS SEQUENTIAL_SECONDS   parallel time vs. one-after-another time
-#   shortlist                          stdin: final list -> numbered cards
-#   pick                               stdin: final list -> Gum choice -> chosen title on stdout
-#   message TEXT | error TEXT | pause | working LABEL CMD…
-# The workflow decides everything; this file only draws.
+#   recommendations_screen.sh show
+#
+# Runs workflows/get_recommendations.sh --progress and splits its two streams:
+#   stderr → progress events, read line by line and drawn live (one status line, redrawn in place)
+#   stdout → the final shortlist, drawn as cards once the workflow is done
+# Then lets the user save one pick through the library workflow. Draws and asks; decides nothing.
 
-source "$(dirname "$0")/theme.sh"
+HERE="$(cd "$(dirname "$0")" && pwd)"
+RECOMMEND="$HERE/../workflows/get_recommendations.sh"
+LIBRARY="$HERE/../workflows/manage_library.sh"
+source "$HERE/theme.sh"
 FRAMES=(⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏)   # spinner frames for the live progress line
 
-header() {
-  clear
-  echo
-  title "  ✨ Recommendations"
-  hint  "  Three agents think in parallel: history · interests · discovery"
-  hint  "  Brain: $1"
-  echo
-}
-
-progress() {   # progress 7 3 history=running interests=done:2s discovery=running
-  local tick="$1" secs="$2" line="" pair name state
-  shift 2
-  for pair in "$@"; do
-    name="${pair%%=*}"; state="${pair#*=}"
-    case "$state" in
-      running) line="$line  \033[38;5;${WARN}m● $name…\033[0m" ;;
-      *)       line="$line  \033[38;5;${OK}m✔ $name ${state#done:}\033[0m" ;;
+draw_progress() {   # stdin: event lines from the workflow
+  local kind a b c d
+  while read -r kind a b c d; do
+    case "$kind" in
+      brain) [ "$a" = codex ] && hint "  Brain: Codex (falls back to the offline catalog if it fails)" \
+                              || hint "  Brain: offline catalog (install the Codex CLI for AI picks)"
+             echo ;;
+      tick)  local line="" pair name state
+             for pair in $c $d; do
+               name="${pair%%=*}"; state="${pair#*=}"
+               case "$state" in
+                 running) line="$line  \033[38;5;${WARN}m● $name…\033[0m" ;;
+                 *)       line="$line  \033[38;5;${OK}m✔ $name ${state#done:}\033[0m" ;;
+               esac
+             done
+             # \r jumps back to the start of the line, \033[K clears it: the line redraws in place
+             printf "\r\033[K  \033[38;5;${ACCENT}m%s\033[0m %3ss %b" "${FRAMES[$(( a % 10 ))]}" "$b" "$line" ;;
+      agent) printf "\r\033[K  \033[38;5;${OK}m✔\033[0m %-10s %2s ideas  in %ss  \033[38;5;${MUTED}m(%s)\033[0m\n" \
+               "$a" "$b" "$c" "$d" ;;
+      total) hint "  total ${a}s in parallel · one after another would take ~${b}s" ;;
+      warn)  warn "$a $b $c $d" ;;
     esac
   done
-  # \r jumps back to the start of the line, \033[K clears it: the line redraws in place
-  printf "\r\033[K  \033[38;5;${ACCENT}m%s\033[0m %3ss %b" "${FRAMES[$(( tick % 10 ))]}" "$secs" "$line"
 }
 
-progress_end() { printf "\r\033[K"; }
-
-agent() {      # agent history 6 2 "offline catalog"
-  printf "  \033[38;5;${OK}m✔\033[0m %-10s %2s ideas  in %ss  \033[38;5;${MUTED}m(%s)\033[0m\n" "$1" "$2" "$3" "$4"
-}
-
-total() {      # total 3 6   -> wall-clock time vs. the sum of the agents' times
-  hint "  total ${1}s in parallel · one after another would take ~${2}s"
-}
-
-shortlist() {
+draw_shortlist() {  # stdin: Title | Author | Genre | Reason | sources
   echo
   gum style --foreground "$SOFT" --bold "  Your shortlist"
   awk -F' [|] ' -v a="\033[38;5;${ACCENT}m" -v m="\033[38;5;${MUTED}m" -v off="\033[0m" '
@@ -59,17 +51,31 @@ shortlist() {
   echo
 }
 
-pick() {
-  { cut -d'|' -f1 | sed 's/ *$//'; echo "↩  nothing for now"; } |
-    gum choose --cursor.foreground "$ACCENT" --header "Save one to your want-to-read list?" |
-    grep -v '^↩'
+show() {
+  local shortlist choice line
+  shortlist=$(mktemp); trap 'rm -f "$shortlist"' EXIT
+  clear; echo
+  title "  ✨ Recommendations"
+  hint  "  Three agents think in parallel: history · interests · discovery"
+
+  # 2>&1 sends the workflow's stderr (events) into the pipe; >file keeps stdout (shortlist) apart
+  "$RECOMMEND" --progress 2>&1 >"$shortlist" | draw_progress
+
+  if [ ! -s "$shortlist" ]; then
+    warn "No new ideas this time: add or rate a few books first."; pause; return
+  fi
+  draw_shortlist < "$shortlist"
+
+  choice=$({ cut -d'|' -f1 "$shortlist" | sed 's/ *$//'; echo "↩  nothing for now"; } |
+             gum choose --cursor.foreground "$ACCENT" --header "Save one to your want-to-read list?")
+  case "$choice" in ""|↩*) return ;; esac
+  line=$(awk -F' [|] ' -v t="$choice" '$1 == t' "$shortlist" | head -n 1)
+  working "Saving \"$choice\"…" "$LIBRARY" save-recommendation "$line" &&
+    success "Added \"$choice\" to your want-to-read list."
+  pause
 }
 
-message() { echo; success "$*"; }
-error()   { echo; warn "$*"; }
-
-cmd="$1"; shift
-case "$cmd" in
-  header|progress|progress-end|agent|total|shortlist|pick|message|error|pause|working) "${cmd//-/_}" "$@" ;;
-  *) echo "recommendations_screen: unknown command '$cmd'" >&2; exit 1 ;;
+case "$1" in
+  show) show ;;
+  *) echo "usage: recommendations_screen.sh show" >&2; exit 1 ;;
 esac

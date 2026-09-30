@@ -37,7 +37,8 @@ if ideas=$("$HERE/ask_codex.sh" "$prompt"); then
 fi
 
 echo "interests agent: offline catalog" >&2
-sleep "${BOOK_THINK_SECONDS:-$((RANDOM % 3 + 1))}"   # simulated think time, so progress is visible
+sleep "${BOOK_THINK_SECONDS:-3}"   # simulated think time (2/3/4 s per agent), so the progress line
+                                   # shows the agents finishing one by one
 
 # Offline: a catalog book matches an interest when one of the interest's keywords is a word
 # of the book's genre (strong match) or one of its tags (weak match). Interests take turns,

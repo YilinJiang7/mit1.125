@@ -48,12 +48,23 @@ check "duplicates merge into 'a+b'"          sh -c 'printf "X | A | G | r | hist
 
 echo "parallelism"
 start=$(date +%s)
-for a in history interests discovery; do BOOK_THINK_SECONDS=2 recommendations/*"$a"*.sh > /dev/null 2>&1 & done
+for agent in recommendations/recommend_*.sh; do BOOK_THINK_SECONDS=2 "$agent" > /dev/null 2>&1 & done
 wait
 check "3 agents x 2s finish in < 4s"          [ $(( $(date +%s) - start )) -lt 4 ]
 
-echo "architecture"
-check "only the data layer touches books.csv" sh -c '! grep -n "books\.csv" app.sh ui/*.sh workflows/*.sh books/*.sh recommendations/*.sh | grep -v ":[[:space:]]*#"'
+echo "workflows (headless)"
+check "library workflow: prepare + save"      sh -c 'r=$(workflows/manage_library.sh prepare "Dune | Frank Herbert" finished) && workflows/manage_library.sh save "$r" && workflows/manage_library.sh details dune | grep -q "| finished | .* | 20[0-9][0-9]-"'
+check "library workflow: already-owned = exit 2" sh -c 'workflows/manage_library.sh prepare "Sapiens" reading; [ $? -eq 2 ]'
+check "recommendation workflow: pipe stage"   sh -c 'n=$(workflows/get_recommendations.sh | grep -c .) && [ "$n" -ge 1 ] && [ "$n" -le 5 ]'
+check "recommendation workflow: progress events" sh -c 'workflows/get_recommendations.sh --progress 2>&1 >/dev/null | grep -q "^agent discovery"'
+
+echo "architecture: strictly top-down"
+code() { grep -v '^[[:space:]]*#' "$@" 2>/dev/null; }      # file contents without comment lines
+check "only the data layer touches books.csv"  sh -c '! grep -n "books\.csv" app.sh ui/*.sh workflows/*.sh books/*.sh recommendations/*.sh | grep -v ":[[:space:]]*#"'
+check "the UI never skips the workflows"       sh -c "! { $(declare -f code); code ui/*.sh | grep -Eq 'data/|books/|recommendations/'; }"
+check "workflows never call the UI"            sh -c "! { $(declare -f code); code workflows/*.sh | grep -q 'ui/'; }"
+check "components never call workflows or UI"  sh -c "! { $(declare -f code); code books/*.sh recommendations/*.sh | grep -Eq 'ui/|workflows/'; }"
+check "the data layer calls nothing above it"  sh -c "! { $(declare -f code); code data/book_database.sh | grep -Eq 'ui/|workflows/|books/|recommendations/'; }"
 
 echo; echo "$pass passed, $fail failed"
 [ "$fail" -eq 0 ]

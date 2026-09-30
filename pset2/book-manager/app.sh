@@ -1,7 +1,8 @@
 #!/bin/bash
 # Application entry point.
-# Checks the tools it needs, then loops: main menu → the workflow for the chosen action.
-# No data, recommendation or drawing logic lives here.
+# Checks the tools it needs, then hands control to the main menu.
+# The call chain is strictly top-down:
+#   app.sh → ui/ → workflows/ → books/ + recommendations/ → data/book_database.sh → data files
 
 cd "$(dirname "$0")" || exit 1
 
@@ -10,11 +11,4 @@ if ! command -v gum >/dev/null 2>&1; then
   exit 1
 fi
 
-while true; do
-  action=$(./ui/main_menu.sh "$(./workflows/manage_library.sh summary)")
-  case "$action" in
-    browse|add|search|update|goal) ./workflows/manage_library.sh "$action" ;;
-    recommend)                     ./workflows/get_recommendations.sh ;;
-    *)                             clear; echo "Happy reading! 📖"; exit 0 ;;
-  esac
-done
+exec ./ui/main_menu.sh
