@@ -18,7 +18,9 @@ trap 'exit 1' INT TERM                  # so the EXIT cleanup also runs when we 
 
 # Run Codex in the background so a watchdog can stop it if it takes too long.
 ( cd "$work" && exec codex exec --skip-git-repo-check --sandbox read-only \
-      --output-last-message "$work/answer.txt" "$1" ) >/dev/null 2>&1 &
+      --output-last-message "$work/answer.txt" "$1
+
+Plain text only: no Markdown, no links, no bold." ) >/dev/null 2>&1 &
 codex_pid=$!
 ( sleep "${BOOK_CODEX_TIMEOUT:-120}"; kill "$codex_pid" 2>/dev/null ) >/dev/null 2>&1 &
 watchdog_pid=$!
@@ -27,6 +29,8 @@ kill "$watchdog_pid" 2>/dev/null
 
 [ "$status" -eq 0 ] && [ -s "$work/answer.txt" ] || exit 1
 
-# Keep lines with exactly 4 fields, drop a header row, strip "1." / "-" list markers.
-awk -F'|' 'NF == 4 && tolower($1) !~ /^[ \t]*title[ \t]*$/ {
-             sub(/^[ \t]*([0-9]+[.)]|[-*])[ \t]*/, ""); print }' "$work/answer.txt" | grep .
+# Clean up Markdown first ("[Title](url)" -> "Title", drop ** and `), then keep lines with
+# exactly 4 fields, drop a header row, and strip "1." / "-" list markers.
+sed -E 's/\[([^]]*)\]\([^)]*\)/\1/g; s/\*\*//g; s/`//g' "$work/answer.txt" |
+  awk -F'|' 'NF == 4 && tolower($1) !~ /^[ \t]*title[ \t]*$/ {
+               sub(/^[ \t]*([0-9]+[.)]|[-*])[ \t]*/, ""); print }' | grep .

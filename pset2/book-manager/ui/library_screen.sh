@@ -46,7 +46,7 @@ goal_bar() {   # goal_bar 2026 4 12   (stdin: the books finished this year)
   local year="$1" done="$2" target="$3" width=30 filled bar="" i pace
   [ "$target" -gt 0 ] 2>/dev/null || target=1
   filled=$(( done * width / target )); [ "$filled" -gt "$width" ] && filled=$width
-  for i in $(seq 1 $width); do [ "$i" -le "$filled" ] && bar="$bar█" || bar="$bar░"; done
+  for i in $(seq 1 $width); do [ "$i" -le "$filled" ] && bar="${bar}█" || bar="${bar}░"; done
   pace=$(( target * 10#$(date +%j) / 365 ))
   echo
   title "  🎯 $year reading goal"

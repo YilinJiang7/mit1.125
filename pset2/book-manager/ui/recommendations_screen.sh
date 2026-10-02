@@ -25,7 +25,7 @@ draw_progress() {   # stdin: event lines from the workflow
              for pair in $c $d; do
                name="${pair%%=*}"; state="${pair#*=}"
                case "$state" in
-                 running) line="$line  \033[38;5;${WARN}m● $name…\033[0m" ;;
+                 running) line="$line  \033[38;5;${WARN}m● ${name}…\033[0m" ;;
                  *)       line="$line  \033[38;5;${OK}m✔ $name ${state#done:}\033[0m" ;;
                esac
              done

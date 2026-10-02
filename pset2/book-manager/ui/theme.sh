@@ -17,7 +17,7 @@ pause()   { echo; hint "  press any key to go back…"; read -r -s -n 1 < /dev/t
 
 stars() {   # stars 4  ->  ★★★★☆   (empty rating -> "not rated")
   case "$1" in
-    [1-5]) local s="" i; for i in 1 2 3 4 5; do [ "$i" -le "$1" ] && s="$s★" || s="$s☆"; done; echo "$s" ;;
+    [1-5]) local s="" i; for i in 1 2 3 4 5; do [ "$i" -le "$1" ] && s="${s}★" || s="${s}☆"; done; echo "$s" ;;
     *) echo "not rated" ;;
   esac
 }
