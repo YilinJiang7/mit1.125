@@ -60,7 +60,7 @@ each video description contains the article URL, dated source notes and AI discl
 | 02 | Why Coding Agents Still Need Careful Checking: Trust, Failures, and How to Improve | [Read article](https://apprenticemode1.substack.com/p/why-coding-agents-still-need-careful) | [Watch video](https://youtu.be/KLvpVroriGE) |
 | 03 | How Learners Should Work with Coding Agents Now: Guide to Delegation, Review, and Cost Management | [Read article](https://apprenticemode1.substack.com/p/how-learners-should-work-with-coding) | [Watch video](https://youtu.be/je0BnhWBX_8) |
 
-**Separate technical demonstration video:** DEMO_LINK
+**Separate technical demonstration video:** https://youtu.be/qX8rmD3m_do
 
 Chrome Incognito checks confirmed full article text and video embeds without
 login or payment, and playback of all three YouTube videos while signed out.
