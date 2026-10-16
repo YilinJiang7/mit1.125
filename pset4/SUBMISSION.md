@@ -356,6 +356,7 @@ the required three publishers per piece and all kinds across the series.
   [filter fixture](examples/filter_input.jsonl) and [expected results](examples/filter_expected.json)
   exercise both boundary dates and `outside_window`, `unknown_date`, `future_date`
   and `invalid_date`; fictional fixture items are not counted as evidence.
+  Note: to save transcription cost, the collectors already keep only entries dated inside the window and drop undated entries before extraction, so in the live runs out-of-window/undated candidates were never passed to filter_items.sh and are not itemized in exclusions.jsonl. filter_items.sh remains the authoritative check on the full stored corpus (including items retained from earlier runs), and its exclusion reasons are demonstrated with the labelled fixture above.
 - **Discovery/caption failures:** run 1's Fireship/GitHub channel RSS requests
   ended in HTTP 404 (one GitHub attempt first returned 500). Later code adds
   yt-dlp flat-ID discovery plus per-video upload dates after RSS failure; method
@@ -509,6 +510,7 @@ overlap and missing perspectives, and obtain learner/educator evidence before
 making claims about educational benefit. Inspect uncertain transcript samples
 with the full retained text and keep testing commercial claims against genuinely
 independent evidence when it exists.
+Let collectors emit all dated and undated candidates (or log their skips), so filter_items.sh records every out-of-window and unknown-date exclusion from live data.
 
 **Architectural tradeoff.** Per-item LLM selection is cheap, inspectable and
 resumable, but lacks a full global comparison. It receives a short history of
