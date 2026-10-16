@@ -1,0 +1,65 @@
+Deno is joining Cloudflare
+Simon Willison’s Weblog
+Newsletter
+Sponsored by: Pomerium — Static OAuth scopes won't stop AI agent breakouts. Upgrade to Pomerium's agentic access management trusted by NVIDIA and OpenAI
+9th October 2026 - Link Blog
+Deno is joining Cloudflare (via) The Deno team released the first version of celld back in August - their open source implementation of the Durable Objects pattern from Cloudflare Workers.
+Today, Cloudflare are acquiring Deno outright, with the goal of building on celld to "make workerd self-hosting a first-class supported way to build and run apps using the Workers programming model" (see the Cloudflare blog.)
+The bad news is that Deno itself will not be maintained by Cloudflare beyond the next year:
+We will support the Deno runtime for another year with monthly releases containing bug fixes and security updates. After that year we will end our development of the Deno runtime. Deno will remain open source, and we welcome others who want to continue its development.
+Deno (and Node.js) creator Ryan Dahl explained that decision in a comment on Hacker News:
+It's a joint decision and I agree with it. I'm most invested in its success and have put the most work into it - and I no longer think it's where I can do the most important work. There are some good ideas in Deno and it's well engineered - but it ultimately is not solving big problems. It has been sucked into the gravity well of node compatibility, which forces it to behave exactly as Node does. Why reimplement Node? It works. Marginal performance or UX or security benefits are not enough.
+I'm interested in building powerful new abstractions. celld has been working remarkably well, depending only on object storage for coordination and persistence. It is not just a slightly different API to interact with the file system or network - it's an entirely new model for server development.
+My favorite feature of Deno has long been the permissions system, where you can run a Deno script and specify exactly which files and folders it can read and write to, and which network hosts it can access.
+Node.js has a similar permissions model these days, added in Node v20.0.0 in April 2023 and declared stable in Node v22.13.0 in January 2025. They don't yet support allow-listing specific network hosts though - networking is either on or off.
+Posted 9th October 2026 at 10:48 pm
+Recent articles
+Hello Python 3.15, goodbye 3.10, and now I can use 3.11 - 12th October 2026
+A new feature for my blog, built using my voice - 9th October 2026
+Claude Haiku 5.5 - 7th October 2026
+We're going to need default hard budget caps on pretty much everything - 3rd October 2026
+This is a link post by Simon Willison, posted on 9th October 2026.
+cloudfront
+5
+javascript
+766
+nodejs
+69
+ryan-dahl
+9
+sandboxing
+57
+deno
+28
+Monthly briefing
+Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

@@ -1,0 +1,13 @@
+{
+  "run_id": "20261013T063437Z-eb299023",
+  "started_at": "2026-10-13T06:34:37.727712Z",
+  "as_of_date": "2026-10-13",
+  "mode": "replay",
+  "previous_run_id": "20261013T035421Z-98ff50c1",
+  "source_run_dir": "runs/20261013T035421Z-98ff50c1",
+  "operation": "collection_replay",
+  "development": false,
+  "phase": "repeatability",
+  "max_audio_minutes": 45.0,
+  "model": "gpt-4.1-mini"
+}

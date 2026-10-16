@@ -1,0 +1,19 @@
+{
+  "stage": "extract-content",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 44,
+  "output_count": 44,
+  "started_at": "2026-10-13T06:34:37.950253Z",
+  "finished_at": "2026-10-13T06:34:41.471882Z",
+  "tools": [
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "network_disabled": true,
+  "reused_count": 44,
+  "method": "offline_pinned_store_versions"
+}

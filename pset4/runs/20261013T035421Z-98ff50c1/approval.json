@@ -1,0 +1,45 @@
+{
+  "review_id": "bac46b5cef0ad59369b615adc792ecc2f996a43d9886feb02811a79b75b3b9fb",
+  "decision": "revise",
+  "reviewer": "Yilin Jiang",
+  "reviewed_at": "2026-10-14T15:36:11Z",
+  "notes": "Baseline run under policy v1; not for publication. Sample review of 3 accepted + 4 rejected/deferred items and corrections C1-C6 in reviews/run1_editorial_review.md. Main problems: vendor skew (6/14 accepts from GitHub), media judged on intro excerpts only (code bug, fixed in 7b89003), vendor statements typed as reported_fact, factual error describing Simon Willison as a learner, pieces 01/03 overlap, piece 02 has no examined tension, articles over length. Revised policy v2 and prompts; publish from live run 2.",
+  "corrections": [
+    {
+      "id": "C1",
+      "where": "decision feed:19c45cc3 reason; briefs 01/03",
+      "problem": "Simon Willison described as a learner-level programmer",
+      "fix": "Experienced developer; frame as what an expert can delegate"
+    },
+    {
+      "id": "C2",
+      "where": "brief 03 claim 03-c2",
+      "problem": "Vendor productivity claim typed reported_fact",
+      "fix": "source_claim attributed to GitHub"
+    },
+    {
+      "id": "C3",
+      "where": "brief 01 claim 01-c5",
+      "problem": "Inference about reduced implementation time not supported by cited evidence",
+      "fix": "Remove or turn into an open question"
+    },
+    {
+      "id": "C4",
+      "where": "brief 02 claim 02-c2",
+      "problem": "2024-25 survey data presented as this month's news",
+      "fix": "State it is older survey data cited in a recent article"
+    },
+    {
+      "id": "C5",
+      "where": "decisions for t3-theo items",
+      "problem": "Theo labelled vendor",
+      "fix": "practitioner/influencer with attention incentive"
+    },
+    {
+      "id": "C6",
+      "where": "articles Sources sections + length",
+      "problem": "Duplicate source lines; 1,072-1,169 words",
+      "fix": "Code fix in 7b89003"
+    }
+  ]
+}

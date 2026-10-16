@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EYwXOGY4JUbrBNtK2Sq2nmqTcjrnA",
+  "object": "chat.completion",
+  "created": 1791996878,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"accept\",\"reason\":\"This short video by a practitioner shares a concrete cost comparison between normal and ultra-fast modes of an AI coding agent, showing that ultra-fast mode currently costs over 40 times more for the same task, advising learners not to upgrade yet. This is a clear, practical insight about cost and speed tradeoffs that learners can use to decide when to delegate to ultra-fast modes and manage their spending.\",\"piece_ids\":[\"01\"],\"strongest_claim\":\"Using the ultra-fast mode of the Astro AI coding agent currently costs over 40 times more tokens for the same task compared to normal speed, making it not worth upgrading to the highest tier yet.\",\"evidence_type\":\"first_hand\",\"perspective\":\"practitioner\",\"commercial_incentive\":false}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4573,
+    "completion_tokens": 155,
+    "total_tokens": 4728,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_13db938a58"
+}

@@ -1,0 +1,33 @@
+{
+  "stage": "fetch-podcasts",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 3,
+  "output_count": 9,
+  "started_at": "2026-10-13T03:54:25.322621Z",
+  "finished_at": "2026-10-13T03:54:26.781710Z",
+  "tools": [
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "sources": [
+    {
+      "source_id": "latent-space-pod",
+      "status": "completed",
+      "output_count": 6
+    },
+    {
+      "source_id": "changelog-pod",
+      "status": "completed",
+      "output_count": 1
+    },
+    {
+      "source_id": "sedaily-pod",
+      "status": "completed",
+      "output_count": 2
+    }
+  ]
+}

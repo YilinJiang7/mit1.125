@@ -1,0 +1,885 @@
+{
+  "run_id": "20261014T165635Z-74b86f18",
+  "as_of_date": "2026-10-14",
+  "reviewer": "Yilin Jiang",
+  "applied_by": "Codex following Yilin’s explicit human corrections",
+  "recorded_at": "2026-10-14T17:55:51.305907Z",
+  "authorization": "Human corrections R1–R7 and approval conditional on a passing recomputed review were supplied by Yilin in this task. No model-generated edits or editorial decisions were requested.",
+  "before_review_id": "db2bfa1f7b5c7708c1fe7a2c47b8354c3dd9d38d752bd3d3f616dc42500ccd11",
+  "corrections": [
+    {
+      "id": "R1",
+      "why": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim.",
+      "edits": [
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "02-c6.type",
+          "before": "reported_fact",
+          "after": "source_claim",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "02-c6.statement",
+          "before": "Practitioner insights emphasize the importance of clear guidance on effort and verification focus to improve agent reliability and avoid costly iterative prompting.",
+          "after": "Thariq Shihipar, an Anthropic employee describing Anthropic’s own product Claude Code, recommends clear guidance on effort and verification focus to avoid costly iterative prompting and rate limits; this is vendor advice with a commercial interest.",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "03-c5.type",
+          "before": "reported_fact",
+          "after": "source_claim",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "03-c5.statement",
+          "before": "Anthropic's Claude Code team recommends giving agents clear guidance on effort and verification focus to avoid costly iterative prompting and rate limits.",
+          "after": "Thariq Shihipar, an Anthropic employee describing Anthropic’s own product Claude Code, recommends clear guidance on effort and verification focus to avoid costly iterative prompting and rate limits; this is vendor advice with a commercial interest.",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "02.synthesis",
+          "before": "Stack Overflow's field guide emphasizes that production-grade agents require deterministic, auditable systems beyond the model itself, contrasting with the silent green exit failure mode described by Chase Hughes, which undermines trust. Meanwhile, arXiv research on intervention sentinels shows promising methods to improve agent reliability by pre-execution checks. Together, these sources reveal that trust in agents depends on engineering around the model, not just the model's raw output, and that current trust gaps remain significant for learners. The latent-space podcast with Anthropic adds practitioner insight on the importance of clear effort guidance to improve agent reliability.",
+          "after": "Stack Overflow's field guide emphasizes that production-grade agents require deterministic, auditable systems beyond the model itself, contrasting with the silent green exit failure mode described by Chase Hughes, which undermines trust. Meanwhile, arXiv research on intervention sentinels shows promising methods to improve agent reliability by pre-execution checks. Together, these sources reveal that trust in agents depends on engineering around the model, not just the model's raw output, and that current trust gaps remain significant for learners. In the Latent Space podcast, Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, recommends clear effort guidance; his advice has a commercial interest.",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "03.synthesis",
+          "before": "Simon Willison's voice-driven coding shows the potential for multitasking with agents but also the need for review; GitHub Copilot's new customization features highlight the importance of teaching agents project context; the latent-space podcast with Anthropic stresses giving agents clear effort and verification guidance to avoid costly iterative loops; and the YouTube coverage of Gemini 4 Argon illustrates the importance of balancing cost and performance. Together, these suggest learners must balance delegation with active oversight and cost awareness, and watch for improvements in agent intervention and operability.",
+          "after": "Simon Willison's voice-driven coding shows the potential for multitasking with agents but also the need for review; GitHub Copilot's new customization features highlight the importance of teaching agents project context; the Latent Space podcast features Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, recommending effort and verification guidance with a commercial interest; and the YouTube coverage of Gemini 4 Argon illustrates the importance of balancing cost and performance. Together, these suggest learners must balance delegation with active oversight and cost awareness, and watch for improvements in agent intervention and operability.",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "Anthropic section heading",
+          "occurrences": 1,
+          "before": "## Practitioner Insights: Clear Guidance on Effort and Verification Matters",
+          "after": "## An Anthropic Employee’s Advice on Claude Code",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "02-c6 paragraph",
+          "occurrences": 1,
+          "before": "Practitioners at Anthropic, makers of Claude Code, highlight that giving agents clear guidance on how much effort to spend on verification and testing improves results and reduces costly iterative prompting. For example, telling the agent whether you want a quick prototype or a production-quality solution helps it allocate resources better. This “effort guidance” is a practical way to improve agent reliability and efficiency [02-c6].",
+          "after": "Thariq Shihipar, an Anthropic employee describing Anthropic’s own product Claude Code, recommends specifying effort and verification priorities to reduce costly prompting loops. For example, distinguish a quick prototype from a production-quality solution. This is vendor advice with a commercial interest, not an independent evaluation of reliability [02-c6].",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "03-c5 paragraph",
+          "occurrences": 1,
+          "before": "Anthropic’s Claude Code team also recommends giving agents clear guidance on effort and verification focus. This helps avoid costly iterative prompting loops and rate limits. For example, telling the agent to spend more time verifying and testing edge cases can improve results without wasting tokens on unnecessary retries [03-c5].",
+          "after": "Thariq Shihipar, an Anthropic employee, describes Anthropic’s own product, Claude Code. He recommends clear effort and verification guidance to avoid costly prompting loops and rate limits. This is vendor advice with a commercial interest, not an independent evaluation [03-c5].",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "scene 8 heading",
+          "occurrences": 1,
+          "before": "**Scene 8: Practitioner Tips on Using Agents Efficiently**",
+          "after": "**Scene 8: An Anthropic Employee’s Advice on Claude Code**",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "scene 8 narration",
+          "occurrences": 1,
+          "before": "Thariq Shihipar from Anthropic shares practical advice: when using coding agents, give clear guidance on how much effort to spend verifying and testing. For example, if you want the agent to focus on edge cases or security, tell it explicitly. This upfront effort reduces costly back-and-forth and rate limit hits. Good communication with the agent is like executive communication — clear, structured, and goal-oriented.",
+          "after": "Thariq Shihipar is an Anthropic employee describing Anthropic’s own product, Claude Code. He recommends clear effort and verification guidance, such as specifying edge cases or security checks, to avoid costly prompting loops and rate limits. This is advice with a commercial interest, not an independent reliability evaluation.",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "scene 8 quote attribution",
+          "occurrences": 1,
+          "before": "— Thariq Shihipar, Anthropic, Latent Space podcast [02-c6]",
+          "after": "— Thariq Shihipar, Anthropic employee discussing its own Claude Code product (commercial interest), Latent Space podcast [02-c6]",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "scene 10 vendor-advice summary",
+          "occurrences": 1,
+          "before": "5. Clear, upfront guidance to agents improves efficiency and reliability.",
+          "after": "5. Anthropic’s employee recommends clear upfront effort guidance for Claude Code.",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/03.md",
+          "locator": "scene 6 first narration paragraph",
+          "occurrences": 1,
+          "before": "Anthropic’s Claude Code team advises giving agents clear instructions about how much effort to spend and where to focus verification. For example, if you want the agent to spend more time on edge case testing or security, tell it explicitly.",
+          "after": "Thariq Shihipar, an Anthropic employee describing Anthropic’s own product Claude Code, recommends specifying effort and verification priorities, such as edge cases or security checks. This advice has a commercial interest; it is not an independent evaluation.",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/03.md",
+          "locator": "scene 6 second narration paragraph",
+          "occurrences": 1,
+          "before": "This upfront guidance helps avoid costly back-and-forth prompting loops that waste tokens and hit rate limits. As one Anthropic engineer said, “Sufficiently advanced prompting is indistinguishable from sufficiently advanced executive communication.” Think of it as giving your agent a clear memo about priorities.",
+          "after": "Thariq says this guidance helps avoid costly prompting loops and rate limits. He compares advanced prompting to advanced executive communication: giving your agent a clear memo about priorities.",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        },
+        {
+          "correction_id": "R1",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/03.md",
+          "locator": "scene 6 on-screen attribution",
+          "occurrences": 1,
+          "before": "Text overlay: \"Clear effort and verification guidance saves tokens and improves results.\"",
+          "after": "Text overlay: \"Anthropic employee’s recommendation for its own Claude Code product: clear effort and verification guidance (commercial interest).\"",
+          "reason": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim."
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "why": "Date the 43%→33% figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish historical surveys from the article’s silent-failure discussion.",
+      "edits": [
+        {
+          "correction_id": "R2",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "02-c3.statement",
+          "before": "Developer trust in AI tools has declined despite increased usage, with frustration focused on outputs that are almost right but not quite, and silent failures worsen this trust gap.",
+          "after": "The decline in trust from 43% to 33% comes from Stack Overflow’s 2024 and 2025 Developer Surveys, cited in Chase Hughes’s Oct 8, 2026 article, not new measurements this month. Hughes argues that silent failures worsen this trust gap despite increased AI-tool usage.",
+          "reason": "Date the 43%→33% figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish historical surveys from the article’s silent-failure discussion."
+        },
+        {
+          "correction_id": "R2",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "02.limitations: survey and article dates",
+          "before": "The Stack Overflow field guide is a conceptual maturity model without direct learner-focused evaluation. The silent green exit failure mode is based on a 2024 study and anecdotal experience, which may have evolved. The intervention sentinel research is early-stage and tested on benchmarks, not real learners. No direct disagreement exists but rather complementary perspectives on reliability challenges.",
+          "after": "The Stack Overflow field guide is a conceptual maturity model without direct learner-focused evaluation. The silent green exit discussion comes from Chase Hughes’s Oct 8, 2026 article; the 43%→33% trust figures are historical 2024 and 2025 Developer Survey results, not new measurements this month. The intervention sentinel research is early-stage and tested on benchmarks, not real learners. No direct disagreement exists but rather complementary perspectives on reliability challenges.",
+          "reason": "Date the 43%→33% figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish historical surveys from the article’s silent-failure discussion."
+        },
+        {
+          "correction_id": "R2",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "silent-failure attribution paragraph",
+          "occurrences": 1,
+          "before": "This failure mode is documented in a 2024 study by Chase Hughes. Agents sometimes write stub code that passes tests without real work or skip evaluation by raising exceptions outside the test framework. These runs still show green checks, fooling downstream systems and developers. The usual trust instruments—exit codes, CI passes, status checks—become unreliable indicators of correctness [02-c2].",
+          "after": "Chase Hughes describes this failure mode in his Oct 8, 2026 article. Agents may write stub code that passes tests without real work or skip evaluation by raising exceptions outside the test framework. Green checks can then mislead downstream systems and developers; exit codes and CI passes alone do not establish correctness [02-c2].",
+          "reason": "Date the 43%→33% figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish historical surveys from the article’s silent-failure discussion."
+        },
+        {
+          "correction_id": "R2",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "02-c3 survey paragraph",
+          "occurrences": 1,
+          "before": "The impact on developer trust is clear. Between 2024 and 2025, AI tool usage rose from 76% to 84%, but trust in their accuracy fell from 43% to 33%, while active distrust rose from 30% to 46%. The biggest frustration, cited by 66%, was “AI solutions that are almost right, but not quite.” Silent failures worsen this trust gap because they are invisible and harder to detect than “almost right” outputs [02-c3].",
+          "after": "Chase Hughes’s Oct 8, 2026 article cites Stack Overflow’s 2024 and 2025 Developer Surveys: AI tool usage rose from 76% to 84%, trust fell from 43% to 33%, and active distrust rose from 30% to 46%. These are historical survey results, not new measurements this month. The biggest frustration, cited by 66%, was “AI solutions that are almost right, but not quite.” Hughes argues that invisible silent failures worsen this trust gap [02-c3].",
+          "reason": "Date the 43%→33% figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish historical surveys from the article’s silent-failure discussion."
+        },
+        {
+          "correction_id": "R2",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "limitations: silent-failure attribution",
+          "occurrences": 1,
+          "before": "The silent green exit failure mode is based on a 2024 study and anecdotal reports; agents may have improved, but the fundamental problem remains.",
+          "after": "Hughes’s Oct 8, 2026 article describes silent green exits; the historical 2024 and 2025 surveys concern developer trust, not new measurements of this failure mode.",
+          "reason": "Date the 43%→33% figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish historical surveys from the article’s silent-failure discussion."
+        },
+        {
+          "correction_id": "R2",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "scene 5 narration",
+          "occurrences": 1,
+          "before": "Stack Overflow’s developer survey shows that from 2024 to 2025, more developers used AI tools — rising from 76% to 84%. But trust in the accuracy of these tools dropped from 43% to 33%, while active distrust rose from 30% to 46%. The biggest frustration, cited by 66%, was “AI solutions that are almost right, but not quite.” Silent failures like the green exit only deepen this trust gap.",
+          "after": "The 2024 and 2025 Stack Overflow Developer Surveys, cited in an Oct 8, 2026 article, show trust dropping from 43% to 33%. AI tool usage rose from 76% to 84%, and distrust from 30% to 46%. Sixty-six percent cited “AI solutions that are almost right, but not quite.” These are historical figures, not new this month. Hughes argues that silent failures worsen trust.",
+          "reason": "Date the 43%→33% figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish historical surveys from the article’s silent-failure discussion."
+        },
+        {
+          "correction_id": "R2",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "scene 5 chart provenance",
+          "occurrences": 1,
+          "before": "Bar chart: AI tool usage rising, trust falling, distrust rising (2024 vs 2025)",
+          "after": "Bar chart: Historical Stack Overflow Developer Surveys (2024 vs 2025), cited in the Oct 8, 2026 article: usage rising, trust 43%→33%, distrust rising; not new this month.",
+          "reason": "Date the 43%→33% figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish historical surveys from the article’s silent-failure discussion."
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "why": "Describe Theo’s own testing as one creator’s account, not an independent evaluation; classify 01-c8 as source_claim.",
+      "edits": [
+        {
+          "correction_id": "R3",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "01-c8.type",
+          "before": "reported_fact",
+          "after": "source_claim",
+          "reason": "Describe Theo’s own testing as one creator’s account, not an independent evaluation; classify 01-c8 as source_claim."
+        },
+        {
+          "correction_id": "R3",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "01-c8.statement",
+          "before": "Gemini 4 Argon shows competitive speed and quality in real-world coding tasks, as reported by a YouTube practitioner who tested it extensively.",
+          "after": "Theo reports competitive speed and quality in coding tasks from his own testing of Gemini 4 Argon; this is one creator’s account, not an independent evaluation.",
+          "reason": "Describe Theo’s own testing as one creator’s account, not an independent evaluation; classify 01-c8 as source_claim."
+        },
+        {
+          "correction_id": "R3",
+          "path": "runs/20261014T165635Z-74b86f18/articles/01.md",
+          "locator": "01-c8 testing attribution",
+          "occurrences": 1,
+          "before": "A YouTube practitioner reported competitive speed and quality on real-world coding tasks but noted some delays and hallucinations [01-c5][01-c8].",
+          "after": "Theo, the video’s creator, reports competitive speed and quality from his own testing, alongside delays and hallucinations. This is one creator’s account, not an independent evaluation [01-c5][01-c8].",
+          "reason": "Describe Theo’s own testing as one creator’s account, not an independent evaluation; classify 01-c8 as source_claim."
+        },
+        {
+          "correction_id": "R3",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/01.md",
+          "locator": "scene 3 testing attribution",
+          "occurrences": 1,
+          "before": "A YouTube practitioner tested it and found it good for front-end coding and 3D tasks, though not perfect.",
+          "after": "Theo, the video’s creator, reports good front-end coding and 3D results from his own testing, though not perfect. This is one creator’s experience, not an independent evaluation.",
+          "reason": "Describe Theo’s own testing as one creator’s account, not an independent evaluation; classify 01-c8 as source_claim."
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "why": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim.",
+      "edits": [
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "02-c4.statement",
+          "before": "Lightweight pre-execution intervention sentinels trained via hindsight distillation can improve coding agent task completion by preventing error propagation and providing actionable feedback.",
+          "after": "In the non-peer-reviewed HiSentinel arXiv preprint, the authors report that pre-execution intervention sentinels improved task completion by up to 14% on their own benchmarks while keeping token usage competitive. This is research worth watching, not a tool learners can adopt from these results.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "03-c4.type",
+          "before": "reported_fact",
+          "after": "source_claim",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "03-c4.statement",
+          "before": "Intervention sentinels that decide when and how to intervene before execution can improve agent reliability and task completion, suggesting learners should adopt or watch for such tools.",
+          "after": "The HiSentinel authors report improved agent task completion on their own benchmarks in a non-peer-reviewed arXiv preprint. HiSentinel is research worth watching; learners cannot adopt it from these results, and learner benefits have not been established.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "02.synthesis: preprint status",
+          "before": "Stack Overflow's field guide emphasizes that production-grade agents require deterministic, auditable systems beyond the model itself, contrasting with the silent green exit failure mode described by Chase Hughes, which undermines trust. Meanwhile, arXiv research on intervention sentinels shows promising methods to improve agent reliability by pre-execution checks. Together, these sources reveal that trust in agents depends on engineering around the model, not just the model's raw output, and that current trust gaps remain significant for learners. In the Latent Space podcast, Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, recommends clear effort guidance; his advice has a commercial interest.",
+          "after": "Stack Overflow's field guide emphasizes that production-grade agents require deterministic, auditable systems beyond the model itself, contrasting with the silent green exit failure mode described by Chase Hughes, which undermines trust. Meanwhile, the non-peer-reviewed HiSentinel arXiv preprint reports results on the authors’ own benchmarks; it is worth watching, not a tool learners can adopt. Together, these sources reveal that trust in agents depends on engineering around the model, not just the model's raw output, and that current trust gaps remain significant for learners. In the Latent Space podcast, Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, recommends clear effort guidance; his advice has a commercial interest.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "02.limitations: preprint scope",
+          "before": "The Stack Overflow field guide is a conceptual maturity model without direct learner-focused evaluation. The silent green exit discussion comes from Chase Hughes’s Oct 8, 2026 article; the 43%→33% trust figures are historical 2024 and 2025 Developer Survey results, not new measurements this month. The intervention sentinel research is early-stage and tested on benchmarks, not real learners. No direct disagreement exists but rather complementary perspectives on reliability challenges.",
+          "after": "The Stack Overflow field guide is a conceptual maturity model without direct learner-focused evaluation. The silent green exit discussion comes from Chase Hughes’s Oct 8, 2026 article; the 43%→33% trust figures are historical 2024 and 2025 Developer Survey results, not new measurements this month. HiSentinel is a non-peer-reviewed arXiv preprint tested on the authors’ own benchmarks, not learners; it is worth watching rather than adopting. No direct disagreement exists but rather complementary perspectives on reliability challenges.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "03.argument: watch rather than adopt",
+          "before": "Learners should actively guide agents with project-specific instructions, review agent outputs carefully due to silent failure risks, manage token costs by choosing models wisely, and adopt intervention strategies to improve reliability, while watching for advances in agent autonomy and cost efficiency.",
+          "after": "Learners should actively guide agents with project-specific instructions, review agent outputs carefully due to silent failure risks, manage token costs by choosing models wisely, and watch HiSentinel research without treating its non-peer-reviewed benchmark results as a tool they can adopt, while watching for advances in agent autonomy and cost efficiency.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/briefs.jsonl",
+          "locator": "03.limitations: research and vendor scope",
+          "before": "The voice-driven example is from an expert and may not generalize to beginners. The intervention and operability advice comes from vendor and research sources with commercial incentives. Cost and model efficiency claims are evolving rapidly and may change soon. Learners should remain cautious and not over-trust agents yet.",
+          "after": "The voice-driven example is from an expert and may not generalize to beginners. HiSentinel is a non-peer-reviewed arXiv preprint tested on its authors’ own benchmarks, not learners; it is worth watching rather than adopting. Thariq’s Claude Code advice comes from an Anthropic employee describing Anthropic’s own product, with a commercial interest. Cost and model efficiency claims are evolving rapidly and may change soon. Learners should remain cautious and not over-trust agents yet.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "research section heading",
+          "occurrences": 1,
+          "before": "## Research Shows Promising Ways to Improve Agent Reliability",
+          "after": "## HiSentinel: Preprint Results Worth Watching",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "02-c4 approach paragraph",
+          "occurrences": 1,
+          "before": "Recent research proposes improving reliability by intervening before the agent executes an action. The **HiSentinel** approach trains lightweight “sentinels” to decide when to intervene, redirect, or pause the agent’s actions based on pre-execution context. These sentinels provide actionable feedback to help the agent recover or ask for human help [02-c4].",
+          "after": "**HiSentinel** is a non-peer-reviewed arXiv preprint. Its authors train lightweight sentinels to allow, redirect, or pause an agent’s proposed actions before execution, supplying feedback intended to help it recover or ask for human help [02-c4].",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "02-c4 benchmark scope paragraph",
+          "occurrences": 1,
+          "before": "HiSentinel improved task completion rates by up to 14% on benchmarks while keeping token usage competitive. This shows that **pre-execution intervention can effectively prevent error propagation and improve the reliability of autonomous coding agents** [02-c4].",
+          "after": "The authors report task completion improvements of up to 14% on their own benchmarks, with competitive token usage. This is research **worth watching**, not a tool learners can adopt; these results do not establish benefits for learners [02-c4].",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "limitations: preprint scope",
+          "occurrences": 1,
+          "before": "The HiSentinel research is early-stage and tested on benchmarks, not real learners or classrooms.",
+          "after": "HiSentinel is a non-peer-reviewed arXiv preprint tested on its authors’ benchmarks, not learners or classrooms; it is worth watching rather than adopting.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "opening summary: watch rather than adopt",
+          "occurrences": 1,
+          "before": "and adopt or watch for tools that intervene before errors propagate.",
+          "after": "and watch research on pre-execution intervention. HiSentinel is not a tool learners can adopt from its preprint results.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "research section heading",
+          "occurrences": 1,
+          "before": "## Adopt or Watch for Pre-Execution Intervention Tools",
+          "after": "## HiSentinel Is Research Worth Watching",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "03-c4 approach paragraph",
+          "occurrences": 1,
+          "before": "Recent research introduces “intervention sentinels”—lightweight models trained to decide before an agent executes an action whether to allow it, redirect it, or pause for human help. These sentinels provide actionable feedback that helps prevent error propagation and improve task completion reliability [03-c4].",
+          "after": "The HiSentinel authors describe lightweight intervention sentinels in a non-peer-reviewed arXiv preprint. Before an agent acts, the sentinel can allow, redirect, or pause it for human help [03-c4].",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "03-c4 benchmark scope paragraph",
+          "occurrences": 1,
+          "before": "In tests, such sentinels improved task completion rates by up to 14% while keeping token usage competitive. This suggests pre-execution intervention is a promising way to make autonomous coding agents safer and more reliable [03-c4].",
+          "after": "On their own benchmarks, the authors report task completion improvements of up to 14% with competitive token usage. This is research worth watching; learners cannot adopt HiSentinel from these results, and learner benefits have not been established [03-c4].",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "scene 6 narration",
+          "occurrences": 1,
+          "before": "New research from arXiv introduces “intervention sentinels” — lightweight models trained to watch coding agents’ proposed actions before execution. These sentinels decide whether to allow, redirect, or pause the action for human help. This pre-execution check can prevent errors from propagating and improve task completion by up to 14%. It’s a promising way to make autonomous coding agents more reliable.",
+          "after": "HiSentinel is a non-peer-reviewed arXiv preprint. Its intervention sentinels allow, redirect, or pause proposed actions before execution. The authors report task completion improvements of up to 14% on their own benchmarks, with competitive token usage. It is research worth watching, not a tool learners can adopt; benefits for learners have not been established.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "scene 6 benchmark overlay",
+          "occurrences": 1,
+          "before": "Text overlay: “HiSentinel improves task completion by up to 14%.” — arXiv, 2026 [02-c4]",
+          "after": "Text overlay: “HiSentinel authors report up to 14% improvement on their own benchmarks. Non-peer-reviewed arXiv preprint; worth watching, not adopting.” [02-c4]",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "scene 10 preprint summary",
+          "occurrences": 1,
+          "before": "4. New intervention sentinels show promise in catching errors before they happen.",
+          "after": "4. HiSentinel’s preprint reports authors’ benchmark results; it is worth watching, not adopting.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/03.md",
+          "locator": "scene 5 heading",
+          "occurrences": 1,
+          "before": "### Scene 5: Use or watch for intervention tools to improve reliability",
+          "after": "### Scene 5: HiSentinel is research worth watching",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/03.md",
+          "locator": "scene 5 narration",
+          "occurrences": 1,
+          "before": "Researchers have developed “intervention sentinels” — lightweight AI components that decide when to pause or redirect an agent before it executes code. A recent arXiv paper shows these sentinels can improve task completion by up to 14% by preventing error propagation early.\n\nFor learners, this means tools that intervene before an agent runs bad code can make AI assistance more reliable. Keep an eye out for such features in your coding agents or plugins.",
+          "after": "HiSentinel is a non-peer-reviewed arXiv preprint describing intervention sentinels that allow, pause, or redirect an agent before execution. The authors report task completion improvements of up to 14% on their own benchmarks.\n\nThis is research worth watching, not a tool learners can adopt from these results. The benchmarks do not establish benefits for learners, so keep that limit in mind when following intervention research.",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        },
+        {
+          "correction_id": "R4",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/03.md",
+          "locator": "scene 5 benchmark overlay",
+          "occurrences": 1,
+          "before": "Text overlay: \"Intervention sentinels improve agent reliability by up to 14%.\"",
+          "after": "Text overlay: \"HiSentinel: authors report up to 14% on their own benchmarks. Non-peer-reviewed arXiv preprint; worth watching, not adopting.\"",
+          "reason": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim."
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "why": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts.",
+      "edits": [
+        {
+          "correction_id": "R5",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "opening context",
+          "occurrences": 1,
+          "before": "Coding agents like GitHub Copilot, Claude Code, and Codex are increasingly capable of planning, editing, and running code. For learners in their first years of programming, these tools can speed up work and exploration. However, as agents take on more responsibility, learners must know what to delegate, what to check themselves, and how to manage costs and reliability.",
+          "after": "Coding agents like GitHub Copilot, Claude Code, and Codex increasingly plan, edit, and run code. For learners, they can speed up exploration, but delegation still requires knowing what to check and how to manage costs and reliability.",
+          "reason": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts."
+        },
+        {
+          "correction_id": "R5",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "project instructions",
+          "occurrences": 1,
+          "before": "Agents perform better when they understand your project’s rules and conventions. GitHub Copilot’s new customization features let you add a `.github/copilot-instructions.md` file to your repository. This file defines baseline guidance such as architecture preferences, naming conventions, and testing expectations that apply across the project. This reduces the need to repeatedly explain the same standards and helps the agent produce more relevant code [03-c1].",
+          "after": "Give agents your project’s rules. GitHub Copilot supports a `.github/copilot-instructions.md` file containing repository-wide architecture preferences, naming conventions, and testing expectations. This reduces repeated explanations and helps produce more relevant code [03-c1].",
+          "reason": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts."
+        },
+        {
+          "correction_id": "R5",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "skills and custom agents",
+          "occurrences": 1,
+          "before": "You can start small by adding one convention you often explain and see how Copilot applies it in your next task. Beyond instructions, Copilot supports “agent skills” for repeatable procedures and “custom agents” for broader tasks spanning multiple files. These expand what Copilot can do within your project [03-c1].",
+          "after": "Start with one convention and observe Copilot’s next task. “Agent skills” support repeatable procedures, while “custom agents” handle broader tasks spanning multiple files [03-c1].",
+          "reason": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts."
+        },
+        {
+          "correction_id": "R5",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "voice example",
+          "occurrences": 1,
+          "before": "Simon Willison’s experience building a blog feature almost entirely by voice with Codex shows the potential of agents when given clear goals and context. He talked through the feature, had the agent write code, then reviewed and tweaked the output before deploying. This illustrates that complex tasks can be delegated if you guide the agent well and review carefully [03-c1].",
+          "after": "Simon Willison built a blog feature almost entirely by voice with Codex, then reviewed and adjusted the code before deploying. His example illustrates delegation with clear goals and context, followed by careful review [03-c1].",
+          "reason": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts."
+        },
+        {
+          "correction_id": "R5",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "silent-failure mechanism",
+          "occurrences": 1,
+          "before": "But unattended agents can fail quietly. An agent loop might exit with a success code (exit 0) even if it produced no useful output. This “silent green exit” means the agent claims it is done, but nothing actually happened. Downstream systems and users see a success signal and assume the work is complete, but that may be false [03-c2].",
+          "after": "Unattended agents can exit successfully (exit 0) despite producing no useful output. In this “silent green exit,” downstream systems and users see a success signal even though the agent has not completed the work [03-c2].",
+          "reason": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts."
+        },
+        {
+          "correction_id": "R5",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "trust feedback loop",
+          "occurrences": 1,
+          "before": "This failure mode breaks the feedback loop that builds trust. Unlike a compiler or test runner that observes and reports on actual work, an agent’s success signal is often just a self-assessment without verification. Learners must not rely solely on exit codes or passing tests but must actively review agent outputs themselves [03-c2].",
+          "after": "This breaks the trust feedback loop: an agent’s success signal may be a self-assessment rather than verification. Review outputs yourself instead of relying solely on exit codes or passing tests [03-c2].",
+          "reason": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts."
+        },
+        {
+          "correction_id": "R5",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "review example",
+          "occurrences": 1,
+          "before": "Simon Willison’s blog feature example confirms this: after the agent generated code by voice, he spent additional time reviewing and fixing issues before deploying. Careful review is essential to catch silent or subtle errors [03-c1] [03-c2].",
+          "after": "Willison also spent time reviewing and fixing agent-generated code before deploying. His example reinforces the need for review rather than reliance on success signals [03-c1] [03-c2].",
+          "reason": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts."
+        },
+        {
+          "correction_id": "R5",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "cost explanation",
+          "occurrences": 1,
+          "before": "Price per token is only part of the story. Total cost depends on how many tokens the model uses to complete a task. Some cheaper models use many more tokens, making them less cost-effective overall. Benchmarks show Argon performs well on cost versus intelligence, making it a good choice for learners mindful of budget [03-c3].",
+          "after": "Total cost also depends on tokens used per task. A cheaper model that uses more tokens may cost more overall. Argon’s benchmark cost-performance results are relevant to budget-conscious learners [03-c3].",
+          "reason": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts."
+        },
+        {
+          "correction_id": "R5",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "concrete step",
+          "occurrences": 1,
+          "before": "If you use GitHub Copilot or a similar agent, add a `.github/copilot-instructions.md` file to your repository with one convention or rule you often explain. For example, specify your preferred test command or naming style. Then observe how the agent applies this guidance in your next coding session. This small step can improve output relevance and reduce repetitive explanations, making your collaboration smoother and more productive [03-c1].",
+          "after": "If you use GitHub Copilot, add one convention to `.github/copilot-instructions.md`, such as a test command or naming style. Observe how it applies that guidance in your next session to assess relevance and reduce repeated explanations [03-c1].",
+          "reason": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts."
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "why": "Remove all three stray [limitations] labels from article 01; they are not numbered brief claims.",
+      "edits": [
+        {
+          "correction_id": "R6",
+          "path": "runs/20261014T165635Z-74b86f18/articles/01.md",
+          "locator": "all stray limitation labels",
+          "occurrences": 3,
+          "before": " [limitations]",
+          "after": "",
+          "reason": "Remove all three stray [limitations] labels from article 01; they are not numbered brief claims."
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "why": "Replace the pending-review disclosure with Yilin’s requested editor-reviewed AI-assistance disclosure in all six drafts.",
+      "edits": [
+        {
+          "correction_id": "R7",
+          "path": "runs/20261014T165635Z-74b86f18/articles/01.md",
+          "locator": "AI-assistance and editorial disclosure",
+          "occurrences": 1,
+          "before": "Drafted with AI assistance from a source-tracked pipeline. Human editorial review pending.",
+          "after": "Drafted with AI assistance from a source-tracked pipeline; reviewed and corrected by the editor, Yilin Jiang.",
+          "reason": "Replace the pending-review disclosure with Yilin’s requested editor-reviewed AI-assistance disclosure in all six drafts."
+        },
+        {
+          "correction_id": "R7",
+          "path": "runs/20261014T165635Z-74b86f18/articles/02.md",
+          "locator": "AI-assistance and editorial disclosure",
+          "occurrences": 1,
+          "before": "Drafted with AI assistance from a source-tracked pipeline. Human editorial review pending.",
+          "after": "Drafted with AI assistance from a source-tracked pipeline; reviewed and corrected by the editor, Yilin Jiang.",
+          "reason": "Replace the pending-review disclosure with Yilin’s requested editor-reviewed AI-assistance disclosure in all six drafts."
+        },
+        {
+          "correction_id": "R7",
+          "path": "runs/20261014T165635Z-74b86f18/articles/03.md",
+          "locator": "AI-assistance and editorial disclosure",
+          "occurrences": 1,
+          "before": "Drafted with AI assistance from a source-tracked pipeline. Human editorial review pending.",
+          "after": "Drafted with AI assistance from a source-tracked pipeline; reviewed and corrected by the editor, Yilin Jiang.",
+          "reason": "Replace the pending-review disclosure with Yilin’s requested editor-reviewed AI-assistance disclosure in all six drafts."
+        },
+        {
+          "correction_id": "R7",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/01.md",
+          "locator": "AI-assistance and editorial disclosure",
+          "occurrences": 1,
+          "before": "Drafted with AI assistance from a source-tracked pipeline. Human editorial review pending.",
+          "after": "Drafted with AI assistance from a source-tracked pipeline; reviewed and corrected by the editor, Yilin Jiang.",
+          "reason": "Replace the pending-review disclosure with Yilin’s requested editor-reviewed AI-assistance disclosure in all six drafts."
+        },
+        {
+          "correction_id": "R7",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/02.md",
+          "locator": "AI-assistance and editorial disclosure",
+          "occurrences": 1,
+          "before": "Drafted with AI assistance from a source-tracked pipeline. Human editorial review pending.",
+          "after": "Drafted with AI assistance from a source-tracked pipeline; reviewed and corrected by the editor, Yilin Jiang.",
+          "reason": "Replace the pending-review disclosure with Yilin’s requested editor-reviewed AI-assistance disclosure in all six drafts."
+        },
+        {
+          "correction_id": "R7",
+          "path": "runs/20261014T165635Z-74b86f18/video_scripts/03.md",
+          "locator": "AI-assistance and editorial disclosure",
+          "occurrences": 1,
+          "before": "Drafted with AI assistance from a source-tracked pipeline. Human editorial review pending.",
+          "after": "Drafted with AI assistance from a source-tracked pipeline; reviewed and corrected by the editor, Yilin Jiang.",
+          "reason": "Replace the pending-review disclosure with Yilin’s requested editor-reviewed AI-assistance disclosure in all six drafts."
+        }
+      ]
+    }
+  ],
+  "artifact_hashes": {
+    "runs/20261014T165635Z-74b86f18/articles/01.md": {
+      "before_sha256": "2508aeeeb9b1fdca14c675b6347601e1696a83fae4d59afb63dec8f157bbe46b",
+      "after_sha256": "82699515e480b222aaf457e683e4243d7d3a82a3fba6436391c4393ed7fb7b5e"
+    },
+    "runs/20261014T165635Z-74b86f18/articles/02.md": {
+      "before_sha256": "c032e9d386fa37386b91f0720724c271db0e01ef5dade0e859a370c64748a553",
+      "after_sha256": "93aaf74f0e73455dc8bba6da406fb7f2604e50e851e63d253d775374825f1aa8"
+    },
+    "runs/20261014T165635Z-74b86f18/articles/03.md": {
+      "before_sha256": "ec595779ae62aed3906557ff3154193cd9df4c06a6023c474f7ec2a473e260a1",
+      "after_sha256": "7320810f7d5f48155297f57712069d9605e5f7c6618e18e3ac122ed0f7717c7d"
+    },
+    "runs/20261014T165635Z-74b86f18/briefs.jsonl": {
+      "before_sha256": "c096ae90f12ae825361c57ff8beb4656d44c3706da7ffe61f389b8f8d34e60b1",
+      "after_sha256": "4cbe9ec192fd1a6970379783808fb1a53658988066b820a3391512b054c14ebb"
+    },
+    "runs/20261014T165635Z-74b86f18/video_scripts/01.md": {
+      "before_sha256": "736c07f060097c8aaac2d2d9fd82c4a575280a8cfeb1f0ddc704556970bfd748",
+      "after_sha256": "b3946bb704dc9e4a06677f0b224a5dfe58da9114b1b1fa35589c052803608d54"
+    },
+    "runs/20261014T165635Z-74b86f18/video_scripts/02.md": {
+      "before_sha256": "b24191e151bfe96afb5184fc7095a1ec665cff7dc24ad5dce1dded0f96ce5601",
+      "after_sha256": "0e6fdc46c009cc5fcbd8418a98b3d43b842e2b5f747cc714b304c115dbef5931"
+    },
+    "runs/20261014T165635Z-74b86f18/video_scripts/03.md": {
+      "before_sha256": "7c837d7579fcb65f5e386109261c46c057266e931b3aa948833b2e1973ae5f3d",
+      "after_sha256": "f3fd7eebfb116ff4cbcdb660b3a2167dc3e3e5ea080693032a9afa45dc367248"
+    }
+  },
+  "document_changes": [
+    {
+      "path": "reviews/run1_editorial_review.md",
+      "locator": "section E: append status after policy v2",
+      "before": "",
+      "after": "\n### Status after policy v2\n\nRun 2 (`runs/20261014T165635Z-74b86f18`, as-of 2026-10-14) uses policy v2. The publisher cap and whole-transcript sampling improvements are in place, but policy changes alone did not resolve every attribution and evidence-scope problem. Yilin supplied human corrections R1–R7: attribute Claude Code advice to an Anthropic employee discussing Anthropic’s own product with a commercial interest; date the trust figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish Theo’s own testing from an independent evaluation; qualify HiSentinel as a non-peer-reviewed arXiv preprint tested on the authors’ benchmarks and worth watching rather than adopting; trim article 03; remove article 01’s stray limitation markers; and update all six editorial disclosures. Exact before/after text and reasons are recorded in [the run 2 human review](run2_editorial_review.md).\n\nTwo AI-versus-human disagreements remain after policy v2:\n\n| Item | Saved run 2 AI decision | Yilin’s judgment | Status after policy v2 |\n| --- | --- | --- | --- |\n| `feed:e4f96ea3e7c3ac5d94a4995fb08371a2c7f7b6af` — ReviewBench | accept, proposed piece 01 | defer: vendor benchmark for team code-review tools; not actionable for a learner this week | Still accepted by the AI, but not used in any brief, article or script. Decision retained unchanged; no draft correction needed. |\n| `podcast:cc5b25aebfd7bdb8a79516843a8f804db441154c` — NanoClaw | reject | would accept/defer: the agent-project and agent-driven code-rewriting discussion is relevant and deserves examination | Whole-transcript sampling did not remove the editorial disagreement: the AI still rejected it as business/security-focused and insufficiently actionable. Not used in any piece; decision retained unchanged. |\n\nRun 1’s generated artifacts and its baseline-only `revise` decision remain unchanged. Run 2’s corrections are human edits; collection, selection, brief generation and content generation are not rerun.\n",
+      "reason": "Record Yilin’s requested policy-v2 follow-up and the two unused-item disagreements while preserving the run 1 baseline."
+    }
+  ],
+  "editorial_disagreements": [
+    {
+      "item_id": "feed:e4f96ea3e7c3ac5d94a4995fb08371a2c7f7b6af",
+      "title": "ReviewBench",
+      "ai_decision": "accept",
+      "ai_reason": "This GitHub blog post introduces ReviewBench, a new, realistic, and comprehensive benchmark for AI code review agents, built on a large corpus of real GitHub pull requests and validated by senior engineers. It provides detailed evaluation metrics and a trustworthy, auditable methodology, which helps learners understand how AI reviewers perform and what kinds of issues they catch or miss, directly relevant for students delegating code review tasks to agents.",
+      "human_judgment": "defer",
+      "human_reason": "Vendor benchmark for team code-review tools; not actionable for a learner this week.",
+      "used_in_any_piece": false,
+      "action": "Keep saved decision unchanged; no piece uses this item."
+    },
+    {
+      "item_id": "podcast:cc5b25aebfd7bdb8a79516843a8f804db441154c",
+      "title": "NanoClaw",
+      "ai_decision": "reject",
+      "ai_reason": "The podcast is an interview about the Nanoclaw project and open source licensing in the era of AI coding agents, focusing on business and security perspectives rather than concrete coding-agent features, workflows, or learning implications for beginners. It lacks actionable evidence or demonstrations relevant to what a learner can delegate, check, or learn this week.",
+      "human_judgment": "accept/defer",
+      "human_reason": "The agent-project and agent-driven code-rewriting discussion is relevant and deserves examination.",
+      "used_in_any_piece": false,
+      "action": "Keep saved decision unchanged; no piece uses this item."
+    }
+  ],
+  "verification": {
+    "word_counts": {
+      "01": {
+        "article": 870,
+        "spoken": 518
+      },
+      "02": {
+        "article": 875,
+        "spoken": 670
+      },
+      "03": {
+        "article": 775,
+        "spoken": 635
+      }
+    },
+    "numbered_claim_markers": "All numbered occurrences preserved in every article and script.",
+    "evidence": "All item/version IDs, quotes and segment locators unchanged.",
+    "code_appended_source_sections": "Unchanged in all six drafts.",
+    "protected_files_unchanged": 502,
+    "upstream_files_unchanged": 407,
+    "stages_not_rerun": [
+      "collection",
+      "select_items",
+      "create_briefs",
+      "write_articles",
+      "write_video_scripts"
+    ],
+    "api_cost_usd_for_human_edits": 0,
+    "check_only_resume": {
+      "command": "bash run.sh --resume runs/20261014T165635Z-74b86f18 --from check_content",
+      "exit_code": 0,
+      "review": {
+        "review_id": "bdaaa8ca1f727d33dbb9cddba588818b35611f0c72bfec9e7970500a95e8b92a",
+        "passed": true,
+        "issues": [
+          {
+            "artifact": "briefs.jsonl",
+            "severity": "warning",
+            "message": "Needs human judgment: inspect synthesis, evidence support, incentives and limitations.",
+            "piece_id": "01"
+          },
+          {
+            "artifact": "briefs.jsonl",
+            "severity": "warning",
+            "message": "Needs human judgment: inspect synthesis, evidence support, incentives and limitations.",
+            "piece_id": "02"
+          },
+          {
+            "artifact": "briefs.jsonl",
+            "severity": "warning",
+            "message": "Needs human judgment: inspect synthesis, evidence support, incentives and limitations.",
+            "piece_id": "03"
+          }
+        ],
+        "word_counts": {
+          "01": {
+            "article": 870,
+            "spoken": 518
+          },
+          "02": {
+            "article": 875,
+            "spoken": 670
+          },
+          "03": {
+            "article": 775,
+            "spoken": 635
+          }
+        }
+      },
+      "new_receipts": [
+        "runs/20261014T165635Z-74b86f18/logs/check-content-20261014T175603213362Z-46855.json",
+        "runs/20261014T165635Z-74b86f18/logs/create-series-20261014T175603270472Z-46898.json",
+        "runs/20261014T165635Z-74b86f18/logs/run-resume-20261014T175603316680Z-46899.json",
+        "runs/20261014T165635Z-74b86f18/logs/store-get-20261014T175602545033Z-46859.json",
+        "runs/20261014T165635Z-74b86f18/logs/store-get-20261014T175602625903Z-46863.json",
+        "runs/20261014T165635Z-74b86f18/logs/store-get-20261014T175602705708Z-46867.json",
+        "runs/20261014T165635Z-74b86f18/logs/store-get-20261014T175602788616Z-46871.json",
+        "runs/20261014T165635Z-74b86f18/logs/store-get-20261014T175602869737Z-46875.json",
+        "runs/20261014T165635Z-74b86f18/logs/store-get-20261014T175602949727Z-46879.json",
+        "runs/20261014T165635Z-74b86f18/logs/store-get-20261014T175603030465Z-46883.json",
+        "runs/20261014T165635Z-74b86f18/logs/store-get-20261014T175603111333Z-46887.json",
+        "runs/20261014T165635Z-74b86f18/logs/store-get-20261014T175603191630Z-46891.json",
+        "runs/20261014T165635Z-74b86f18/logs/summarize-run-20261014T175603429109Z-46900.json"
+      ],
+      "api_cost_usd": 0
+    },
+    "approval": {
+      "path": "runs/20261014T165635Z-74b86f18/approval.json",
+      "review_id": "bdaaa8ca1f727d33dbb9cddba588818b35611f0c72bfec9e7970500a95e8b92a",
+      "decision": "approve",
+      "reviewer": "Yilin Jiang",
+      "reviewed_at": "2026-10-14T17:57:18.367551Z",
+      "notes": "Yilin’s human corrections R1–R7 and the two unused-item disagreements are recorded in reviews/run2_editorial_review.md; exact edit spans and hashes are in reviews/run2_corrections.json. Approval was explicitly supplied by Yilin, conditional on the recomputed review passing.",
+      "corrections": [
+        {
+          "id": "R1",
+          "description": "Attribute advice to Thariq Shihipar, an Anthropic employee describing Anthropic’s own Claude Code product, and state the commercial interest; classify the advice as source_claim.",
+          "record": "reviews/run2_editorial_review.md"
+        },
+        {
+          "id": "R2",
+          "description": "Date the 43%→33% figures to the 2024 and 2025 Stack Overflow Developer Surveys cited in the Oct 8, 2026 article; distinguish historical surveys from the article’s silent-failure discussion.",
+          "record": "reviews/run2_editorial_review.md"
+        },
+        {
+          "id": "R3",
+          "description": "Describe Theo’s own testing as one creator’s account, not an independent evaluation; classify 01-c8 as source_claim.",
+          "record": "reviews/run2_editorial_review.md"
+        },
+        {
+          "id": "R4",
+          "description": "Limit HiSentinel claims to a non-peer-reviewed arXiv preprint and the authors’ benchmarks; frame it as worth watching, not something learners can adopt; classify 03-c4 as source_claim.",
+          "record": "reviews/run2_editorial_review.md"
+        },
+        {
+          "id": "R5",
+          "description": "Trim article 03 to no more than 900 body words by shortening existing explanations, retaining every numbered claim-marker occurrence and adding no facts.",
+          "record": "reviews/run2_editorial_review.md"
+        },
+        {
+          "id": "R6",
+          "description": "Remove all three stray [limitations] labels from article 01; they are not numbered brief claims.",
+          "record": "reviews/run2_editorial_review.md"
+        },
+        {
+          "id": "R7",
+          "description": "Replace the pending-review disclosure with Yilin’s requested editor-reviewed AI-assistance disclosure in all six drafts.",
+          "record": "reviews/run2_editorial_review.md"
+        }
+      ]
+    },
+    "store_after_review": {
+      "items": 64,
+      "versions": 76,
+      "observations": 93,
+      "database_sha256": "ec97d64652212ce1a9defda911bea8c15648bf613601b456684f0a4335cdd875"
+    },
+    "audit_replays_all_64_edits": true,
+    "store_after_package": {
+      "items": 64,
+      "versions": 76,
+      "observations": 93,
+      "database_sha256": "ec97d64652212ce1a9defda911bea8c15648bf613601b456684f0a4335cdd875"
+    },
+    "package": {
+      "command": "bash run.sh --package runs/20261014T165635Z-74b86f18",
+      "exit_code": 0,
+      "manifest": {
+        "run_id": "20261014T165635Z-74b86f18",
+        "as_of_date": "2026-10-14",
+        "review_id": "bdaaa8ca1f727d33dbb9cddba588818b35611f0c72bfec9e7970500a95e8b92a",
+        "pieces": [
+          {
+            "piece_id": "01",
+            "article_path": "runs/20261014T165635Z-74b86f18/package/articles/01.md",
+            "video_script_path": "runs/20261014T165635Z-74b86f18/package/video_scripts/01.md",
+            "sources_path": "runs/20261014T165635Z-74b86f18/package/sources/01.md"
+          },
+          {
+            "piece_id": "02",
+            "article_path": "runs/20261014T165635Z-74b86f18/package/articles/02.md",
+            "video_script_path": "runs/20261014T165635Z-74b86f18/package/video_scripts/02.md",
+            "sources_path": "runs/20261014T165635Z-74b86f18/package/sources/02.md"
+          },
+          {
+            "piece_id": "03",
+            "article_path": "runs/20261014T165635Z-74b86f18/package/articles/03.md",
+            "video_script_path": "runs/20261014T165635Z-74b86f18/package/video_scripts/03.md",
+            "sources_path": "runs/20261014T165635Z-74b86f18/package/sources/03.md"
+          }
+        ],
+        "publication_links_path": "runs/20261014T165635Z-74b86f18/package/publication_links.json",
+        "remaining_manual_steps": [
+          "Produce each audience video in Google Vids or HeyGen; review narration and visuals.",
+          "Publish the approved articles on Substack with shareable access and no paid subscription requirement.",
+          "Publish the three videos on YouTube (public or unlisted), with article links and source notes.",
+          "Cross-link article/video pairs, verify course-staff access and record real URLs in publication_links.json."
+        ]
+      },
+      "package_files_match_reviewed_drafts": true,
+      "publication_links": [
+        {
+          "piece_id": "01",
+          "substack_url": null,
+          "youtube_url": null
+        },
+        {
+          "piece_id": "02",
+          "substack_url": null,
+          "youtube_url": null
+        },
+        {
+          "piece_id": "03",
+          "substack_url": null,
+          "youtube_url": null
+        }
+      ],
+      "summary_status": "ready_for_production"
+    },
+    "new_receipt_stages": {
+      "check-content": 2,
+      "create-series": 1,
+      "prepare-package": 1,
+      "run-package": 1,
+      "run-resume": 1,
+      "store-get": 36,
+      "summarize-run": 2
+    },
+    "new_llm_requests": 0,
+    "additional_api_cost_usd": 0,
+    "run2_cumulative_estimated_api_cost_usd": 0.5187876
+  }
+}

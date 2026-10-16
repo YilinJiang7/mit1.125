@@ -1,0 +1,109 @@
+{
+  "stage": "fetch-youtube",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 5,
+  "output_count": 15,
+  "started_at": "2026-10-14T16:56:50.601947Z",
+  "finished_at": "2026-10-14T16:56:53.703892Z",
+  "tools": [
+    "python3",
+    "yt-dlp"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "sources": [
+    {
+      "source_id": "theo-yt",
+      "status": "completed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "completed"
+        }
+      ],
+      "output_count": 3,
+      "method": "channel_rss"
+    },
+    {
+      "source_id": "fireship-yt",
+      "status": "completed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "completed"
+        }
+      ],
+      "output_count": 3,
+      "method": "channel_rss"
+    },
+    {
+      "source_id": "github-yt",
+      "status": "completed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "completed"
+        }
+      ],
+      "output_count": 3,
+      "method": "channel_rss"
+    },
+    {
+      "source_id": "primetime-yt",
+      "status": "completed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "completed"
+        }
+      ],
+      "output_count": 3,
+      "method": "channel_rss"
+    },
+    {
+      "source_id": "yc-yt",
+      "status": "completed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "completed"
+        }
+      ],
+      "output_count": 3,
+      "method": "channel_rss"
+    }
+  ]
+}

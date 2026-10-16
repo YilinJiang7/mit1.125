@@ -1,0 +1,19 @@
+{
+  "stage": "run-resume",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": null,
+  "output_count": 64,
+  "started_at": "2026-10-14T17:56:02Z",
+  "finished_at": "2026-10-14T17:56:03.316961Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "resumed_from": "check_content",
+  "reason": "User-requested resume from check_content using saved upstream artifacts."
+}

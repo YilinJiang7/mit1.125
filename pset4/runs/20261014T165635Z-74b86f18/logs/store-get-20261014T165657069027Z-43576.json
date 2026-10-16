@@ -1,0 +1,21 @@
+{
+  "stage": "store-get",
+  "status": "failed",
+  "exit_code": 1,
+  "input_count": 0,
+  "output_count": 0,
+  "started_at": "2026-10-14T16:56:57.041403Z",
+  "finished_at": "2026-10-14T16:56:57.069051Z",
+  "tools": [
+    "python3",
+    "sqlite3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [
+    {
+      "message": "item/version absent"
+    }
+  ]
+}

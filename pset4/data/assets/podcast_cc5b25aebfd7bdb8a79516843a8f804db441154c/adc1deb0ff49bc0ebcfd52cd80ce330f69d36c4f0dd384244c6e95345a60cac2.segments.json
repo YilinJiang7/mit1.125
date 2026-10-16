@@ -1,0 +1,452 @@
+[
+  {
+    "end_seconds": 28.0,
+    "segment_id": "seg-0001",
+    "start_seconds": 0.0,
+    "text": "What's up, friends? Welcome back. This is the change log. What if the most important viable thing you own, your crown jewels, was code you just gave away for free the same weekend that you wrote it? Well, this week I'm talking to Gabriel Cohen, the creator of Nanoclaw, about exactly that bet. We discuss why restrictive open source licenses are pointless in a world where agents can rewrite any code base in 12 languages overnight."
+  },
+  {
+    "end_seconds": 68.0,
+    "segment_id": "seg-0002",
+    "start_seconds": 28.0,
+    "text": "How he sat down with a cloud code that didn't even know OpenClaw existed and built Nanoclaw from a blank slate the moment Carpathia tweeted and shut down a marketing agency doing hundreds of thousands in ARR. And Gabriel's vision for a human-centered future where every knowledge worker becomes a manager of hundreds of agents. Heads up, I'm doing a live show with Taylor Otwell at Resend Forward. Check it out at resend.com forward and I hope to see you there. A massive thank you to our friends and our partners at fly.io. That is the home of changelog.com, your agents in a computer, and that is what they built."
+  },
+  {
+    "end_seconds": 102.0,
+    "segment_id": "seg-0003",
+    "start_seconds": 68.0,
+    "text": "Learn more at fly.io. Okay, let's do this. Well, friends, this episode is brought to you by our friends at Coder.com, secure environments where developers and agents work in parallel. And I'm joined by Nicky Pike, field CTO for Coder. Nicky, what is a field CTO? So I get that question a lot and it's half the people understand it, half the people don't. A field CTO, I describe it very simply as we're dev rel for the C-suite."
+  },
+  {
+    "end_seconds": 142.0,
+    "segment_id": "seg-0004",
+    "start_seconds": 102.0,
+    "text": "So we provide a bridge between the customer voice, between the C-suite and the managers and the leadership teams of our customers back into our product. And then we go through and we help enable our teams to have the same message to make sure that the message is correct. And that we're building on something that people actually want, not just something that we think they want. Okay, so we're taking the laptop away from the developer. Not really, though. We're putting them in a cloud development environment, a secure environment where they can work with their agents in parallel. These are blessed environments. What's wrong with the laptop? The laptop is the trap here. And not only because the fact that it could be stolen, you could lose it, it breaks and you're out of work while you're waiting for a new one. But there's also just the consistency that you got there."
+  },
+  {
+    "end_seconds": 182.0,
+    "segment_id": "seg-0005",
+    "start_seconds": 142.0,
+    "text": "We all know developers. Developers are going to be looking for some of the latest and greatest. And if you're not really controlling how they get out there, that's where you get this. It works on my machine. It doesn't work in production. It doesn't work anywhere else because you don't have that consistency. You don't have that ability to really standardize what that environment looks like. And this is a problem not only for new people coming in. The onboarding statement is average, I think, is like four to five weeks for a new employee to really get their local laptop set up and ready to start doing their first time of code. And the time to first commit is a metric that almost everybody knows. And the reason they can't do that is because there's a lot of tribal knowledge out there. They got to go talk to other developers. What are we using? Where do we get our dependencies? Are we getting them from public? Are we getting them from private repositories?"
+  },
+  {
+    "end_seconds": 221.0,
+    "segment_id": "seg-0006",
+    "start_seconds": 182.0,
+    "text": "But there's also the security and the supply chain aspect of this. When you have local machines out there, look at like the Shai Halud, you know, that virus that went out not long ago. This was a compromise of the MPM public repositories. They went and downloaded things. MPM did what it did. Next thing you know, you're compromised. But when you use something like what we're doing with cloud development environments, then you can mandate and you can put restrictions on there to say, hey, you can only go get your packages from our private repo. Those packages are expected to have been thoroughly vetted. We know that they're clean. Now, does this stop everything like Shai Halud? No. If that compromised package gets into your private repo, you can still have that."
+  },
+  {
+    "end_seconds": 258.0,
+    "segment_id": "seg-0007",
+    "start_seconds": 221.0,
+    "text": "But it really reduces the surface area of the attack. And it also reduces the blast area of the compromise should it happen. Because if your laptop gets compromised and you have to kill the laptop for whatever reason, that's weeks out of work while you're either fixing that or you're getting a new laptop in. The cloud development environments allows you to kill that, start back up fresh, and you're back and running in five minutes. You don't have to wait all that time. Well, friends, the first step is to go to Coder.com, install Coder, self-hosted environments for your teams to enjoy, to standardize around. And it's open source, so you can try it out today. Once again, Coder.com."
+  },
+  {
+    "end_seconds": 262.0,
+    "segment_id": "seg-0008",
+    "start_seconds": 259.0,
+    "text": "Coder.com"
+  },
+  {
+    "end_seconds": 318.0,
+    "segment_id": "seg-0009",
+    "start_seconds": 278.0,
+    "text": "So we're here with Gabrielle Cohen, creator of Nanoclaw, one of the many claws. And you might even say from back in the day, Claude Bot started this all, right? Like it was a pretty interesting time. Wasn't it called Claude Bot? Wasn't that what it was called initially? It sort of set this all off back in like January, February this time? Yeah. When I found the project, it was called Claude Bot. And then it became Molt Bot for like two days. Right. And then OpenGlow. What do you think about the, I guess, the direction of the name even, like just getting to the world of claws? Yeah, it's an interesting name."
+  },
+  {
+    "end_seconds": 358.0,
+    "segment_id": "seg-0010",
+    "start_seconds": 318.0,
+    "text": "I don't know. There's something about it that's a little bit playful, maybe a little bit aggressive. But I think with Nanoclaw, I tried to take it into a more friendly side. And I think the name does that a little bit, but also our logo, this little blue lobster cute guy instead of an angry red guy. Yeah, I know. The red is kind of angry, isn't it? Blue is a bit more color science, right? Like soothing. Aren't most things that are blue kind of soothing, water soothing, right? How that gets associated, something like that?"
+  },
+  {
+    "end_seconds": 366.0,
+    "segment_id": "seg-0011",
+    "start_seconds": 358.0,
+    "text": "I think so. I think brands that want you to trust them go with blue."
+  },
+  {
+    "end_seconds": 405.0,
+    "segment_id": "seg-0012",
+    "start_seconds": 369.0,
+    "text": "What do you think about the state we're in with, I guess, how drastically things have changed? And at what point did you get inspired by the work of Peter Steinberg and what was going on there to then create Nanoclaw? How did this trail in for you? What's your journey here? So I actually started to play around with OpenClaw in early January. I downloaded it. I set it up. It didn't stick for some reason. And then end of January, I came back to it."
+  },
+  {
+    "end_seconds": 444.0,
+    "segment_id": "seg-0013",
+    "start_seconds": 405.0,
+    "text": "I had been messing around with – I actually got a Mac mini and was just running background Cloud Code tasks on it. But I was looking for something that gave me a bit more of the ability to schedule tasks in a nicer way, in a cleaner way. So I came back to OpenClaw, set it up. I was building at the time an AI native marketing agency. So using agents for all kinds of stuff, content optimization and whatnot. I just set it up and gave it access to an Obsidian drive that had files for each of the customers that I was talking with and the customers that I had signed."
+  },
+  {
+    "end_seconds": 481.0,
+    "segment_id": "seg-0014",
+    "start_seconds": 444.0,
+    "text": "And I just set it up there and I said, you are my sales manager and you manage my sales pipeline. And just figure out a system for doing it. And basically, that's it. And then I connected it to a WhatsApp group with myself and my co-founder. And it started to send us morning sales briefings, sales stand-ups each morning and updates and whatnot. And I was like, this is wild. Within a day, it was doing the work of a person, doing it quite well. Interesting. Yeah. And then – I mean, that was working."
+  },
+  {
+    "end_seconds": 518.0,
+    "segment_id": "seg-0015",
+    "start_seconds": 481.0,
+    "text": "And I was like, wow, okay, there's actually real value here, which was surprising to me. Because I was like, it's just – I've been using cloud code for a year then and coding agents for a little bit longer than that. And I didn't really initially understand what's actually new here that I didn't have before. And it took a little while. I spent like a week trying to figure it out. But I saw some security issues. I saw some problems that concerned me as I was setting it up and started to use it. And I didn't feel like it was production-ready, OpenClaw. And I wanted to build a business with lots of agents running on top of it."
+  },
+  {
+    "end_seconds": 557.0,
+    "segment_id": "seg-0016",
+    "start_seconds": 518.0,
+    "text": "So I just sat down and decided to build my own project, which became NanoClaw. What was that process for you? Were you – I'm not familiar with your full history. You mentioned marketing agency. Help me understand how – and don't take this as a pejorative. But how developer were you prior to this? Were you deep in development? Did you learn on the job? Did you learn as you built NanoClaw? What's your developer journey when it comes to this? Yeah. I was a full developer before this. So I studied physics and computer science. By hand, right? You wrote code by hand yourself with your own fingers? I wrote many lines of code with these fingers, yeah."
+  },
+  {
+    "end_seconds": 594.0,
+    "segment_id": "seg-0017",
+    "start_seconds": 557.0,
+    "text": "I studied physics and computer science at Tel Aviv University. I didn't learn how to code in university. I just learned how to reverse trees and stuff like that. But I worked at Wix.com. I was there for seven years and was a front-end developer, full-stack developer, and led a team of developers there. And so I had actually stopped doing development for about four years. I took off from development. When you work – I mean, I'm sure you've seen this. You work as a developer for a while."
+  },
+  {
+    "end_seconds": 632.9199981689453,
+    "segment_id": "seg-0018",
+    "start_seconds": 594.0,
+    "text": "At some point, you start managing people, and then it stops becoming software development and it just becomes managing people. And I got to a point where I felt like anytime I was writing code, it was because I was procrastinating from doing something I was supposed to be doing. And it wasn't as much fun anymore. So I took some time off. I spent like four years doing public relations, working with tech startups, a lot of cyber security, AI, ML, and dev startups, and helping them, really, really technical companies, helping them talk about super in-the-weed stuff in a way that would be understandable"
+  },
+  {
+    "end_seconds": 672.3199996948242,
+    "segment_id": "seg-0019",
+    "start_seconds": 632.9199981689453,
+    "text": "by a wider audience and would resonate and get reporters interested and whatnot. So I spent time doing that and then started to build an AI native marketing agency as a new business. And that's how I got to OpenClaw and then NanoClaw. Yeah. It's a real bummer that that's how the arc was, I suppose. I'm not sure what the arc is now. Do you do software development now? I mean, you're kind of back in the same realm, right? You're sort of managing agents, which are like people, so you end up managing things or entities or whatever you want to call them to do the coding work, right? And so you're kind of back in this manager job."
+  },
+  {
+    "end_seconds": 710.4400024414062,
+    "segment_id": "seg-0020",
+    "start_seconds": 672.3199996948242,
+    "text": "Do you feel that? Or do you feel like you're still close to the middle? I feel now... I mean, it's a really good question and I think we're still figuring it out, right? I don't know where this is all going, definitely not at the end point yet, but the way I feel now is not like a manager because I don't have to talk to people about taking their time off and how they're feeling and motivation levels. I do like to get my agents motivated. I like to be like, great job guys. We're really on a roll here."
+  },
+  {
+    "end_seconds": 748.8399963378906,
+    "segment_id": "seg-0021",
+    "start_seconds": 710.4400024414062,
+    "text": "I think there is a little bit of that management thing that works with agents, but it's more... My role as a software developer, I feel, is more of an architect. So I'm giving the big vision and the design and they're implementing it. And I know, I guess for some developers, I don't know how you feel about it. For me, it wasn't so much about writing the code, typing out the code. I never got really good with 150 or whatever words per minute. I was always a bit slow with the typing and took time to think about things."
+  },
+  {
+    "end_seconds": 780.7599945068359,
+    "segment_id": "seg-0022",
+    "start_seconds": 748.8399963378906,
+    "text": "And I think where I brought the most value was in figuring out what we can cut out and how we can simplify things and write less code. So I like the role of being an architect rather than typing out code. Yeah. Let's dig into that because I feel like that's what we're all kind of moving towards, right? And for those who don't really have that architect brain or just like the natural tendency to like architect things, that's what I naturally do."
+  },
+  {
+    "end_seconds": 818.1600036621094,
+    "segment_id": "seg-0023",
+    "start_seconds": 780.7599945068359,
+    "text": "I think anybody who's been in a product manager role, anybody who's been in a UX designer type role, front end role, I suppose many developers too, you're problem solving, but are you always architecting? I think a lot of those roles really lean into this architectural kind of feel. I feel like that's what I do a lot. It's like I suggest intent. I suggest not every single detail of what I'm trying to build with an agent, for example."
+  },
+  {
+    "end_seconds": 858.1199951171875,
+    "segment_id": "seg-0024",
+    "start_seconds": 818.1600036621094,
+    "text": "But I end up kind of giving the world I want it to live in. What are some of the things that are true about the world? What are the things that are untrue about that world? What are the do's and don'ts? And it's kind of like taste, but I think it's more like architect and intent and what should happen. I think a lot of that stems from understanding user experience or even just workflows and problem solving. I feel like that's the world we're in now. Is that the majority of folks are building that way. They're becoming an architect versus maybe a manager. I hate being a manager of things. I'd rather architect things. What about you?"
+  },
+  {
+    "end_seconds": 891.8800048828125,
+    "segment_id": "seg-0025",
+    "start_seconds": 858.1199951171875,
+    "text": "Yeah. I think there are, I guess, like you're saying, multiple roles in managing agents. I think the baseline is you have to be able to manage them, but then there's the role of the architect. There's the role of the UX engineer and product. I think you have to have another kind of leg to stand on besides just, I know how to manage coding agents. I think you got to bring something else to it, but it could be, it maybe doesn't have to be the architect."
+  },
+  {
+    "end_seconds": 925.0400085449219,
+    "segment_id": "seg-0026",
+    "start_seconds": 891.8800048828125,
+    "text": "I think, yeah, the agent manager, I mean, we're going to a place where it's like agents managing agents. When you kick off a workflow with Fable 5, in many cases, you give it a very basic direction and it goes off for hours and it's managing all the agents and orchestrating them."
+  },
+  {
+    "end_seconds": 962.760009765625,
+    "segment_id": "seg-0027",
+    "start_seconds": 925.0400085449219,
+    "text": "I do think that the engineering and architecting probably is shifting to, like you're mentioning, architecting the world that this agent lives in and the feedback that it gets and what's true for it and what it knows and sees, rather than telling it how to build the software. I think that's the next evolution. To me, when people are talking about loops and building loops and whatnot, for me, it's not about a while loop."
+  },
+  {
+    "end_seconds": 999.3999938964844,
+    "segment_id": "seg-0028",
+    "start_seconds": 962.760009765625,
+    "text": "It's about orchestrating or engineering some kind of architecting, some kind of feedback loop that gives the agent signal and information about what to do and what to build. Yeah. That's kind of funny. I still haven't perfected it. Maybe you have with your work, this idea of loops and this idea of queues and you've heard lots of things with folks suggesting this is the era of queues and loops now. That's what we should focus on, not prompts or prompt engineering, more like context engineering. Do I have enough context built up so I can just say, go and do it?"
+  },
+  {
+    "end_seconds": 1038.5599975585938,
+    "segment_id": "seg-0029",
+    "start_seconds": 999.3999938964844,
+    "text": "That small go and do it phrase actually has so much context behind it. I feel like something I experienced recently was just having one agent talk to another agent and how that agent's context and its role as a reviewer, maybe a PR, maybe it's a code review or something like that, kind of re-prompts the initial agent that's actually leading most of the work. The one that I'm architecting with, the one that has the majority of the plans context and the one that's in charge, so to speak, of the one or many sub-agents, like that whole"
+  },
+  {
+    "end_seconds": 1075.9200134277344,
+    "segment_id": "seg-0030",
+    "start_seconds": 1038.5599975585938,
+    "text": "loop of not just the context you build up by documenting what you're building or thinking about it and architecting it like that, but that a sub-agent or a side agent can then go and do a code review or a pull request review or something like that, which re-prompts the main agent. It's like almost a yin and yang in a way, where it's the fish eating the fish tail kind of thing, where it's like if you kind of keep this dance going with one prompting another, as long as your context is true with what you were trying to architect, well, it's on mission. You don't need to course correct it, really, at all. It just goes."
+  },
+  {
+    "end_seconds": 1114.3599853515625,
+    "segment_id": "seg-0031",
+    "start_seconds": 1075.9200134277344,
+    "text": "I think that's even more true or maybe more true now with Fable 5 and this new class of models where they seem to be more capable now of open-ended kind of work where the task isn't very well defined and it requires decisions and judgment. I think that is starting to become the reality where you can give it maybe more values and principles of what your preferences are and your tastes and your choices and then let"
+  },
+  {
+    "end_seconds": 1154.3200073242188,
+    "segment_id": "seg-0032",
+    "start_seconds": 1114.3599853515625,
+    "text": "it reason from those principles and values about how the software should be designed. I think it probably will become more important for projects to have those kinds of documents. Cloud MD, I think, is probably going to go away in terms of like use this kind of linting thing or use this pattern when you're writing out functions and instead it's more like what's the ethos and values and principles behind how I want to build and what we're trying to do. How long did it take you to get to something that was usable? How long did you not sleep? Did your family miss you?"
+  },
+  {
+    "end_seconds": 1185.760009765625,
+    "segment_id": "seg-0033",
+    "start_seconds": 1154.47998046875,
+    "text": "Did you stop eating? Did you turn into an AI vampire like this famous or infamous phrase comes out? What were the initial Nanoclaw days for you when it came to building it and how did you – I don't want to say this negatively – did you copy ideas from OpenClaw or did you say, you know what? I've got my own ideas. There are some good ideas out there but I have a plan that I think will work better. How did it begin for you?"
+  },
+  {
+    "end_seconds": 1221.2800006866455,
+    "segment_id": "seg-0034",
+    "start_seconds": 1187.760009765625,
+    "text": "So firstly, I took five days roughly where I had OpenClaw running and I had seen what it could do and I spent like five days. I was going to work, taking showers. hours walking the dog, but all the time in the back of my head, I was thinking, what is this new thing? What did it unlock? Why is this interesting? Why is it suddenly bringing all this value when it's just running a coding agent? I already had the coding agent. What's the unlock here? And I spent a lot of time thinking about that and then sat down to write"
+  },
+  {
+    "end_seconds": 1257.2999992370605,
+    "segment_id": "seg-0035",
+    "start_seconds": 1221.2800006866455,
+    "text": "the project once I felt like I had a thesis, let's say, about what those things are. And it was like, I don't even know if I remember now, but it was like, I need memory. I need a persistent session. I need it to be connected to a browser. I think it turns out browser is probably not that critical. And I need it to be in a messaging app. It's like a big, I think, psychological shift when you're talking within a messaging app instead of in a terminal. And it's just also the availability, it's always there. And then the extensibility,"
+  },
+  {
+    "end_seconds": 1290.8399963378906,
+    "segment_id": "seg-0036",
+    "start_seconds": 1257.2999992370605,
+    "text": "the fact that it could add things and the schedule tasks. So being able to schedule jobs for itself, that makes it feel at least proactive. Like it's coming to you to update you about stuff instead of you always going to prompt it. So I had this thesis and then I did do one of those crazy marathon coding sessions. I sat down Friday night in my sweatpants on the couch and this couch here behind me and basically melted into the couch for the"
+  },
+  {
+    "end_seconds": 1324.7799987792969,
+    "segment_id": "seg-0037",
+    "start_seconds": 1290.8399963378906,
+    "text": "entire weekend till Sunday night. I think probably about 40 hours of coding. And my wife was like, I haven't seen you like this for like 10 years since you were in university. Something wild is going on. But to her credit, she let me go down this rabbit hole and something's going on and left me to it. And then I came out on the other side, so it was Sunday. And I was like, if I don't release this now, I'm going to spend the whole week on this instead"
+  },
+  {
+    "end_seconds": 1362.6199951171875,
+    "segment_id": "seg-0038",
+    "start_seconds": 1324.7799987792969,
+    "text": "of doing my real work, which is building my AI native agency. So I just said, I just got to release it, put it out there. Mostly AI generated read me, which I got a lot of grief about on Hacker News. But I published it and it took off. Pretty much immediately, I just posted on Hacker News and it started to take off and shot up to like 1,000, 2,000 stars within the first day. Wow. I had seen projects go on Hacker News and I knew normally they go, they'll shoot up."
+  },
+  {
+    "end_seconds": 1398.979995727539,
+    "segment_id": "seg-0039",
+    "start_seconds": 1362.6199951171875,
+    "text": "It's like the reverse hockey stick. So they like take off and then they just flatline. But this kind of kept going and it went 500, 400, 500 stars per day and it just kept going to 8K, 10K stars. And then a couple, so spent like two weeks back and forth with my co-founder going, should we keep building this AI marketing agency that we built or should we become the Nanoclaw company? And going back and forth on it and deciding together that, okay, let's"
+  },
+  {
+    "end_seconds": 1436.7799987792969,
+    "segment_id": "seg-0040",
+    "start_seconds": 1398.979995727539,
+    "text": "give Nanoclaw another two days. Let's invest a little bit more in it and kind of kick the count down the road and see where we're at in a few days. And then about two weeks late after the initial launch, Karpathy, Andre Karpathy tweeted this whole post about claws, his claw post. And half of the post was about Nanoclaw and how he thought it was mind blowing or slightly blew his mind. And then it just went to another level and it was like, clear, all right, we got to do this. So we went, called our customers at the native marketing agency and said, sorry guys, we've got to drop you. We've got this"
+  },
+  {
+    "end_seconds": 1469.260009765625,
+    "segment_id": "seg-0041",
+    "start_seconds": 1436.7799987792969,
+    "text": "new thing and just shut down. We were ramping up very quickly. We were at a few hundred thousand in ARR and like really good ramp. And we shut it down and created Nanocoat as the company building Nanoclaw. Wow. You knew right away you would build a business around this. This wasn't by accident. This was totally what they would call premeditated. No, not at all premeditated. So I built it just to use it for myself. So I put it out,"
+  },
+  {
+    "end_seconds": 1503.7799987792969,
+    "segment_id": "seg-0042",
+    "start_seconds": 1469.260009765625,
+    "text": "MIT licensed. I would probably make that decision again if I came to it. But I didn't even think about it because this was just, it wasn't even a thing. I had spent two days building it. I was like, there's nothing special here. Like if I spent two days, anybody else could. So I just put it out and thought, maybe people will find it useful and maybe they'll contribute to it and then it will make it better and I could use it for our own business, get it more robust, more stable."
+  },
+  {
+    "end_seconds": 1536.0199890136719,
+    "segment_id": "seg-0043",
+    "start_seconds": 1503.7799987792969,
+    "text": "And I thought it would be good for our reputation as an AI native agency to have created a successful AI agent project. So that was my thinking, but it was totally just going to be this side project. I put it out on my personal GitHub user and only moved it to our company's GitHub after it took off. This was just a weekend project. So you shut down the agency pretty abruptly though, right? NanoCo, you and your co-founder,"
+  },
+  {
+    "end_seconds": 1572.1400146484375,
+    "segment_id": "seg-0044",
+    "start_seconds": 1536.0199890136719,
+    "text": "did you, I guess there's a lot of context I need to build up to ask this question properly. There's a concern, I suppose, or at least I know I have the concern and I hear other people having similar concerns around open source. And then you mentioned you open sourced right away as MIT, which is the most liberal open source license. You would actually say that is truly in the spirit of open source, that is open source. Just having the code open visible is not obviously open source. It's about a license, a license that gives you permission, unfettered permission to do what you want."
+  },
+  {
+    "end_seconds": 1609.8999938964844,
+    "segment_id": "seg-0045",
+    "start_seconds": 1572.1400146484375,
+    "text": "And so here's you, you got this Friday to Sunday 40 hour marathon, you release it on Monday because you're concerned about how you would actually do your job Monday through Friday, which I totally empathize with because it's so tantalizing when you can just do so much and your ideas just come to life in front of you. It's kind of wild. You said you would consider or do that again with the MIT license. How do you think about or reason about open source in this world now where even if you'd written, let's just say you'd written something"
+  },
+  {
+    "end_seconds": 1646.7200012207031,
+    "segment_id": "seg-0046",
+    "start_seconds": 1609.8999938964844,
+    "text": "in TypeScript and I want to borrow an idea and I have a Go program, I could easily look at, given with agencies these days, just look at what you're doing and graft intent off of that. Not so much take your code or take something like that that would have normally been licensed intellectual property, etc. Even if it's open source, it's still some version of an IP. Even if it's permissively open IP, it's still IP. How do you feel about that decision to go the MIT route? How do you feel about the state of open source? And"
+  },
+  {
+    "end_seconds": 1682.5599975585938,
+    "segment_id": "seg-0047",
+    "start_seconds": 1646.7200012207031,
+    "text": "is your position currently in any way hindered? And maybe you can't even say yes or no to this because you're already on this road, man. You can't put the cat back in the bag so to speak because you've already open sourced an MIT licensed nanoclaw. How does that sit with you when it comes to you building a business around a code repository that's fully open with fully permissive to any degree? How do you feel about that? Yeah, it gets right to the heart of I think- The difficulty. Something big that's going on. Yeah, I think it's not a difficulty for us surprisingly."
+  },
+  {
+    "end_seconds": 1720.719970703125,
+    "segment_id": "seg-0048",
+    "start_seconds": 1682.5599975585938,
+    "text": "I'll explain why, but it's clear that open source, I've heard people saying open source is dead. I wouldn't necessarily agree with that. I think though it needs to evolve, kind of metamorphosize into something else. I don't think open source, the way we knew it before, works anymore or is going to continue. But I think there is a new way of doing open source, a new model for it. Yeah, the project, I put it out there and people started to use"
+  },
+  {
+    "end_seconds": 1758.0800170898438,
+    "segment_id": "seg-0049",
+    "start_seconds": 1720.719970703125,
+    "text": "it and teams started to use it and companies started to use it. So there are companies that I know of and I've been in contact with that are building their own internal agent platforms on nanoclaw and using it as infrastructure. There are teams building on it. There are companies who are building products on top of it and providing services with it. And all of that is fully allowed with the MIT license and I actually am happy about it and endorse it all. And I saw even within a few weeks of launching it, there were these sites popping up like"
+  },
+  {
+    "end_seconds": 1795.4400024414062,
+    "segment_id": "seg-0050",
+    "start_seconds": 1758.0800170898438,
+    "text": "host your own nanoclaw and providing hosted nanoclaws. And I'm fine with that. We're not going after that kind of business. I think even if you chose a different license today, you choose the most restrictive license, once the code is open source, like you said, you could just tell it to rewrite it in a different language. And people did that with, I think it was cloud code, source code that leaked allegedly or that's what people were saying anyways, that it was cloud code, source code. So it leaks and people posted it on GitHub"
+  },
+  {
+    "end_seconds": 1835.2799987792969,
+    "segment_id": "seg-0051",
+    "start_seconds": 1795.4400024414062,
+    "text": "and then there were all these takedown requests. So then people had AI... coding agents just rewrite the entire thing in Python, in Rust, in 12 other languages. And that actually, once you rewrite it in another language, the original license doesn't apply anymore. So you can look at a project and rewrite it, and that's fully allowed by licensing. So I think it doesn't really help you to have open source that's restrictively licensed. So you might as well just go all the way with MIT license and get maximum reach. I don't think the model of building an open source"
+  },
+  {
+    "end_seconds": 1874.2399978637695,
+    "segment_id": "seg-0052",
+    "start_seconds": 1835.2799987792969,
+    "text": "project and then trying to monetize your own user base works, because it's so easy to host stuff. It's so easy to fork it. I think the new model is the open source project is just about building up a brand, getting a community, getting distribution. So that's the way we're looking at it for Nanoclaw. So you've got people building on Nanoclaw, individuals, businesses. That's all great. Only 1%, probably much less, probably a tenth of a percent, of companies are going to build their own internal agent"
+  },
+  {
+    "end_seconds": 1912.9199981689453,
+    "segment_id": "seg-0053",
+    "start_seconds": 1874.2399978637695,
+    "text": "platform on top of an open source project. Even if they have the engineers in the company who could, in theory, do it, they don't want to take their best four engineers and put them on building an agent platform for marketing and for sales. They want their best four engineers building their own product, their core product. And we've had those conversations with companies, and they're very clear about that. So what we're focused on is providing exactly that and agents built on top of the Nanoclaw open source project, but with a lot more going on on top of that."
+  },
+  {
+    "end_seconds": 1952.8000030517578,
+    "segment_id": "seg-0054",
+    "start_seconds": 1912.9199981689453,
+    "text": "For the 99 plus percent of companies that are not going to build their own internal agent platform. So you can't just put agents in a sandbox and connect it to a messaging app, even if it's a really good sandbox and great orchestration and great project, and roll it out in enterprise in a Fortune 500 company. You need to be connected to identity. You need governance. You need audit. You need to be deployed into the company's own cloud environment with retention policies and logs and a whole host of other things. So that's what we're doing. We're providing for them together with services,"
+  },
+  {
+    "end_seconds": 1991.0399932861328,
+    "segment_id": "seg-0055",
+    "start_seconds": 1952.8000030517578,
+    "text": "actually, going back to where we started with AI native services business. So providing the services of figuring out what they need, what do the agents need to look like, what should the policies be around what they can and can't do, and helping the company, guiding them through the process of rolling out agents that are really powerful and connect to everything like we know about OpenClaw, but controlled, safe, secure, and doing it in a responsible way. I like your view on open source. It's intriguing, at least. I want to hear more. And so if I understand correctly,"
+  },
+  {
+    "end_seconds": 2030.8800048828125,
+    "segment_id": "seg-0056",
+    "start_seconds": 1991.0399932861328,
+    "text": "your position is that open source has obviously changed. Even if the license is not permissive, the fact that it's there might as well be permissive. Because anybody who has any sort of ill feeling, whether it's towards you personally, towards the project, or just like, you know what, I'm going to take what's here and just run with it and build my own. That was never really a customer, potentially, anyways. Or I never really thought about it like that. Open source used to be about sharing an idea, getting people together around it. I suppose that's still the same if your view on open source is true, which is it's about building a brand,"
+  },
+  {
+    "end_seconds": 2048.0800018310547,
+    "segment_id": "seg-0057",
+    "start_seconds": 2030.8800048828125,
+    "text": "about building community. But then how do you then say to that community, well, I've been giving you this software for free. I and any other contributors, whether it's with skills, we could talk about it later, or actual code. I think it's cool to contribute via skills."
+  },
+  {
+    "end_seconds": 2071.239990234375,
+    "segment_id": "seg-0058",
+    "start_seconds": 2050.720001220703,
+    "text": "You were contributing, you were using for free, and now here's a paid product that I want to sell you. Or I think it gives you value, so therefore, because you accept the value, maybe you'll also accept giving me the exchange of value, which is monetary value. That's how commerce works, that's how capitalism works, if you didn't know that, I'm sure you do."
+  },
+  {
+    "end_seconds": 2113.7999877929688,
+    "segment_id": "seg-0059",
+    "start_seconds": 2073.9200134277344,
+    "text": "That's not drastically different than the original basis that I've been kind of operating on around open source, but it's uniquely different, because it seems like you just have no fear on the exposure of, let's just say your crown jewels, Nanoclaw, right? You gave away the most important, I'm air quoting, by the way, the most important asset. How do you then take that and commercialize that in a way that doesn't hinder you? I guess maybe you haven't gotten there yet, or maybe you have, doesn't seem so from the outside, but how do you reconcile MIT Open Source"
+  },
+  {
+    "end_seconds": 2153.040008544922,
+    "segment_id": "seg-0060",
+    "start_seconds": 2114.5599975585938,
+    "text": "build a community, build a brand, and then find a way to commercialize on top of that without your crown jewel MIT licensed project sucking the life out of you in the process? We have, so we're commercializing, we have customers, we have paying customers, and I don't know if the same will hold true for every project. I think a claw type of project, personal agent, it's a bit of a unique thing. It's not a developer tool, right, which most open source projects are. It's mostly tools for developers,"
+  },
+  {
+    "end_seconds": 2192.0599975585938,
+    "segment_id": "seg-0061",
+    "start_seconds": 2153.040008544922,
+    "text": "platforms for developers, infrastructure for developers. This is something that anybody can use, and you don't use it for building software. You use it for your personal stuff. And so we've got this big user base. We've got tens of thousands of people that have set up, their own personal assistant, their second brain. The Minister of Foreign Affairs of Singapore has been very public about being a user of NanoClaw. He's described this whole setup and published about it. And many executives at large corporations, large companies are users and are posting about it on LinkedIn and posting about it on X."
+  },
+  {
+    "end_seconds": 2232.019989013672,
+    "segment_id": "seg-0062",
+    "start_seconds": 2192.0599975585938,
+    "text": "And then what's happening is those users, they're seeing a lot of value, like other people have seen from OpenClaw, but for them being a bit more security conscious or wary, they decided to go with NanoClaw. They see the value, and they're saying, I want to give this to every person on my team, every person in my organization, so they get the same 2X, 3X boost in productivity that I saw actually outside of work mostly in my personal life, because they weren't able to bring it into work. They didn't have all the compliance stuff and other things they needed to be able to bring it into the company. But they set it up on their personal email,"
+  },
+  {
+    "end_seconds": 2270.5,
+    "segment_id": "seg-0063",
+    "start_seconds": 2232.019989013672,
+    "text": "they see the unlock, they want to bring it into business. And then they started to reach out to us saying, hey, how can I roll this out of my company? And the same thing was happening with individuals on a team, smaller teams who were able to set it up within their own team. This one guy, he's an investor at a VC firm. He set it up for himself, he's using it. And then other people at the firm are coming to him and saying, hey, can you set me up with an agent as well? And he approached us and said, hey, I don't want to be the IT guy for my company now who's helping everybody set up their agents. I want you guys to do that."
+  },
+  {
+    "end_seconds": 2308.8200073242188,
+    "segment_id": "seg-0064",
+    "start_seconds": 2270.5,
+    "text": "So the open source project, the open source user base and community becomes a pipeline for deal flow, but it's not us sort of cannibalizing or monetizing or extracting value from those same people who are using it. If you're using the open source project, I'm not trying to turn that into a paying customer. It's if you've seen it, you've seen the value, love it, you like it, and now you want help bringing it into your business or your company, and you don't want to do that yourself. If you're using it as an individual user and you want to be the IT guy for the company"
+  },
+  {
+    "end_seconds": 2332.5,
+    "segment_id": "seg-0065",
+    "start_seconds": 2308.8200073242188,
+    "text": "who builds everyone's agents, go do that as well. I don't want to monetize that either. I think at some point we may start to feel a pull from companies saying, hey, we built our own internal agent platform and we want some form of support or some form of this or that. But for right now, I think the biggest opportunity for us is actually 99% of the world that is not gonna use the open source."
+  },
+  {
+    "end_seconds": 2373.5800170898438,
+    "segment_id": "seg-0066",
+    "start_seconds": 2335.0,
+    "text": "Interesting. So is that the kind of business, so while I recognize the commercial opportunity here, and maybe that's just the surface that we're scratching and that's what you can share here now, is that the business you want to run? Because I mean, to start out, you began as an engineer, building software, kind of ejected from that, did something different for a bit, came back to it. I'm paraphrasing a lot of your story, so fill in the blanks. And one of your angst was managing people and not architecting software. It seemed like that was, if I'm grokking your story, that's what your angst was. And now here you are running NanoCo,"
+  },
+  {
+    "end_seconds": 2413.199999809265,
+    "segment_id": "seg-0067",
+    "start_seconds": 2374.02001953125,
+    "text": "which largely seems support-esque. Like, let me help you set up the thing I made inside your company. And maybe that is architecting. Help me understand what's interesting about the potential future you can forge and clear out with NanoCo. Is it just support? What are the bigger opportunities here? It goes beyond support and it goes beyond the services around the setup. Each, when you look at a large, enterprise fortune 500 company. So they need to connect to their identity provider so that they can define rules and policies, not only for users, but for groups. And those need to match"
+  },
+  {
+    "end_seconds": 2449.720001220703,
+    "segment_id": "seg-0068",
+    "start_seconds": 2413.199999809265,
+    "text": "up with the groups that have set up in their their IDP, they need to be able to set policies so they can't just set let each individual user decide what their agent can do and can't do they want to set it up in a controlled way across the organization access control policies of what each agent can do. So for example, we're going to let everybody in the company connect their emails, we're going to let their everybody's agents if people want, read their emails, search their emails. But if the agents want to send an email across the whole company that requires human in the loop approvals,"
+  },
+  {
+    "end_seconds": 2486.7600021362305,
+    "segment_id": "seg-0069",
+    "start_seconds": 2450.0,
+    "text": "right, and then we set a policy in our organization, agents can't delete emails, you know, you want the you want to keep the information you don't want to delete. So that's something that you can't do just having the open source project and deploying for individual users. There's another level on top of that, which is really about governance. And beyond that, there's the process of rolling out agents for an organization, you need to have templates for what kind of agents are going to have marketing agents, sales agents,"
+  },
+  {
+    "end_seconds": 2526.199996948242,
+    "segment_id": "seg-0070",
+    "start_seconds": 2487.0800018310547,
+    "text": "engineering agents, they need to have instruction skills, policies, tools are connected to recurring jobs, you want to give people an agent that's valuable on day one. And so there's there is software there, there's a platform. And then there's the services around getting it set up, and around managing maintaining it in the long term. But with coding agents, there's a new opportunity here. Because things that used to be really intensive, labor intensive and require a lot of human hours of work can now be done by agents and be be automated. So a lot of"
+  },
+  {
+    "end_seconds": 2565.6000061035156,
+    "segment_id": "seg-0071",
+    "start_seconds": 2526.199996948242,
+    "text": "those services, for example, when we're rolling this out to a company, we're going to roll it out to say start with a small group of 200 people in the company. We want to gather information for them about what are their workflows look like what tools they use, how do they use those tools so that we can set up the templates, set up the policies, we need to gather a lot of information. So rather than, you know, doing human interviews with people or sending them forms to fill out that they're never going to fill out, we have we put them all in a big group in a big slack channel. And then each person gets a DM from an agent, our interview agent, and it starts asking them some questions about what AI tools do you use? How"
+  },
+  {
+    "end_seconds": 2604.8399963378906,
+    "segment_id": "seg-0072",
+    "start_seconds": 2565.6000061035156,
+    "text": "are you using them? And it gathers some information from them. And then based on that information, we're able to come back to executives, to leadership in the company and say, here are the templates of agents that we think you should have. And here is a reasonable starting point for your policies. Here are the tools we think you should connect them to and you shouldn't connect them to, and some more workflows will build. And then I think fundamentally, what we're building is not what we're doing is not providing a service for a company to deploy their agents within the company and then maintain them over time. What we're building is a factory, an"
+  },
+  {
+    "end_seconds": 2643.240005493164,
+    "segment_id": "seg-0073",
+    "start_seconds": 2604.8399963378906,
+    "text": "agent factory. And the output of that factory is custom deployments for large enterprises. That does change the calculus quite a bit. I mean, when you were saying about interviewing people and getting into the details, I was thinking like, gosh, you must be spending a lot of time on site, talking to Sally or talking to Bob about their red stapler or whatever, you know. And then here, you just go and change it and flip the script and say, let's just put them on a Slack channel and have the agent DM each person who matters and interview them. That's a different thing. Tell me about this agent factory. What are your big ideas here for"
+  },
+  {
+    "end_seconds": 2681.8800048828125,
+    "segment_id": "seg-0074",
+    "start_seconds": 2643.240005493164,
+    "text": "agent factories? What is the status quo currently and what is the future we're driving towards? I think it comes back a little bit to the skills thing of contribution. That really defines what our agent factory looks like. When I sat down to build NanoClaw, I'd gone down this rabbit hole of AI native. AI changes everything. AI changes how software is built and written. A lot of the old rules maybe don't apply and we got to rethink everything. So I sat down to build it and I thought, I'm going to build this"
+  },
+  {
+    "end_seconds": 2699.8800048828125,
+    "segment_id": "seg-0075",
+    "start_seconds": 2681.9200134277344,
+    "text": "as an AI native open source project or AI native software. So part of that was initially when you want to set up NanoClaw, there was no wizard, there was no installer, there wasn't any documentation even for humans on how to set it up. There was just a skill slash setup and you run Claw in the"
+  }
+]

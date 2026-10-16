@@ -1,0 +1,176 @@
+[
+  {
+    "end_seconds": 37.52,
+    "segment_id": "seg-0001",
+    "start_seconds": 0.16,
+    "text": "Intelligence too cheap to measure is AI's next frontier. According to Sam Alman back in July of 2025, I'm pretty sure that in all of 2025, my personal use of AI would probably amount to like $800 to $1,000 versus this year, 2026, any given day, I can probably pull a,000 plus dollars in tokens. It seems like intelligence is getting way more expensive, especially now with models like Fable and Astra that are literally more expensive per token and are doing more and generating more tokens, massively increasing the costs that real world businesses are seeing. It seems like everyone's AI bill is just going up"
+  },
+  {
+    "end_seconds": 77.119,
+    "segment_id": "seg-0002",
+    "start_seconds": 37.52,
+    "text": "like everyone's AI bill is just going up and up and up with no sign of stopping. So, what happened here? Why aren't we achieving this new frontier as Sam Alman promised us? Why isn't intelligence getting cheaper? I feel like I was spending a few pennies per prompt last year and now I'm spending tens if not hundreds of dollars. What went so wrong? Why are these companies charging so much more? I thought it was supposed to get cheaper. This video is inspired by Prime because he made a tweet referencing a real promise that Sam Alman had made, which is that he said AI would get 10 times cheaper year-over-year. and Prime said he's a bit confused because he thought that we would get this 10 times cheaper AI, but Astra's out and it's way"
+  },
+  {
+    "end_seconds": 116.72,
+    "segment_id": "seg-0003",
+    "start_seconds": 77.119,
+    "text": "cheaper AI, but Astra's out and it's way more expensive. So, what went wrong? I got a lot of thoughts on this one. The short version of what happened here is it did actually get cheaper. We're just not measuring it right. The long version, aka the video, will be the next thing after the sponsor break. Okay, look. I know this is an ad, but I just want to nerd out for a minute because I've been building a lot more with Railway recently, and I have had so much fun doing it. Let me get some bias out of the way first. I've loved Railway for years now. I was almost their fourth hire, but I instead chose to make my own startup and then my YouTube channel soon after. I know this team well. I love them and everything they're building is awesome. Railway had already built the easiest cloud for developers to build and ship real full stack applications on it. These guys handled everything from"
+  },
+  {
+    "end_seconds": 154.959,
+    "segment_id": "seg-0004",
+    "start_seconds": 116.72,
+    "text": "it. These guys handled everything from the database to the CDN and everything else in between. You could build your full app from scratch on railway and it was really nice when you needed persistent servers. Where things got genuinely magical is when they introduced their skills, CLIs and MCPs to our agents. And now I can have agents just deploy and manage full stack apps without ever having to think about it. Even calling these apps almost feels misleading though, cuz one of those apps is a cloud I built on top of Railway. Yes, the cloud I've been working on for a while now, Lake Bed, is entirely built on top of Railway and I'm so happy I did it this way. I have my full production environment as well as a staging environment that my agents provisioned for me as well as an environment for one specific PR that again my agents provisioned for me to test things out"
+  },
+  {
+    "end_seconds": 194.8,
+    "segment_id": "seg-0005",
+    "start_seconds": 154.959,
+    "text": "provisioned for me to test things out end to end. When I have any questions about how the infer is working or any ideas for how it could work better, I tell Claude or Codeex about it. It connects to the MCP. It spins up a new environment. It figures it out. It verifies the changes. It ships to prod by merging on main. It will then check in on the environment through the MCP server and just know what's going on. Ready for the spiciest part of this ad? I haven't looked at this dashboard in weeks because I don't have to because my agents can manage all of it for me. Whether I'm building a one-off experiment to host my own analytics like I did with Slop House or I'm trying to put together HTML hosts like I did with PostPlan or I'm building my own cloud with Lakebed. My default has been Railway for months now. And I'm so thankful that changed. If you're worried about costs, don't be. I'm hosting a ton"
+  },
+  {
+    "end_seconds": 232.48,
+    "segment_id": "seg-0006",
+    "start_seconds": 194.8,
+    "text": "about costs, don't be. I'm hosting a ton of stuff on Railway, including our entire internal video pipeline where this ad's actually going to be uploaded. And my estimated costs for the month are under $50 for this insane amount of usage I'm getting. Ship on a platform that you and your agents will love at sidv.link/railway. Sorry for the break. Good to have you back. In order to explain why AI is actually getting cheaper, we're going to have to look at some numbers and talk more about how models work. The first thing we need to talk about is token cost. Flashbang warning for artificial analysis. When you look at model prices over time, the numbers are pretty scary. GBT5 medium was $10 per million tokens out and $125 per million tokens in"
+  },
+  {
+    "end_seconds": 271.12,
+    "segment_id": "seg-0007",
+    "start_seconds": 232.48,
+    "text": "out and $125 per million tokens in versus a model like GBT6 Astra which is $50 per mill out and 10 per mill in. That is a 5 to10x increase on input and output tokens cost. That's crazy. That's terrifying. That's the exact opposite of what we were promised. We were promised 10x decreases in cost, but there's a 10x increase. Well, there are layers to this because token cost is one of the worst ways to measure cost. The three things we need to be considerate of are first, yeah, sure, token cost. We'll talk a little bit about it, but the other two are where most of the important parts come from. The second one is how many tokens it takes to complete a given piece of work. And the third is the types of work the models can complete."
+  },
+  {
+    "end_seconds": 309.84,
+    "segment_id": "seg-0008",
+    "start_seconds": 271.12,
+    "text": "types of work the models can complete. Specifically, how much intelligence per dollar, so to speak. So, we have token cost, tokens per dollar. We have tokens per task cost. How many times does it take to solve a task? And then we have cost per level of intelligence. How much spend does it take? How much money do we have to spend to get a solution to a problem at a certain level of intelligence? So yes, token costs did go up for the best of the best models, but let's be real here. There are also cheap options that are incredible. For example, a model like GLM 5.3 Flash, which I absolutely adore. It's one of my favorite model releases ever. This model is 15 cents per million input tokens and 50 cents per million out. It's also on"
+  },
+  {
+    "end_seconds": 347.759,
+    "segment_id": "seg-0009",
+    "start_seconds": 309.84,
+    "text": "50 cents per million out. It's also on sale in a lot of places for 50% off. So, it's actually 7 cents per mill in and 25 per mill out. That means that it's about a 30th the cost of GPT5. For a 20th to a 30th the price per token, GLM 53 flash will run circles around GPT5 for a lot of real world agentic stuff. So again, if we look at the top tier models, yes, cost per token's gone up, but if you look at other places, you'll see that we've also gotten really capable models that are way cheaper than before as well. So yes, the top end has gotten crazier, but so has the bottom end. Both"
+  },
+  {
+    "end_seconds": 387.6,
+    "segment_id": "seg-0010",
+    "start_seconds": 347.759,
+    "text": "crazier, but so has the bottom end. Both sides have seen meaningful improvements here. But as I mentioned before, cost per token is only a tiny piece of the formula here. I'll use a really fun example. Let's look at Gemini 38 Flash. On this chart, it looks like a pretty good deal. It's $3.75 per million out. That makes it less than half the price of GBT5 and less than a tenth the price of Astra and Fable. But then we hop up a little bit to cost per intelligence index task and suddenly that difference gets a lot less different because 38 Flash uses so many tokens for the work that it's doing. So even though it is comically cheaper per token, the token waste that 38 flash has results in this"
+  },
+  {
+    "end_seconds": 426.479,
+    "segment_id": "seg-0011",
+    "start_seconds": 387.6,
+    "text": "waste that 38 flash has results in this gap going from over 10x to under 3x and 3.5 flash was even worse here cuz it was so token hungry getting to over half the cost of 56 soul even though 56 soul is a way more expensive model. So once again you need to factor all of these things in. Hilariously enough 5 was more expensive than Astra because sonnet just burns tokens. So those are the first two dimensions to consider. Cost per token and the amount of tokens used to solve a given task. And to be clear, different tasks have different ways that they work here. For example, if the task is to ingest 800,000 tokens and categorize"
+  },
+  {
+    "end_seconds": 465.84000000000003,
+    "segment_id": "seg-0012",
+    "start_seconds": 426.479,
+    "text": "ingest 800,000 tokens and categorize them in some way. The categorization and the output tokens aren't going to matter as much. The input tokens will. So you're always paying that cost basically no matter what. At that point, optimizing for the cheapest model for the input token read is probably the right call. But if you're doing agentic dev work, things like caching, reliability, and token efficiency suddenly matter a hell of a lot more. We're also not looking at this the right way. We're just looking at cost right here. What we want to see is cost versus intelligence. This chart is much more interesting where you can see how expensive a run was and how well it performed in the benchmarks. They have this nice line now for the Pareto Frontier, which is what is the best"
+  },
+  {
+    "end_seconds": 505.84,
+    "segment_id": "seg-0013",
+    "start_seconds": 465.84000000000003,
+    "text": "Frontier, which is what is the best model at a given cost level. And you'll see GBD6 Astra has a significant number of the spots here. And Fable ends up being way more expensive all the way over there. But you'll see at a given level of intelligence, cost can go down massively. Like if you're happy with a 45 to a 46 as the score here, your cost will be 82 cents per task. Where if you want to bump up into the 50s, suddenly it's $3.26. So for just a few more points, you're spending three times more money. I still don't think this is the best way to think about it, though. I want to flip it. Instead of thinking about this as how much intelligence can you get per dollar, let's take a level of intelligence and see how much it costs"
+  },
+  {
+    "end_seconds": 545.6,
+    "segment_id": "seg-0014",
+    "start_seconds": 505.84,
+    "text": "intelligence and see how much it costs over time. If we took the capability of GPT5, for example, how expensive would it be to get that same level of intelligence today with other cheaper options? I actually did a good bit of research here to find what models have similar scores to GPT5 and it was harder than expected because we've had to overhaul almost all the benchmarks that we use over the last year because we saturated everything. I eventually stumbled on V4 Flash being roughly equivalent to five codecs high because the handful of benches they had overlapping were actually similar in score. Funny enough, the DeCev4 flash model is actually outperforming it in a bunch of places like humanity's last exam, AI omniscience, which is a benchmark measuring hallucination rates,"
+  },
+  {
+    "end_seconds": 584.64,
+    "segment_id": "seg-0015",
+    "start_seconds": 545.6,
+    "text": "benchmark measuring hallucination rates, but it got roughly the same overall intelligence index score. Deepseek V4 Flash is 21 times cheaper than GPT5 for input tokens and 55 times cheaper for output tokens. I couldn't find good numbers to measure the efficiency changes here, but even if you assumed that DeepS was 3x less efficient, the difference still nets out to around a 20x improvement. So, if the goal was to get 10 times cheaper intelligence at a given level, we blew that out the [ __ ] park. We're at 20 times cheaper.  Thankfully, this is actually being tracked by our friends at artificial analysis. They would pick a given level, which was intelligence less than 10"
+  },
+  {
+    "end_seconds": 623.04,
+    "segment_id": "seg-0016",
+    "start_seconds": 584.64,
+    "text": "which was intelligence less than 10 points before. That used to cost 60 cents per task and that got all the way down to 2 cents per task over the course of about 2 years. From November of 2022 to July of 2024, we saw that cost go down massively, but then we start ranking things between 10 and 20 points. Initially, they were expensive all the way up to like $15 per task with 01 preview because that model was super expensive. But you can see over time it didn't take very long to drop. It was September of 2024 that it cost $15 for this level. And by February of 2025, just a few months later, Gro 3 Mini was"
+  },
+  {
+    "end_seconds": 661.519,
+    "segment_id": "seg-0017",
+    "start_seconds": 623.04,
+    "text": "just a few months later, Gro 3 Mini was getting similar numbers at a way, way cheaper price, pennies to what were dollars before, 16 cents to get a score that was actually higher than 01 Preview because 01 Preview only got an 11. And that was September of 2024. And by February of 25, Gro 3 Mini had four points on top of it at under a hundth the price. Sorry, roughly a hundth the price. Pretty crazy that the price has dropped by almost 99% in just 4 months. And Chad just made a good observation. Chad said the drops are faster each time. That is where things get really, really cool. The speed of this drop was a little crazy because the 01 preview"
+  },
+  {
+    "end_seconds": 698.64,
+    "segment_id": "seg-0018",
+    "start_seconds": 661.519,
+    "text": "a little crazy because the 01 preview and 01 models were more expensive they should have been, but the drop happened nearly immediately after. And then we get to the 20s where 03 was the first model to break 20. And from April to August that year, GBT 5 Mini got a meaningfully higher score. Actually, no, it's like the same score. It's a 20 to 21, but instead of costing $155, it only cost 26. Then Deep Seek 3.2 got the same score for 10. And now there's models like Ling 3 Flash that get the same score for 4.7. But now models are even smarter. The ones in the 30s started at $1.90 with 52"
+  },
+  {
+    "end_seconds": 738.24,
+    "segment_id": "seg-0019",
+    "start_seconds": 698.64,
+    "text": "ones in the 30s started at $1.90 with 52 and not long after got to literally 3. And now we're in the 40s to the 50s. Opus47 started us strong here at $3.85 per task which also this is a fun trend. Initially the new model at the new level isn't that much more expensive. But then with 01 this new level cost us way more. Then the next new level cost us less more. Then the next one after was roughly the same. The next one after was slightly more expensive but barely. So like when a new level of intelligence happens the cost isn't going up a whole bunch then even. And yes all the axes are exponential here. The cost measure here is log. So the top is $16 and"
+  },
+  {
+    "end_seconds": 776.48,
+    "segment_id": "seg-0020",
+    "start_seconds": 738.24,
+    "text": "here is log. So the top is $16 and halfway through is a dollar. So remember that as we look. But now we get to where we are now, where you can see some of the most intense battlegrounds we've ever seen in LLM history, where when we got Opus 47, which was meaningful bump hitting a 41 on the intelligence index. We got 56 Terra not long after with a higher score at like almost half the price. Then GLM53 getting an even higher score at under a third the price. And then GLM53 Flash getting nearly the same score at a hundth the price. So, while it might feel bad now because we just did another one of these bumps, at a given level of intelligence, prices do"
+  },
+  {
+    "end_seconds": 815.2,
+    "segment_id": "seg-0021",
+    "start_seconds": 776.48,
+    "text": "given level of intelligence, prices do drop massively, way more than 10x year-over-year. Remember when I said there was three things? I kind of lied because there's one last piece that's important to know. As intelligence has gotten more intelligent, the ways we use it have changed. We used to have the model autocomplete a single function for us in our codebase. Now, we have it take a screenshot of a bug and get the change landed for us. the models can do so much more. They're going end to end and we don't have to interfere as much because they stay on task better, too. So, yes, our bills are getting higher. I'm not trying to gaslight you into thinking otherwise. But it's not because the token cost went up. It's because the usage went up. We are using these models"
+  },
+  {
+    "end_seconds": 855.12,
+    "segment_id": "seg-0022",
+    "start_seconds": 815.2,
+    "text": "usage went up. We are using these models so much more. They are running longer. They are doing bigger tasks. They are completing work that we used to have to intervene with all the time. The fact that we are generating way more tokens per prompt is success. It's because the models got cheaper and better and more capable. This is kind of a Jevans paradox thing. When steam power got cheaper and coal got more accessible, we started spending much more money on all of those things because it suddenly was cheap enough and good enough to be usable in places it wasn't before. Our bills aren't going up because the models are more expensive. They're going up because we're using the expensive models more. It really is that simple. And this is where things get really fun. like A4"
+  },
+  {
+    "end_seconds": 895.04,
+    "segment_id": "seg-0023",
+    "start_seconds": 855.12,
+    "text": "is where things get really fun. like A4 in chat saying, \"Imagine getting Fable 5.1 levels of intelligence for GLM 53 flash pricing.\" It's going to happen. It's absolutely going to happen because I kind of danced around something earlier. I was comparing 53 flash and 53 flash pricing to GPT5 pricing and comparing the 25 to 50 cents per mill out on 53 flash against the $10 per mill out on GBT5 is unfair. It's unfair because it does not do enough credit to GLM53 flash. 53 flash is a way, way better model than GPT5. I would rather use GLM53 flash for everything than be stuck using GPT5 for anything because 53"
+  },
+  {
+    "end_seconds": 934.88,
+    "segment_id": "seg-0024",
+    "start_seconds": 895.04,
+    "text": "stuck using GPT5 for anything because 53 flash has a lot of the industrywide advancements that have happened in the last year. The way it does vision is better. The way it handles tool calls is better. Most importantly, the way it manages longunning work in agentic workflows where the model goes and does things for hours instead of seconds is comically better. GLM53 Flash is not just cheaper for a given level of capability than GPT5. It's also just so much better in every realistic way. The only thing 53 Flash doesn't have that GBT5 does is a bit more knowledge that doesn't require searching. And chances are if you gave both a search tool and benched them on any knowledge, anything,"
+  },
+  {
+    "end_seconds": 973.759,
+    "segment_id": "seg-0025",
+    "start_seconds": 934.88,
+    "text": "benched them on any knowledge, anything, 53 Flash will smoke GPT5 like order of magnitude difference simply because it can do the searching well. It can use its tools well. It can get solutions better even if the model is dumber in terms of what we've stuffed into its brain. Small models with good tools massively outperform last year's smartest models, even with tools, because we've gotten so much better at that. And we're going to see more and more of these types of improvements. And this is coming from the guy who not that long ago said that we had peaked. Two years ago, I did a video back when I was mostly blonde and mustached titled AI isn't going to keep improving because I"
+  },
+  {
+    "end_seconds": 1012.8,
+    "segment_id": "seg-0026",
+    "start_seconds": 973.759,
+    "text": "isn't going to keep improving because I thought we had kind of flatlined. And you can see here in the bench I had GBD35, then GBD4, 4T, and 40 did not meaningfully improve on the benchmarks that we were looking at. That's cuz we needed new benchmarks. I was so wrong. I've never in my life had a take that was that bad. And I I've learned my lesson. I was so wrong. It's hilarious. If you're going to make fun of me for being a guy who doesn't know what they're doing, make fun of that version of me, not whatever you're mad about when I talk about compaction or something. I People are mad at me for things that I'm right on. And they are not mad at me for the things I was really really wrong on for some reason. But yeah, the point I'm trying to make is that we are still trying to find ways to measure these levels of intelligence."
+  },
+  {
+    "end_seconds": 1051.44,
+    "segment_id": "seg-0027",
+    "start_seconds": 1012.8,
+    "text": "to measure these levels of intelligence. Things are so much better than I ever would have guessed they would have gotten. way faster than I ever would have expected it to happen and way cheaper than I ever could have imagined it would be. The issue is that these things have gotten so cheap and so capable that we are just pissing money all over them. We are spending so much because they are so useful. And that doesn't mean that we failed. In fact, I would go as far as to say intelligence too cheap to measure. That isn't happening in the way that Sam may have implied here. But his previous promise of intelligence 10 times cheaper has been blown out of the water. We absolutely achieved that. The tasks that we used AI for last year are actually"
+  },
+  {
+    "end_seconds": 1091.28,
+    "segment_id": "seg-0028",
+    "start_seconds": 1051.44,
+    "text": "we used AI for last year are actually that much cheaper. The difference is we can do bigger and tougher things with it, which is in my opinion way more exciting. All that said, kind of crazy that you can rack up $1,500 of spend in a day using these models. I don't want to discount that with the things I'm saying. All I'm saying is that you would never have been able to do that with GPT5, not because it was so much cheaper, but because you just wouldn't be able to get that much work done. LM spend is tied to the productivity we get from LMS. And yes, we are getting more from that. Thank all I have to on this one. I hope you can better understand where our money is going now. And don't worry, things will continue to get cheaper, even if it doesn't look like it right now. Keep your head up and be excited for all the developments that"
+  },
+  {
+    "end_seconds": 1099.76,
+    "segment_id": "seg-0029",
+    "start_seconds": 1091.28,
+    "text": "excited for all the developments that will continue to make models cheaper and more capable. I know I've been hyped about this and I hope you are, too. Until next time, he's nerds."
+  }
+]

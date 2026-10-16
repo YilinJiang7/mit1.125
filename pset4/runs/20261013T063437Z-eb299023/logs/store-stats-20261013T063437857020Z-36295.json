@@ -1,0 +1,22 @@
+{
+  "stage": "store-stats",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 0,
+  "output_count": 1,
+  "started_at": "2026-10-13T06:34:37.828901Z",
+  "finished_at": "2026-10-13T06:34:37.857317Z",
+  "tools": [
+    "python3",
+    "sqlite3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "store_counts": {
+    "items": 44,
+    "versions": 44,
+    "observations": 44
+  }
+}

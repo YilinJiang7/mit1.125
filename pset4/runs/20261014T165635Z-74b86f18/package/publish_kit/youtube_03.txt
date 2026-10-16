@@ -1,0 +1,41 @@
+How Learners Should Work with Coding Agents Now: Guide to Delegation, Review, and Cost Management
+
+Description:
+Learners can guide agents with project instructions, review their outputs, and consider token price alongside usage. This video examines research worth watching and commercially interested Claude Code advice while keeping human oversight central.
+
+Read the full article: ARTICLE_LINK
+
+Sources:
+[1] GitHub Copilot app for Beginners: How to teach Copilot about your codebase — GitHub; published 2026-10-12; written source; no timestamp
+https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase
+
+[2] A new feature for my blog, built using my voice — Simon Willison; published 2026-10-09; written source; no timestamp
+https://simonwillison.net/2026/Oct/9/built-using-my-voice
+
+[3] A green exit code is not evidence that the work happened — Stack Overflow; published 2026-10-08; written source; no timestamp
+https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened
+
+[4] llm-gemini 0.35 — Simon Willison; published 2026-10-13; written source; no timestamp
+https://simonwillison.net/2026/Oct/13/llm-gemini
+
+[5] I thought AI was gonna get cheaper? — Theo; published 2026-10-12; 12:18–12:56
+https://www.youtube.com/watch?v=vRS2leJLAI0&t=738
+
+[6] Learning When and How to Intervene: A Hindsight-Distilled Sentinel for Coding Agents — arXiv; published 2026-09-30; written source; no timestamp
+https://arxiv.org/abs/2609.39957v1
+
+[7] Claude Code’s Next Era — Thariq Shihipar, Anthropic — Latent Space; published 2026-09-29; 21:52–23:43
+https://www.latent.space/p/thariq
+
+[8] Claude Code’s Next Era — Thariq Shihipar, Anthropic — Latent Space; published 2026-09-29; 29:44–30:31
+https://www.latent.space/p/thariq
+
+[9] Production-grade LLMs and agents: a field guide — Stack Overflow; published 2026-10-08; written source; no timestamp
+https://stackoverflow.blog/2026/10/08/production-grade-llms-and-agents-a-field-guide
+
+[10] Claude Code’s Next Era — Thariq Shihipar, Anthropic — Latent Space; published 2026-09-29; 14:31–15:14
+https://www.latent.space/p/thariq
+
+As-of date: 2026-10-14
+
+Narration drafted with AI assistance from a source-tracked pipeline; reviewed by the editor, Yilin Jiang. Voice/visuals generated with Google Vids (or HeyGen).

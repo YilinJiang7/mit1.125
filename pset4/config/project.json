@@ -1,0 +1,20 @@
+{
+  "publication_name": "Apprentice Mode",
+  "topic": "AI coding agents (Codex, Claude Code, Copilot agent mode, Cursor and similar tools that plan, edit and run code) as they affect people who are still learning to program",
+  "audience": "Students in their first one or two years of programming, including graduate students outside computer science, who already use chatbots or coding agents for coursework and projects but cannot yet reliably judge whether the agent's code, explanations or tests are correct. They know basic Python, the terminal and git; they do not follow model benchmarks or developer-tools business news.",
+  "central_question": "As coding agents take on more of the work this month, what should a learning programmer delegate to them, what must they still be able to do and check themselves, and which claims about agents' speed, reliability and effect on learning are actually supported by evidence?",
+  "scope_includes": [
+    "Releases and changes to coding agents that alter what a learner can delegate (autonomy, sandboxing, review, testing, pricing for students)",
+    "Evidence about productivity, code quality, security and learning outcomes when people use coding agents",
+    "Practitioner workflows and failure reports that a beginner can adopt or avoid",
+    "Teaching and course-policy responses to coding agents"
+  ],
+  "scope_excludes": [
+    "General model benchmark rankings with no coding-agent consequence",
+    "Funding rounds, valuations and company drama",
+    "Enterprise procurement and pricing beyond what a student would pay",
+    "Speculation about AGI or job loss without concrete evidence"
+  ],
+  "return_reason": "Agent tools change week to week; each edition tells a learner what changed, which claims held up, and one concrete habit to adopt or drop before the next edition.",
+  "voice": "Plain, calm and specific. Write like a careful senior student explaining to a classmate: define jargon once, separate what is known from what is claimed, never hype, and end with something the reader can do this week."
+}

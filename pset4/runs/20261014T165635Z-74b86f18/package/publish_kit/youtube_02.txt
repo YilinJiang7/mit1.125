@@ -1,0 +1,26 @@
+Why Coding Agents Still Need Careful Checking: Trust, Failures, and How to Improve
+
+Description:
+Coding agents can report success without finishing the work, so green checks need verification. This video examines engineering safeguards, historical trust figures, non-peer-reviewed HiSentinel results, and commercially interested advice from an Anthropic employee.
+
+Read the full article: ARTICLE_LINK
+
+Sources:
+[1] A green exit code is not evidence that the work happened — Stack Overflow; published 2026-10-08; written source; no timestamp
+https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened
+
+[2] Production-grade LLMs and agents: a field guide — Stack Overflow; published 2026-10-08; written source; no timestamp
+https://stackoverflow.blog/2026/10/08/production-grade-llms-and-agents-a-field-guide
+
+[3] Learning When and How to Intervene: A Hindsight-Distilled Sentinel for Coding Agents — arXiv; published 2026-09-30; written source; no timestamp
+https://arxiv.org/abs/2609.39957v1
+
+[4] Claude Code’s Next Era — Thariq Shihipar, Anthropic — Latent Space; published 2026-09-29; 14:31–15:14
+https://www.latent.space/p/thariq
+
+[5] Claude Code’s Next Era — Thariq Shihipar, Anthropic — Latent Space; published 2026-09-29; 21:52–23:43
+https://www.latent.space/p/thariq
+
+As-of date: 2026-10-14
+
+Narration drafted with AI assistance from a source-tracked pipeline; reviewed by the editor, Yilin Jiang. Voice/visuals generated with Google Vids (or HeyGen).

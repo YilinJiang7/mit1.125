@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EYOkENUQPHYHcQgn830IVzvMPMJHm",
+  "object": "chat.completion",
+  "created": 1791866978,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "# What Changed This Month: From Chat to Custom Interfaces and Smarter Agent Workflows\n\n**Scene 1: Hook — What’s new with AI coding agents this month?**  \n**Narration:**  \nAre chat boxes still the best way to work with AI coding agents? This month, big changes are shifting how learners can delegate programming tasks. Instead of just chatting, new tools let you build custom interfaces and smarter workflows. What does that mean for you as a learner? Let’s find out.  \n**On screen:**  \nText overlay: \"What changed this month with AI coding agents?\"  \nVisual: Animated chat box transforming into a custom interface canvas.  \n**Sources:** [01-c1]\n\n---\n\n**Scene 2: GitHub’s Canvases — Beyond chat to full-stack apps**  \n**Narration:**  \nGitHub introduced something called “canvases” inside the Copilot app. A canvas is like a mini full-stack app that runs inside the Copilot environment. It lets the AI and you communicate back and forth, not just by typing messages but by interacting with a real interface.  \nThis means you can build tools where the AI controls parts of the app, and you can click or type in others. For example, you could play a Connect 4 game with the AI inside the app or manage software packages with a graphical interface.  \nThis is a big step beyond just typing prompts in a chat box. It lets you automate workflows and take yourself out of the loop for many steps.  \n**On screen:**  \nScreenshot of GitHub Copilot canvas UI with a Connect 4 game example.  \nQuote card: “A canvas is a little full-stack application... plus can communicate bi-directionally with the GitHub Copilot agent.” — GitHub blog, 2026-09-24  \n**Sources:** [01-c1]\n\n---\n\n**Scene 3: Tailoring AI to your codebase with custom instructions and agents**  \n**Narration:**  \nGitHub also added ways to teach Copilot about your project’s rules and workflows. You can add custom instructions that tell Copilot how your codebase is structured and what conventions to follow.  \nYou can package repeatable tasks as “agent skills” and create “custom agents” specialized for bigger tasks. Plus, you can connect Copilot to external tools using MCP servers, like running browser tests automatically.  \nThis means the AI understands your project better and can help more effectively, saving you time and reducing mistakes.  \n**On screen:**  \nDiagram showing: Custom instructions → Agent skills → Custom agents → MCP servers  \nText overlay: “Tailor AI behavior to your project”  \n**Sources:** [01-c2]\n\n---\n\n**Scene 4: OpenAI’s Computer Use agents — AI with its own Linux computer**  \n**Narration:**  \nOpenAI announced “Computer Use” agents that run on personal Linux virtual computers in the cloud. These agents can use full desktop apps and web browsers just like you do.  \nFor example, one user saved two hours by letting the agent place a complicated meal prep order online. The agent did it eight times faster than the user could.  \nThis shows AI agents are becoming more autonomous and can handle complex, multi-step tasks on your behalf.  \n**On screen:**  \nClip or animation of a Linux desktop with an AI agent navigating a meal prep website.  \nQuote card: “The agent can do anything you as a person can do... you can ask a Dot to do.” — OpenAI DevDay podcast, 02:50  \n**Sources:** [01-c3]\n\n---\n\n**Scene 5: Voice-driven coding demo — building by talking**  \n**Narration:**  \nSimon Willison demonstrated building a new blog feature almost entirely by voice using Codex in a local development environment.  \nHe talked to his laptop while cooking dinner, and the AI wrote code, asked clarifying questions, and showed previews. After about 30 minutes, they had a working feature ready for review.  \nThis shows how voice-driven workflows can help multitask and speed up development, especially for simple, well-understood features.  \n**On screen:**  \nScreenshot of Simon’s blog post with voice transcript excerpts.  \nText overlay: “Built a blog feature by voice in 30 minutes”  \n**Sources:** [01-c4]\n\n---\n\n**Scene 6: What this means for learners — delegate more, but review carefully**  \n**Narration:**  \nWith these new tools, learners can delegate more complex, multi-step tasks to AI agents. You spend less time typing every line and more time defining what you want, reviewing the AI’s output, and making decisions.  \nBut remember, you’re still responsible for the final code. AI can speed up implementation, but you must check correctness, security, and fit with your project.  \nLearning to direct AI agents well is becoming a key skill.  \n**On screen:**  \nFlowchart: Define task → AI implements → You review → Finalize  \nText overlay: “You’re still responsible — review AI output”  \n**Sources:** [01-c5]\n\n---\n\n**Scene 7: One thing to do this week**  \n**Narration:**  \nThis week, try adding a simple custom instruction file to your project’s .github folder. Tell Copilot one convention or rule your code follows. Then see how it changes the AI’s suggestions.  \nIt’s a small step that helps you get started with tailoring AI to your codebase.  \nFor full references and more details, check out the Apprentice Mode Substack article linked below.  \n**On screen:**  \nText overlay: “Try adding .github/copilot-instructions.md to your repo”  \nLink: [Insert Apprentice Mode article URL here]  \n**Sources:** [01-c2]\n\n---\n\n**Video description:**  \nThis video explains the latest changes in AI coding agents, from GitHub’s customizable canvases to OpenAI’s autonomous Linux-based agents and voice-driven coding demos. Learn what these mean for learners and one practical step to try this week.  \nRead the full article on Apprentice Mode: [Insert URL here]  \n\n---\n\n*This narration was drafted with AI assistance and reviewed by the Apprentice Mode editor.*",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11571,
+    "completion_tokens": 1261,
+    "total_tokens": 12832,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_3493888272"
+}

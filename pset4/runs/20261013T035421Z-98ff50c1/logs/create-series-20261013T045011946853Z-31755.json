@@ -1,0 +1,19 @@
+{
+  "stage": "create-series",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 44,
+  "output_count": 3,
+  "started_at": "2026-10-13T04:48:17Z",
+  "finished_at": "2026-10-13T04:50:11.946874Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "resumed_from": "create_briefs",
+  "reason": "User-requested resume from create_briefs using saved upstream artifacts."
+}

@@ -1,0 +1,43 @@
+{
+  "stage": "fetch-feeds",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 5,
+  "output_count": 32,
+  "started_at": "2026-10-14T16:56:35.784329Z",
+  "finished_at": "2026-10-14T16:56:50.454613Z",
+  "tools": [
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "sources": [
+    {
+      "source_id": "simonw-blog",
+      "status": "completed",
+      "output_count": 10
+    },
+    {
+      "source_id": "github-blog-ai",
+      "status": "completed",
+      "output_count": 6
+    },
+    {
+      "source_id": "pragmatic-engineer",
+      "status": "completed",
+      "output_count": 6
+    },
+    {
+      "source_id": "stackoverflow-blog",
+      "status": "completed",
+      "output_count": 6
+    },
+    {
+      "source_id": "arxiv-agents-education",
+      "status": "completed",
+      "output_count": 4
+    }
+  ]
+}

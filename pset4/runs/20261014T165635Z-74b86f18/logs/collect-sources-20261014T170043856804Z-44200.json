@@ -1,0 +1,22 @@
+{
+  "stage": "collect-sources",
+  "status": "failed",
+  "exit_code": 1,
+  "input_count": 56,
+  "output_count": 64,
+  "started_at": "2026-10-14T16:56:35Z",
+  "finished_at": "2026-10-14T17:00:43.856829Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [
+    {
+      "stage": "extract-content",
+      "message": "stage returned exit 1"
+    }
+  ]
+}

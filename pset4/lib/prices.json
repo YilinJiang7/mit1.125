@@ -1,0 +1,7 @@
+{
+  "cost_is_estimate": true,
+  "checked_at": "2026-10-13",
+  "sources": ["https://developers.openai.com/api/docs/models/whisper-1", "https://developers.openai.com/api/docs/models/gpt-4.1-mini"],
+  "whisper-1": {"usd_per_minute": 0.006},
+  "gpt-4.1-mini": {"input_usd_per_million": 0.40, "cached_input_usd_per_million": 0.10, "output_usd_per_million": 1.60}
+}

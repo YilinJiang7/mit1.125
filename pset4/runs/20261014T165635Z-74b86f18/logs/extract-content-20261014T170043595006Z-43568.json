@@ -1,0 +1,118 @@
+{
+  "stage": "extract-content",
+  "status": "failed",
+  "exit_code": 1,
+  "input_count": 56,
+  "output_count": 49,
+  "started_at": "2026-10-14T16:56:56.574272Z",
+  "finished_at": "2026-10-14T17:00:43.595096Z",
+  "tools": [
+    "ffmpeg",
+    "ffprobe",
+    "python3",
+    "yt-dlp"
+  ],
+  "models": [
+    {
+      "model": "whisper-1",
+      "input_tokens": null,
+      "output_tokens": null,
+      "audio_minutes": 10.0008,
+      "cost_usd": 0.060004800000000004,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T165823638081Z-55473443.request.json",
+      "response_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T165823638081Z-55473443.response.json"
+    },
+    {
+      "model": "whisper-1",
+      "input_tokens": null,
+      "output_tokens": null,
+      "audio_minutes": 10.0008,
+      "cost_usd": 0.060004800000000004,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T165853742519Z-db5eb964.request.json",
+      "response_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T165853742519Z-db5eb964.response.json"
+    },
+    {
+      "model": "whisper-1",
+      "input_tokens": null,
+      "output_tokens": null,
+      "audio_minutes": 10.0002,
+      "cost_usd": 0.0600012,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T165924475465Z-526d74d7.request.json",
+      "response_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T165924475465Z-526d74d7.response.json"
+    },
+    {
+      "model": "whisper-1",
+      "input_tokens": null,
+      "output_tokens": null,
+      "audio_minutes": 10.0008,
+      "cost_usd": 0.060004800000000004,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T165954700754Z-5cb3baec.request.json",
+      "response_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T165954700754Z-5cb3baec.response.json"
+    },
+    {
+      "model": "whisper-1",
+      "input_tokens": null,
+      "output_tokens": null,
+      "audio_minutes": 4.9998,
+      "cost_usd": 0.0299988,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T170028059756Z-b4c1eed8.request.json",
+      "response_path": "runs/20261014T165635Z-74b86f18/llm/extract-content/2026-10-14T170028059756Z-b4c1eed8.response.json"
+    }
+  ],
+  "cost_usd": 0.2700144,
+  "cost_is_estimate": true,
+  "errors": [
+    {
+      "item_id": "youtube:sbHoDdAalMI",
+      "source_id": "github-yt",
+      "message": "No reachable YouTube captions"
+    },
+    {
+      "item_id": "youtube:N_cGKFGMxxc",
+      "source_id": "github-yt",
+      "message": "No reachable YouTube captions"
+    },
+    {
+      "item_id": "youtube:JFvlXTjLoVY",
+      "source_id": "primetime-yt",
+      "message": "No reachable YouTube captions"
+    },
+    {
+      "item_id": "youtube:FlWII9xFabo",
+      "source_id": "primetime-yt",
+      "message": "No reachable YouTube captions"
+    },
+    {
+      "item_id": "youtube:s95Q7D0WR40",
+      "source_id": "primetime-yt",
+      "message": "No reachable YouTube captions"
+    },
+    {
+      "item_id": "youtube:cp7mBZJkaCs",
+      "source_id": "yc-yt",
+      "message": "No reachable YouTube captions"
+    },
+    {
+      "item_id": "youtube:ofxAtQhV-xA",
+      "source_id": "yc-yt",
+      "message": "No reachable YouTube captions"
+    }
+  ],
+  "max_audio_minutes": 45.0,
+  "reused_count": 17
+}

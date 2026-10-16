@@ -1,0 +1,31 @@
+# Video 01: paste each scene into its own Google Vids scene (AI avatar box, max 800 characters)
+
+=== SCENE 1 (465 chars) ===
+This month, AI coding agents took big steps forward. You can now build complex features almost entirely by voice. New large language models, or LLMs, arrived with different prices and speeds. And GitHub Copilot got smarter about understanding your project’s rules. But what does this mean for you, a learner still getting comfortable with programming? What can you safely delegate to your coding agent, and what should you still check yourself? Let’s break it down.
+
+=== SCENE 2 (684 chars) ===
+Simon Willison, an expert developer, recently built a new blog feature almost entirely by voice. He used Codex in a local development environment, chatting with his laptop while cooking dinner. Over about 30 minutes, the AI wrote code, asked clarifying questions, and updated multiple files. The feature included new data models, import scripts, and web pages — a multi-step task done mostly by voice.
+
+But Simon also reviewed and fixed the AI’s work afterward. He spent another half hour typing to correct import methods and tweak the display before deploying the feature. So voice-driven coding can handle complex tasks, but it still needs your review and occasional hands-on fixes.
+
+=== SCENE 3 (676 chars) ===
+A new model called Gemini 4 Argon launched this month. It’s priced competitively — about $2 per million input tokens and $10 per million output tokens at launch. That’s half or even a fifth of some other top models. But the price will double in December, matching competitors.
+
+What matters most is how many tokens the model uses to complete your task. According to an independent analysis, Gemini 4 Argon is efficient, costing around $2,400 to run a standard benchmark, cheaper than many others. Theo, a developer YouTuber, reports good front-end coding and 3D results from his own testing, though not perfect. This is one creator’s experience, not an independent evaluation.
+
+=== SCENE 4 (586 chars) ===
+So when choosing a model, consider both price per token and total tokens used. This helps balance cost and quality for your projects.
+
+GitHub Copilot now supports project-aware features to better understand your codebase. You can add custom instructions in a file named .github/copilot-instructions.md to tell Copilot your project’s architecture, naming conventions, or testing expectations.
+
+You can also package repeatable procedures as “agent skills” and create “custom agents” for specialized tasks. Plus, MCP servers let Copilot connect to external tools like browsers for testing.
+
+=== SCENE 5 (795 chars) ===
+This means you don’t have to explain the same rules every time. Instead, your agent learns your project’s standards and can produce more relevant and correct code. For learners, this reduces repetitive explanations and helps keep agent output consistent.
+
+So what should you do this week? Try this: pick one project convention you often explain to your agent. Add it to .github/copilot-instructions.md. Then see how Copilot applies it on your next coding task.
+
+Remember, you can delegate more complex tasks now — even multi-file features by voice or with project-aware agents. But you still need to review the code carefully, guide the agent with context, and watch your token usage to manage costs.
+
+For full details and references, check out the Apprentice Mode Substack article linked below.
+

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EYwnE3Qtx52pycRkHGb8VO8JDLseh",
+  "object": "chat.completion",
+  "created": 1791997860,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "# What Changed This Month: Voice-Driven Development, New Models, and Project-Aware Agents\n\n---\n\n### Scene 1: Hook — What’s new for learning programmers this month?\n\n**Narration:**  \nThis month, AI coding agents took big steps forward. You can now build complex features almost entirely by voice. New large language models, or LLMs, arrived with different prices and speeds. And GitHub Copilot got smarter about understanding your project’s rules. But what does this mean for you, a learner still getting comfortable with programming? What can you safely delegate to your coding agent, and what should you still check yourself? Let’s break it down.\n\n**On screen:**  \nText overlay: \"What’s new for learning programmers? Voice coding, new models, smarter agents.\"  \nShow a split screen: one side a person speaking to a laptop, the other side a code editor with GitHub Copilot suggestions.\n\n**Sources:** [01-c1], [01-c2], [01-c3]\n\n---\n\n### Scene 2: Voice-driven coding — building a blog feature by talking\n\n**Narration:**  \nSimon Willison, an expert developer, recently built a new blog feature almost entirely by voice. He used Codex in a local development environment, chatting with his laptop while cooking dinner. Over about 30 minutes, the AI wrote code, asked clarifying questions, and updated multiple files. The feature included new data models, import scripts, and web pages — a multi-step task done mostly by voice.\n\nBut Simon also reviewed and fixed the AI’s work afterward. He spent another half hour typing to correct import methods and tweak the display before deploying the feature. So voice-driven coding can handle complex tasks, but it still needs your review and occasional hands-on fixes.\n\n**On screen:**  \nQuote card: \"I built the feature almost entirely using my voice, chatting away to my laptop while I cooked dinner.\" — Simon Willison  \nShow a short animated timeline: voice commands → AI code edits → manual review → deployment.\n\n**Sources:** [01-c1], [01-c7], [01-c4]\n\n---\n\n### Scene 3: New LLM models — Gemini 4 Argon’s cost and performance\n\n**Narration:**  \nA new model called Gemini 4 Argon launched this month. It’s priced competitively — about $2 per million input tokens and $10 per million output tokens at launch. That’s half or even a fifth of some other top models. But the price will double in December, matching competitors.\n\nWhat matters most is how many tokens the model uses to complete your task. According to an independent analysis, Gemini 4 Argon is efficient, costing around $2,400 to run a standard benchmark, cheaper than many others. A YouTube practitioner tested it and found it good for front-end coding and 3D tasks, though not perfect.\n\nSo when choosing a model, consider both price per token and total tokens used. This helps balance cost and quality for your projects.\n\n**On screen:**  \nChart comparing token prices and total benchmark costs for Gemini 4 Argon and other models.  \nScreenshot from the YouTube video titled \"So I've been testing Gemini 4...\" with timestamp 00:00–02:00.\n\n**Sources:** [01-c2], [01-c5], [01-c8]\n\n---\n\n### Scene 4: Smarter GitHub Copilot — teaching your agent your project’s rules\n\n**Narration:**  \nGitHub Copilot now supports project-aware features to better understand your codebase. You can add custom instructions in a file named `.github/copilot-instructions.md` to tell Copilot your project’s architecture, naming conventions, or testing expectations.\n\nYou can also package repeatable procedures as “agent skills” and create “custom agents” for specialized tasks. Plus, MCP servers let Copilot connect to external tools like browsers for testing.\n\nThis means you don’t have to explain the same rules every time. Instead, your agent learns your project’s standards and can produce more relevant and correct code. For learners, this reduces repetitive explanations and helps keep agent output consistent.\n\n**On screen:**  \nDiagram showing `.github/copilot-instructions.md`, agent skills folder, custom agents folder, and MCP server connections.  \nText overlay: \"Teach Copilot your project’s rules to get better help.\"\n\n**Sources:** [01-c3], [01-c6]\n\n---\n\n### Scene 5: What should learners do now?\n\n**Narration:**  \nSo what should you do this week? Try this: pick one project convention you often explain to your agent. Add it to `.github/copilot-instructions.md`. Then see how Copilot applies it on your next coding task.\n\nRemember, you can delegate more complex tasks now — even multi-file features by voice or with project-aware agents. But you still need to review the code carefully, guide the agent with context, and watch your token usage to manage costs.\n\nFor full details and references, check out the Apprentice Mode Substack article linked below.\n\n**On screen:**  \nText overlay: \"One thing to try: Add a custom instruction to your project.\"  \nLink to the full article on Apprentice Mode Substack.\n\n**Sources:** [01-c7], [01-c6]\n\n---\n\n### Video description\n\nThis video explains the latest advances in AI coding agents for learning programmers. It covers voice-driven coding, new LLM models like Gemini 4 Argon, and GitHub Copilot’s project-aware features, showing what you can delegate and what you must still check. Read the full article with sources here: [Insert article link].\n\n---\n\nDrafted with AI assistance from a source-tracked pipeline. Human editorial review pending.\n\n---\n\n### Sources\n\n[01-c1] Simon Willison’s blog on voice-driven coding, 2026-10-09  \n[01-c2] Simon Willison’s blog on Gemini 4 Argon pricing, 2026-10-13  \n[01-c3] GitHub Copilot blog on project-aware features, 2026-10-12  \n[01-c4] Simon Willison’s inference on voice coding suitability  \n[01-c5] Simon Willison’s analysis on token cost and efficiency  \n[01-c6] GitHub Copilot blog on custom instructions and skills  \n[01-c7] Simon Willison’s review and code fixes after voice coding  \n[01-c8] YouTube video \"So I've been testing Gemini 4...\", 2026-10-14",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 14294,
+    "completion_tokens": 1326,
+    "total_tokens": 15620,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_3493888272"
+}

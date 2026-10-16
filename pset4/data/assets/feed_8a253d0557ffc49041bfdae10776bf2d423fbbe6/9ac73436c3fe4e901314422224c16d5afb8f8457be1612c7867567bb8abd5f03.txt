@@ -1,0 +1,82 @@
+Gwen Davis·@purpledragon85
+October 2, 2026
+|
+3 minutes
+Share:
+AI is changing how developers work and apply their skills. Writing code is still essential, but developers increasingly need to know how to direct AI, evaluate its output, communicate tradeoffs, and make sound technical decisions.
+The good news? You can start preparing today. Here’s where to focus:
+Tip #1: Learn to direct AI, not just use it.
+AI is changing what execution looks like. Increasingly, great execution means defining the problem clearly, providing the right context, evaluating AI-generated code, and deciding what’s ready to ship. As AI agents take on more of the implementation, these skills become even more valuable.
+For example, imagine you’re asked to add a new authentication flow.
+A traditional workflow might look like this:
+Task: Add authentication
+→ Create branch
+→ Write code
+→ Run tests
+→ Open pull request
+As AI tools become more capable and more deeply integrated into day-to-day workflows, those same skills can help you coordinate multiple AI agents. Your workflow might look more like this:
+Workspace: Add authentication
+Agent 1 ✓ Authentication ready for review
+Agent 2 ✓ Documentation draft ready
+Agent 3 ✓ Test suite ready
+Notice what changed. You’re still responsible for the outcome, but you’re spending less time implementing every piece yourself. Instead, you’re defining the work, reviewing outputs, and making the technical decisions that bring everything together.
+Takeaway: Learn to direct AI agents.
+Start your first agent session >
+Tip #2: Don’t trust AI’s first answer
+AI can generate impressive solutions in seconds, but the first answer isn’t always the best. Your experience writing clean, maintainable code can help you evaluate AI’s output.
+Ask a second AI model to critique the first model’s work, then use your own judgment to evaluate both responses.
+Here’s a prompt that shows what that might look like in practice:
+"Write a SQL query that returns each customer's most recent order."
+↓
+AI Model #1
+✓ Generates the query
+↓
+AI Model #2 (Critique)
+⚠ Doesn't handle duplicate timestamps
+⚠ Missing index recommendation
+⚠ May perform poorly on large tables
+Different AI models have different strengths and blind spots. That’s why GitHub Copilot’s built-in Rubber Duck agent uses a second model to critique plans, code, and tests before you move forward. A second perspective often catches issues the first model misses.
+Takeaway: Trust AI enough to use it but not enough to skip review.
+Tip #3: Use AI to solve bigger problems
+When AI saves implementation time, developers can use that time to tackle broader problems: understanding customer needs, evaluating tradeoffs, designing better systems, and making technical decisions that AI can’t make for them.
+For example:
+Issue #4821
+Title: Add dark mode
+AI
+✓ Build implementation
+✓ Generate tests
+✓ Update documentation
+Developer checklist
+☐ Validate customer problem
+☐ Review architectural tradeoffs
+☐ Check accessibility
+☐ Define success metrics
+☐ Approve solution
+As AI takes on more implementation work, the skills that distinguish great engineers become even more important: exercising sound judgment, balancing tradeoffs, and solving the right problems.
+Takeaway: Let AI handle more of the implementation so you can spend more time building the judgment that helps teams make better decisions.
+The bottom line
+As developer workflows evolve, learning to work effectively with AI—and strengthening your own technical judgment—can help you adapt.
+Put these ideas in practice >
+Tags:
+AI
+career development
+Written by
+Gwen Davis is a senior content strategist at GitHub, where she writes about developer experience, AI-powered workflows, and career growth in tech.
+Related posts
+AI & ML
+GitHub Copilot app for Beginners: How to teach Copilot about your codebase
+Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.
+Career growth
+Hack the World: Why hackathons are still the best place to learn to build
+The barriers to building software have collapsed. Today, anyone can build. Hackathons are a great place to start learning.
+AI & ML
+Secret protection must scale with software
+Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it.
+We do newsletters, too
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Your email address
+*
+Your email address
+Subscribe
+Yes please, I’d like GitHub and affiliates to use my information for personalized communications, targeted advertising and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Subscribe

@@ -1,0 +1,22 @@
+{
+  "stage": "create-series",
+  "status": "failed",
+  "exit_code": 1,
+  "input_count": 64,
+  "output_count": null,
+  "started_at": "2026-10-14T17:00:43Z",
+  "finished_at": "2026-10-14T17:04:30.961154Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [
+    {
+      "stage": "write-articles",
+      "message": "stage returned exit 1"
+    }
+  ]
+}

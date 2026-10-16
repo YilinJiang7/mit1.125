@@ -1,0 +1,103 @@
+Computer Science > Robotics
+arXiv:2609.24145v1 (cs)
+[Submitted on 21 Sep 2026]
+Title:MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation
+Authors:Lucky Kant Nayak, Narayanan Palghat Parameswaran, Neehar Peri, Deva Ramanan
+View a PDF of the paper titled MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation, by Lucky Kant Nayak and 3 other authors
+View PDF
+HTML (experimental)
+Abstract:We present MimicAgent, a prompt-to-trajectory generation framework for learning dynamic quadruped skills. Although reward shaping is extensively used when training quadruped policies, navigating the resulting reward landscape is notoriously difficult, requiring hours of "graduate student descent". Eureka attempts to automate reward design with LLMs, but we find that it struggles to generalize across diverse skills and morphologies. Our key observation is that it is far easier for a human - and by association, an LLM - to generate reference motions than to shape reward functions. Our hypothesis is motivated by the success of example-guided RL for humanoids, which exploits large-scale motion capture datasets as references for training locomotion policies. Unlike humanoids, quadrupeds lack such reference motion data. Towards this end, we propose MimicAgent, an agentic harness that, given a skill prompt, generates quadruped reference trajectories with coding agents. These coarse reference trajectories are then used to train example-guided RL policies that are deployable in simulation and in the real-world. Notably, we find that when prompting Claude Fable 5.1 within our agentic harness, 87% of prompts yield semantically aligned reference trajectories.
+Comments:
+Project Page: this https URL
+Subjects:
+Robotics (cs.RO)
+Cite as:
+arXiv:2609.24145 [cs.RO]
+(or
+arXiv:2609.24145v1 [cs.RO] for this version)
+https://doi.org/10.48550/arXiv.2609.24145
+Focus to learn more
+arXiv-issued DOI via DataCite
+Submission history From: Neehar Peri [view email]
+[v1]
+Mon, 21 Sep 2026 05:56:20 UTC (9,551 KB)
+Full-text links:
+Access Paper:
+View a PDF of the paper titled MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation, by Lucky Kant Nayak and 3 other authors
+View PDF
+HTML (experimental)
+TeX Source
+view license
+Additional Features
+Audio Summary
+Current browse context:
+cs.RO
+< prev
+|
+next >
+new
+|
+recent
+| 2026-09
+Change to browse by:
+cs
+References & Citations
+NASA ADS
+Google Scholar
+Semantic Scholar
+export BibTeX citation
+Loading...
+BibTeX formatted citation
+×
+loading...
+Data provided by:
+Bookmark
+Bibliographic Tools
+Bibliographic and Citation Tools
+Bibliographic Explorer Toggle
+Bibliographic Explorer (What is the Explorer?)
+Connected Papers Toggle
+Connected Papers (What is Connected Papers?)
+Litmaps Toggle
+Litmaps (What is Litmaps?)
+scite.ai Toggle
+scite Smart Citations (What are Smart Citations?)
+Code, Data, Media
+Code, Data and Media Associated with this Article
+alphaXiv Toggle
+alphaXiv (What is alphaXiv?)
+Links to Code Toggle
+CatalyzeX Code Finder for Papers (What is CatalyzeX?)
+DagsHub Toggle
+DagsHub (What is DagsHub?)
+GotitPub Toggle
+Gotit.pub (What is GotitPub?)
+Huggingface Toggle
+Hugging Face (What is Huggingface?)
+ScienceCast Toggle
+ScienceCast (What is ScienceCast?)
+Demos
+Demos
+Replicate Toggle
+Replicate (What is Replicate?)
+Spaces Toggle
+Hugging Face Spaces (What is Spaces?)
+Spaces Toggle
+TXYZ.AI (What is TXYZ.AI?)
+Related Papers
+Recommenders and Search Tools
+Link to Influence Flower
+Influence Flower (What are Influence Flowers?)
+Core recommender toggle
+CORE Recommender (What is CORE?)
+Author
+Venue
+Institution
+Topic
+About arXivLabs
+arXivLabs: experimental projects with community collaborators
+arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs.
+Which authors of this paper are endorsers? |
+Disable MathJax (What is MathJax?)

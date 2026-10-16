@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EYwWJ0Uoz1VpGBnD4n9p8wHkeideW",
+  "object": "chat.completion",
+  "created": 1791996811,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"reject\",\"reason\":\"The article discusses challenges in tech hiring due to AI-generated resumes and introduces Stack Overflow's Developer Story as a hiring improvement, but it does not address coding agents, their use by learners, or effects on programming education or workflows relevant to Apprentice Mode's audience.\",\"piece_ids\":[],\"strongest_claim\":\"AI-generated resumes have made it harder to identify genuine talent in tech hiring, prompting Stack Overflow to revive Developer Story to better showcase candidates' real work and skills.\",\"evidence_type\":\"assertion\",\"perspective\":\"vendor\",\"commercial_incentive\":true}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4076,
+    "completion_tokens": 117,
+    "total_tokens": 4193,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_13db938a58"
+}

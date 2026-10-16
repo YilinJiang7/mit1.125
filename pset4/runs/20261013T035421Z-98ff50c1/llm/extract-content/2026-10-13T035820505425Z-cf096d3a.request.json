@@ -1,0 +1,9 @@
+{
+  "model": "whisper-1",
+  "response_format": "verbose_json",
+  "timestamp_granularities[]": "segment",
+  "file_path": "data/media/20261013T035421Z-98ff50c1/podcast_64b91e66513089bb845ec631153b359c46207a1b/chunk-1200.mp3",
+  "file_sha256": "fd3935431b233b10a4f94a13355b388c24fcc86aaf60344a96f64d279f777207",
+  "duration_seconds": 600.012,
+  "offset_seconds": 1200
+}

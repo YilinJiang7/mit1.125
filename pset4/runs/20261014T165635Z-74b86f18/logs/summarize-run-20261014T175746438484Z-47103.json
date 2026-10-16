@@ -1,0 +1,16 @@
+{
+  "stage": "summarize-run",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 237,
+  "output_count": 1,
+  "started_at": "2026-10-14T17:57:46.362229Z",
+  "finished_at": "2026-10-14T17:57:46.438840Z",
+  "tools": [
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": []
+}

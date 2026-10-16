@@ -1,0 +1,434 @@
+[
+  {
+    "end_seconds": 36.560001373291016,
+    "segment_id": "seg-0001",
+    "start_seconds": 0.0,
+    "text": "Are you passionate about software development and the tech industry? Software Engineering Daily is looking for a new podcast host to grow its hosting team. In this role, you'll help shape the show's editorial direction and interview engineers, founders, hackers, and tech leaders. Podcasting experience is a plus, but not required. Curiosity, great communication skills, and a genuine interest in the craft of building software are what matter most. If this sounds like you, reach out at editor.softwareengineeringdaily.com. In the world of software security, there was historically a"
+  },
+  {
+    "end_seconds": 72.4000015258789,
+    "segment_id": "seg-0002",
+    "start_seconds": 36.560001373291016,
+    "text": "comfortable lag between the moment a vulnerability became public and the moment attackers could exploit it. This lag was often measured in months, but AI models can now read a vulnerability report and generate a working exploit almost instantly. They can scan the entire internet for exposed secrets at a scale no human team could match and surface complex flaws that traditional tools missed for years. However, the same capabilities are just as available to defenders, and there is a case to be made that defenders hold the stronger hand. Alon Schindel is the VP of AI and Threat"
+  },
+  {
+    "end_seconds": 110.31999969482422,
+    "segment_id": "seg-0003",
+    "start_seconds": 72.4000015258789,
+    "text": "Research at Wiz, which is a cloud security platform acquired by Google in 2026. In this episode, Alon joins Gregor Vand to discuss how AI has compressed the time from disclosure to exploit, the prospects for defenders to stay ahead, how Wiz approaches scanning and remediation, the growing strain on open-source maintainers, and more. Gregor Vand is a security-focused technologist, having previously been a CTO across cybersecurity, cyber insurance, and general software engineering companies. He is based in Singapore and can be found via his profile"
+  },
+  {
+    "end_seconds": 112.95999908447266,
+    "segment_id": "seg-0004",
+    "start_seconds": 110.31999969482422,
+    "text": "at vand.hk or on LinkedIn."
+  },
+  {
+    "end_seconds": 163.27999877929688,
+    "segment_id": "seg-0005",
+    "start_seconds": 125.83999633789062,
+    "text": "Hello and welcome to Software Engineering Daily. My guest today is Alon Schindel. Welcome, Alon. Hi, it's great to be here. Thank you for having me. Yeah, absolutely. You are at Wiz, and this is, I think, the second time we've now had someone from Wiz on, which is exciting. I spoke to one of your colleagues, Rami McCarthy, probably two years ago at this point, which is crazy to think it was that long ago. But yeah, great to have you here today, Alon, and we're going to be talking all things AI, AI threats in general, so both the threats themselves that come from AI being possible now, and detection that's also then possible,"
+  },
+  {
+    "end_seconds": 199.44000244140625,
+    "segment_id": "seg-0006",
+    "start_seconds": 163.27999877929688,
+    "text": "and all these kind of things, which is super exciting. As we like to do, just curious, how did you get into security generally, and how did you find your way to Wiz, the company? So for me, I think I was always curious about security. I started building websites when I was on, I think, third or fourth grade, just enjoy the creating. And I think that, I mean, ever since that, I was always fascinated by hackers, and how can my website be hacked. So I think I kind of naturally was attracted to this domain. And whenever I had, when it was in school, or"
+  },
+  {
+    "end_seconds": 236.39999389648438,
+    "segment_id": "seg-0007",
+    "start_seconds": 200.39999389648438,
+    "text": "after that, in the professional career, whenever I had the opportunity to choose a cybersecurity position, I went there, or class, I went there. And yeah, so it's a journey that has started a long time ago, more than 20 years ago. And I was really lucky to walk and meet other people in this domain. And some of them are industry leaders who guided me and mentored me, helped me to get to this point. And one of them is actually one of the first engineers at Wiz, who is one of my childhood friends. And we went to the same kindergarten, we know each other since we were"
+  },
+  {
+    "end_seconds": 273.9200134277344,
+    "segment_id": "seg-0008",
+    "start_seconds": 236.39999389648438,
+    "text": "five. And he joined Wiz, he knew the founders, joined Wiz on the first day, one of the first employees. And a few months after, after they started, and they wanted to expand, he texted me, asked me, what am I doing now? And if I'm available to talk about a new opportunity? I said, yeah, it sounds interesting. And that's the story of how I got to Wiz there around five and a half years ago. So I'm always grateful for this opportunity. And maybe the lesson is that it's good to keep these relationships close, even when they start so early."
+  },
+  {
+    "end_seconds": 310.0,
+    "segment_id": "seg-0009",
+    "start_seconds": 273.9200134277344,
+    "text": "Yeah. So cybersecurity in kindergarten, that's definitely one to, that's a new one. I guess that means, because Wiz, I can't quite remember how old Wiz is a company, but that means you've been there since very early on at Wiz. Yeah, Wiz now is six, yeah, started six years ago. So it feels shorter. It's been a very fast journey. And I think we saw, yeah, I mean, we saw, we feel like we saw almost everything since Log4j in 2021, when, I mean, it was one of the largest vulnerabilities that we saw. Now we are"
+  },
+  {
+    "end_seconds": 345.8399963378906,
+    "segment_id": "seg-0010",
+    "start_seconds": 310.0,
+    "text": "seeing the supply chain attacks, this wave of Shaikh Hulud and other similar GitHub worms that we're seeing. But of course, in everything with AI and how AI impacts security, it kind of feels like we're starting all over again. Since the challenge is real, there are new challenges, the pace is faster than ever. So even though we are six, I think it feels like we started just last year because everything changes so fast. Yeah, absolutely. And I think, yeah, on that things change fast point, that's kind of where we want to talk about things today, all things"
+  },
+  {
+    "end_seconds": 384.8800048828125,
+    "segment_id": "seg-0011",
+    "start_seconds": 345.8399963378906,
+    "text": "AI and how has that affected the security landscape? And then sort of how should people be then thinking about their security sort of setup now that AI can be a part of that? It's something that we've touched on, especially we have a SED monthly episode, me and one of the other hosts talk about things. And we're often like kind of noodling on this idea, like, okay, how has AI really changed the security landscape? But it's great to have you to actually be able to answer some of those questions properly today. So yeah, I mean, I think just kind of opening with more of a stat, I guess, which was that, in theory, the Firefox team had said that they had"
+  },
+  {
+    "end_seconds": 424.79998779296875,
+    "segment_id": "seg-0012",
+    "start_seconds": 384.8800048828125,
+    "text": "fixed more security bugs in April 2026 than in the entire previous year. And that was because of Mythos, the anthropic model that had been released back then. We went offline for a little while, but it has, to our understanding, come back online about six days before we recorded. So if it's offline again, by the time this comes out, sorry to the audience, but it is online as we're talking today. So yeah, this model Mythos and there's a co-model Fable, which we can always get onto as well. But yeah, just talk to us about that. How has that kind of affected how we should be,"
+  },
+  {
+    "end_seconds": 462.0,
+    "segment_id": "seg-0013",
+    "start_seconds": 424.79998779296875,
+    "text": "I guess, looking at just, let's just start with landscape total. What does that mean? So I think we'll get into Mythos and vulnerability research with AI, but I think it's always important to remember that there are two different perspectives. How you can use AI for security and also securing AI and how AI changes the threat landscape just by opening maybe new attack surfaces for the attacker. So whenever we talk about the impact of AI on security, we have to talk about both of these different aspects. And I think what we see today, I mean, I started with"
+  },
+  {
+    "end_seconds": 496.55999755859375,
+    "segment_id": "seg-0014",
+    "start_seconds": 462.0,
+    "text": "that. We see that there is a new reality and I'm saying that it's like having new rules of physics today because everything that we knew before is changing. So, for example, we see how faster you can find vulnerabilities. That's one example. We'll deep dive into that later. But Mythos is only one point and it was maybe a loud wake-up call for the industry. But the trend of AI models"
+  },
+  {
+    "end_seconds": 529.280029296875,
+    "segment_id": "seg-0015",
+    "start_seconds": 496.55999755859375,
+    "text": "that are becoming good in vulnerability research is something that we have started seeing even last year in December. We had in Wiz, we launched AI vulnerability competition. We invited hackers to find vulnerabilities in software, in cloud software, AI software. Now, most of the teams that finished in the highest positions in this competition use AI to find the vulnerabilities. We are talking about around four months, five months before Mythos was announced."
+  },
+  {
+    "end_seconds": 569.5999755859375,
+    "segment_id": "seg-0016",
+    "start_seconds": 530.0,
+    "text": "And we keep seeing that the other models like Opus 4.6, Gemini, OpenAI, the GPT-55, they all show great capabilities in finding vulnerabilities. And in addition to other great capabilities in just software engineering and building software. So I think this is one of the things that is changing now. And we're talking about the reality that hacking is democratized and it is becoming easy for everyone to find vulnerabilities. And it's even easier to do web hacking. I started by talking about how I used to build websites, how it inspired me to get into cybersecurity."
+  },
+  {
+    "end_seconds": 608.4799995422363,
+    "segment_id": "seg-0017",
+    "start_seconds": 569.5999755859375,
+    "text": "I think today, if I had, when I was 10, if I had access to a model like even, again, Opus, not even Mythos, I think it was a great tool to start scanning the internet and find just exposed data out there or Lambda functions that whenever you trigger them, they just get your secrets back. And the barrier to get into cybersecurity is becoming lower and lower. You still have, I mean, I think that you still need basic skills, understanding. what you are seeing, but we see that these models can help us. And in ways we saw it was one of the early uses of AI for us"
+  },
+  {
+    "end_seconds": 648.1199989318848,
+    "segment_id": "seg-0018",
+    "start_seconds": 608.4799995422363,
+    "text": "was for what we call the red agent. It was kind of the AI automated attacker. And it was amazing to see how fast we were able to build this feature and how fast we were able to enable it to thousands of customers. I think probably one of the features that we saw the fastest adoption speed for, just because they are so effective. I mean, you scan the web page, you scan the HTML file, JavaScript file, and AI is doing amazing work in analyzing it, thinking like a hacker and finding the exposures here. So when I say that hacking has been democratized, that's what I mean, that it's becoming easier"
+  },
+  {
+    "end_seconds": 685.1999969482422,
+    "segment_id": "seg-0019",
+    "start_seconds": 648.1199989318848,
+    "text": "to hack a website. And it's also becoming, I mean, the job, this work is now scalable because you don't need, even if you had amazing, I mean, we saw hackers before, we saw APTs, nation states that are doing great work, but it required time, effort, skills. Now, even a single person just from home can run these large operations, scan the internet, find these exposures. And I think that for us as an industry, the cybersecurity industry on the blue side, there are also great opportunities there. So everything is changing."
+  },
+  {
+    "end_seconds": 724.1600036621094,
+    "segment_id": "seg-0020",
+    "start_seconds": 685.1999969482422,
+    "text": "It doesn't necessarily mean that things will be worse in the longterm. Yeah. There was a great article you put out, which sort of talks about a framework around looking for vulnerabilities and then defending against. So I'm going to sort of reference that throughout our chat today. There was something you mentioned there, zerodayclock.com, which is, for those that don't know, yeah, if you sort of pull that up, it's a very interesting downward trending chart through the years of how fast it has been to basically exploit, you know, from a sort of found exploitation. And if I just look at this, like 2021 was when that was seen as like,"
+  },
+  {
+    "end_seconds": 763.1600036621094,
+    "segment_id": "seg-0021",
+    "start_seconds": 724.1600036621094,
+    "text": "wow, it took one year to go from, you know, something that has been discovered to the time it was breached. And then we fast forward to 2025 and it's already dropped to one month. And now in 2026, it's one week, or rather, sorry, and it's actually, we also reached in 2026 one day and they at least are projecting one hour by 2027 and even maybe one minute by 2027. Like, I think that really frames it super interestingly. Like we've just, in what the space of five years gone from, oh, we've got a year to potentially patch this to you're lucky if you've got a day now. Does that kind of sound right to you? Yeah, definitely."
+  },
+  {
+    "end_seconds": 802.6000061035156,
+    "segment_id": "seg-0022",
+    "start_seconds": 763.1600036621094,
+    "text": "I mean, we see it as part of my work here. I'm also, I also own the response to vulnerabilities. So it's not only finding them, it's also responding to them. And we see how in the last year, we were just busy with back-to-back response to new vulnerabilities. And so we see more vulnerabilities and we see that, yeah, we need to respond to them faster because you see the exploits faster. And I remember days, even if I look back, I think one of the, after I joined Waze, one of the first vulnerabilities that was released was in a critical Apache HTTP server vulnerability. And I think it took, like the vulnerability was published, I think it took like around two or three days"
+  },
+  {
+    "end_seconds": 841.8399963378906,
+    "segment_id": "seg-0023",
+    "start_seconds": 802.6000061035156,
+    "text": "until we saw the exploit. Now, maybe one of the recent examples is MongoBlade, the vulnerability in MongoDB. And you were able, so just from the report or the vulnerability that was public, you could have just sent it to Claude and get the full exploit back. So that's what we see. And in the AI threat readiness framework that you mentioned, we are trying to help organizations and security teams and also software engineering teams to rethink their response framework. And I think that part of that is really how do you reduce exposure? And the reason that this part,"
+  },
+  {
+    "end_seconds": 881.0,
+    "segment_id": "seg-0024",
+    "start_seconds": 841.8399963378906,
+    "text": "I mean, it was always important not to have exposed resources out there, but now if you have resources that are just out there and everyone can find them and hack them very fast. This is a really interesting piece because it sort of crosses into ASM, which is attack surface management, which is actually something a few moons ago, I kind of worked on products in that area. I'm really curious, what's kind of your then definition of what has changed because you can apply AI to that now? The way we apply AI in this space"
+  },
+  {
+    "end_seconds": 917.9599914550781,
+    "segment_id": "seg-0025",
+    "start_seconds": 881.0,
+    "text": "is by creating the AI attacker. And today we see how these capabilities of attackers and defenders converge. And we can, I mean, in ways, we scan your environment from the inside. So we know which resources are the important ones. Where do we have sensitive data? Where are the crown jewels of your organization? And we use this data to create smarter scans and prioritize the resources according to their sensitivity, according to their criticality to your system. And when we have these hints"
+  },
+  {
+    "end_seconds": 957.2000122070312,
+    "segment_id": "seg-0026",
+    "start_seconds": 917.9599914550781,
+    "text": "about what actually is on this resource, we can trigger these AI scan. We scan the page from the outside like an attacker, but we can give it some hints about what's in it. And in this way, we create a very effective scanning mechanism. We actually found thousands of vulnerabilities and critical exposures just out there. And if it wasn't us that found it, it could have been an attacker. And like all this data was just out there. So we scan it, we analyze the HTML file, the JavaScript file, try to find what is exposed, whether we can find, we see that we sometimes find the tokens"
+  },
+  {
+    "end_seconds": 995.0799865722656,
+    "segment_id": "seg-0027",
+    "start_seconds": 957.2000122070312,
+    "text": "that are maybe get apart the tokens, other tokens that are just, you know, accidentally embedded in these webpages. Everyone can read them, use them to log in to the organization system, and then just, you know, start their hacking campaign there. I mean, we see different, of course, hackers. They can try to exfiltrate data. They can try to maybe start a supply chain. If it's a GitHub token, you can maybe add some malicious script to the product or to the package that this company creates and infect the downstream customers. And, you know, of course,"
+  },
+  {
+    "end_seconds": 1033.7999877929688,
+    "segment_id": "seg-0028",
+    "start_seconds": 995.0799865722656,
+    "text": "many other opportunities for attacks there. But the bottom line is that we are trying to use AI, leverage AI, the same way that attackers will do. But the reason that I'm optimistic is that as attackers, we have more context. Context is the key for AI. It is, in cybersecurity context, has been the key and the king. Even, you know, five years ago, I think that was the significant part of how we built ways to use context to prioritize. Now with AI, it's becoming even more critical because you need to, the models, they can't work without context. And if you have better context, the results will be better."
+  },
+  {
+    "end_seconds": 1073.3999938964844,
+    "segment_id": "seg-0029",
+    "start_seconds": 1033.7999877929688,
+    "text": "So when we, as defenders, we know what do we have inside our system, in our environment, we know what's important. Attackers, they can, you know, brute force. They can just spray and try to find exposures, but they don't know what's really important until they actually get in. And I think that's an area where we, as defenders, have the advantage. And this is part of the reason that, in the long term, I'm optimistic. Because attackers, I mean, everyone, I think that we'll see that we, as defenders, I mean, let's assume we have access to the same models. We can talk about whether it's going to be true or not,"
+  },
+  {
+    "end_seconds": 1110.3200073242188,
+    "segment_id": "seg-0030",
+    "start_seconds": 1073.3999938964844,
+    "text": "but let's assume that we have access to the same models. The defenders have better context, and this is why I believe that we can defend and have the advantage on the attackers. Yeah, that's super interesting. I hadn't maybe thought of it like that, where pre-AI, okay, the context is the developer who can say, well, like, I know how this was put together, and I know kind of where the skeletons lie a little bit, you know, and why, for example, like, oh, we had to brush this bit out, and that's the one that I'm not super confident on having the same degree of, that our security engineer wasn't able to look at that for quite as long as this other bit over here,"
+  },
+  {
+    "end_seconds": 1150.3200073242188,
+    "segment_id": "seg-0031",
+    "start_seconds": 1110.3200073242188,
+    "text": "which got way more stakeholders looking at it, basically. So I think that's super interesting, where that can all then be fed into, you know, and even, like, I guess, like GitHub histories, for example, where, like, that conversation that happened around that pull request, for example, where someone says, okay, well, I guess we're going to push this out, but I'm not super happy about this, like that. That can be brought into the defend context, right? Mm-hmm. Yeah, exactly. This episode of Software Engineering Daily is brought to you by VariaCode. If you're an engineering or IT leader, you know how painful this is. An open rec sits unfilled for three months. Your tech lead is burning out, covering the gaps, and your product roadmap gets pushed back again."
+  },
+  {
+    "end_seconds": 1185.4400024414062,
+    "segment_id": "seg-0032",
+    "start_seconds": 1150.3200073242188,
+    "text": "VariaCode solves that. For over 10 years, they've been embedding senior Latin American engineers directly into US engineering teams in under 10 days at up to 40% less than local hiring. We're not talking about generic contractor pools. These are pre-vetted, high-quality engineers with real on-call and SLA experience. They work directly in your Slack, JIRA, and daily standups in your exact US time zone with zero friction. If you're ready to stop losing sprints to open recs, head over to variacode.com slash S-E-D right now and get a custom shortlist of senior candidates in 48 hours."
+  },
+  {
+    "end_seconds": 1223.8600006103516,
+    "segment_id": "seg-0033",
+    "start_seconds": 1185.4400024414062,
+    "text": "That's V-A-R-I-A-C-O-D-E dot com slash S-E-D. Your customer lives in the real world and it's messy. Intermittent connections, mid-onboarding drop-offs, edge cases on devices you've never tested. Mobile apps reflect reality in a way no other surface does. Yet, from an engineering perspective, they're the hardest to understand. It's common for mobile engineers to see green backend dashboards, normal error rates, no crashes, but inevitably, somewhere there's a frustrated user watching your app spin. After a few seconds, they'll lose patience, close the app, and turn their attention somewhere else. They may never come back. The worst part?"
+  },
+  {
+    "end_seconds": 1262.340000152588,
+    "segment_id": "seg-0034",
+    "start_seconds": 1223.8600006103516,
+    "text": "Most observability tools never see any of it. Bitdrift, on the other hand, captures 100% of mobile data, unsampled and in real time, so it's immediately queryable by engineers and AI agents. It's mobile observability built for the real world. Try Bitdrift today, bitdrift.io slash sign up. Sponsored by DeepGram, the leader in voice AI, so you can use voices like mine. So before we kind of move on to like how AI has then helped more on the actual patching of all these discoveries, something that maybe is a tricky topic, which is just like responsible disclosure. So like, you know, when things are found,"
+  },
+  {
+    "end_seconds": 1301.0599975585938,
+    "segment_id": "seg-0035",
+    "start_seconds": 1262.340000152588,
+    "text": "companies, there are various sort of laws in different countries around like how long you, in theory, have to then declare these, et cetera. But if you're finding like 3,000 in a week, how do you guys look at that? For us, it's an important principle to comply with the different disclosure rules by, you know, different platforms. I mean, when I go about 1,000 findings, it's part of what you see in the Wiz products. So when there is something that is, I mean, we believe that is even like super critical, and we see that there might be an exposure that, I mean, with that, I mean, our system flags is super critical."
+  },
+  {
+    "end_seconds": 1338.740005493164,
+    "segment_id": "seg-0036",
+    "start_seconds": 1301.0599975585938,
+    "text": "We also try to reach out either through the security email or, I mean, just to contact the company, yeah, the same way that the other reports are being submitted. In other cases, when it's a custom, we can just reach out to the security team directly. And I think that there's also maybe a new problem. And when we talk about the scale of finding that for maybe open-source projects or some other small maintainers that they have a problem, that they are getting, I mean, you know, maybe dozens, hundreds of reports from different companies every week. We just saw an example last week"
+  },
+  {
+    "end_seconds": 1378.4199981689453,
+    "segment_id": "seg-0037",
+    "start_seconds": 1338.740005493164,
+    "text": "for an open-source project that disclosed their vulnerability and they had, I think, 15 different companies or researchers who reported this issue. And the reason is that everyone scans these open-source projects with AI, but it creates a problem with like triage. How do you triage issues when you have so many? We saw some other maintainers that said that they just, they won't respond to reports that were AI-generated reports since you also see some AI slope over there. So it's not only that. I mean, that's another problem that AI creates that you have to review more and more data. So for us, we are lucky to have a great team"
+  },
+  {
+    "end_seconds": 1417.5800018310547,
+    "segment_id": "seg-0038",
+    "start_seconds": 1378.4199981689453,
+    "text": "and enough people to actually make sure that reports go to their right place. And we have, of course, the product where most of these issues are reported and security teams, they have the processes to respond to these issues. But it's indeed, I think that's another area where the industry is changing now and how do you report issues to maintainers? How can maintainers, and I think it is a real problem because you have some people that, I mean, with their hobby, on their free time, they do something great for everyone's good. And now they have to, you know, they are being sometimes even shamed for not responding fast enough, but they don't have the resources."
+  },
+  {
+    "end_seconds": 1456.8999938964844,
+    "segment_id": "seg-0039",
+    "start_seconds": 1417.5800018310547,
+    "text": "You know, it's just their life. And this is why it's good to say, like you mentioned before, the Mozilla, like the Firefox project. So I think one of the important initiatives now is how can the frontier labs work with or scan these critical open source projects that are the backbone of everything, of the internet, of everything we know, and how can we help them find all these vulnerabilities before the attackers do? And I know that both Google, OpenAI, Anthropic, they all invest efforts there. And I think it's something that we must do now"
+  },
+  {
+    "end_seconds": 1495.7000122070312,
+    "segment_id": "seg-0040",
+    "start_seconds": 1456.8999938964844,
+    "text": "before these capabilities propagate to the red side. Yeah, definitely. And like, yeah, as you call out in open source, it's just a whole other ballgame as well. I think, you know, looking at how, if we sort of go into a bit more of the framework you mentioned in your article, and then like actually then how to accelerate the actual patching and like the zero day response, which again, going back to zerodayclock.com, that's no more than one day now in 2020. Like if we hit one day in 2026, means we might be already down to like 20 hours because the next marker is one hour."
+  },
+  {
+    "end_seconds": 1534.2200012207031,
+    "segment_id": "seg-0041",
+    "start_seconds": 1495.7000122070312,
+    "text": "So we probably down below 24 hours at this point. As it probably sounds, you know, this needs to start involving a lot more continuous automated remediation, which I think was always like the Holy Grail, right? Like no human in the loop and like something's just declared and suddenly you've got like kind of an agent to go and like deal with it. I think Wiz does have, you know, you talked about the red agent, which is like AI powered sort of attacking if you like. And then we've got the green agent, which is on the response side. So like, could you kind of describe like how, how does that all work, I guess? I think it's part, I mean,"
+  },
+  {
+    "end_seconds": 1572.9800109863281,
+    "segment_id": "seg-0042",
+    "start_seconds": 1534.2200012207031,
+    "text": "in order to get to full automation, it's kind of a circle where you find an exposure and you need to analyze it and remediate it automatically. Honestly, I mean, it's not easy. I want to, I don't think that anyone has, you know, the perfect solution today. And of course I'm sure that the listeners, they're working on some systems that have been there for maybe years and they have their legacy code. It's not easy. It's important to say there's no, I don't want to make anyone feel bad because they think that there's the perfect solution and they don't apply it. So the way that we see it is first, yeah, you have to continuously scan"
+  },
+  {
+    "end_seconds": 1612.4200134277344,
+    "segment_id": "seg-0043",
+    "start_seconds": 1572.9800109863281,
+    "text": "and maybe the first layer of scans is kind of very wider and shallow scans, like the one that I mentioned with the red agent, that you keep scanning your attack surface, trying to understand what's exposed. And when I talk about attack surface, so it's not only your web assets, you also have to scan your GitHub repos. We saw all these recent supply chain attacks, your CICD pipelines, you know, scanning every resource that you have that can be potentially hacked, scan it continuously with AI, try to find these exposures before the attackers do. The next step after that is trying to understand"
+  },
+  {
+    "end_seconds": 1650.5799865722656,
+    "segment_id": "seg-0044",
+    "start_seconds": 1612.4200134277344,
+    "text": "the potential risk. And in order to solve that, you can either reduce exposure. And I think that's, again, I mentioned it before. I think that's a very important part. Reducing exposure is becoming critical today because you have, and that's what we usually see. I think in many cases, the problem is not only the vulnerability, the problem is a resource that shouldn't have been exposed or it shouldn't have been public. So just trying to reduce your work by reducing exposure, that's the first step. But if you have a resource that indeed has a vulnerability in it, a vulnerability that can be exploited, maybe you have a misconfiguration on this resource,"
+  },
+  {
+    "end_seconds": 1690.5799865722656,
+    "segment_id": "seg-0045",
+    "start_seconds": 1650.5799865722656,
+    "text": "maybe you have a code vulnerability on your side, more on the APSEC side. So yeah, you have to start planning your remediation. This is where the green agent walk is starting, trying to understand first where this issue is coming from, finding the root cause. And that's another part that is usually overlooked because finding where is the source, I mean, just finding an exposure vulnerability out there and connecting it to the owner in your organization, connecting it to the file, to your code file that it is coming from is also difficult. It used to be something that was a bit difficult. It's still not easy, but AI can also help with that"
+  },
+  {
+    "end_seconds": 1730.260009765625,
+    "segment_id": "seg-0046",
+    "start_seconds": 1690.5799865722656,
+    "text": "if AI has both access to your exposure data and to your code repo. So you can do this, what we call cloud to code and find where is the source of this issue. And then you have to start and plan your remediation steps. And again, AI is not only good in hacking, it's great, of course, in building software, understanding software. And this is where we are trying, we are building this agent that finds the issue and then plans the remediation or also sometimes offers different remediation plans. And another interesting progress there was that we can add some memory. So you can just add instructions to these agents."
+  },
+  {
+    "end_seconds": 1770.02001953125,
+    "segment_id": "seg-0047",
+    "start_seconds": 1730.260009765625,
+    "text": "So if you prefer always patching, that's one thing. I mean, you can ask it to always prioritize patching or you can ask it to prioritize reducing exposure by changing to your telephone files or like it. So maybe focus on everything that is not the code itself. It's not an easy thing to do. And I think there's still work for the industry to understand how you can do automated patching because after you patch, you have to test it. And part of this, I think the next step there will be how do you automatically test the new code? How do you make sure that this change doesn't have impact on other parts of your system? And this automatic workflow, you can see that there are some cases"
+  },
+  {
+    "end_seconds": 1807.1999998092651,
+    "segment_id": "seg-0048",
+    "start_seconds": 1770.02001953125,
+    "text": "where it can work well, but there's still work to do. And part of it is sometimes even changing the architecture, your architecture, that which will be easier. So using, for example, secure images is one solution where you can help organizations kind of close this end-to-end loop faster with better architecture. Yeah, as you just touched on there, these like hardened images or like hardened containers, depending on what people call them. But yeah, we've had a couple of episodes. on that, either the drawback there, I think, or like the perceived drawback is just like having to, as a developer, having to"
+  },
+  {
+    "end_seconds": 1839.7999992370605,
+    "segment_id": "seg-0049",
+    "start_seconds": 1807.1999998092651,
+    "text": "accept some constraints on your toolchain or like make sort of special changes to these containers. Like, I guess that's just something that developer teams just have to like accept a trade-off on if they're willing, if they're wanting to actually make their whole supply chain more secure for this purpose. Yeah, I think this changing in supply chain, I mean, another change that we are seeing now is even assessing the potential risk from different libraries and packages that are out there. So if you see, and it's, I mean, something that was"
+  },
+  {
+    "end_seconds": 1876.0,
+    "segment_id": "seg-0050",
+    "start_seconds": 1839.7999992370605,
+    "text": "discussed in the past as well, where some libraries and some packages are not maintained well, and again, we don't judge the maintainers, and I think that they have a great challenger, and that's another thing that we see in our research here. So we also find, we try to scan these public repos, try to scan CI, CD pipelines, and GitHub Actions, and we see that there are, and we're working with these maintainers, as I mentioned, like we do it responsibly, but there are many projects that"
+  },
+  {
+    "end_seconds": 1908.599998474121,
+    "segment_id": "seg-0051",
+    "start_seconds": 1876.0,
+    "text": "have exposures, and if this project is very popular, it is used by many organizations, it has an exposure, and there's no, it doesn't have good security hygiene, it is something that is a ticking bomb. You can see this package as a ticking bomb, and I think that another part of the exposure reduction process that we see, we're not only talking about just public resources, it's also about vetting your open source code and using more secure SBOM, and I think that's another part that when I talk"
+  },
+  {
+    "end_seconds": 1942.6000061035156,
+    "segment_id": "seg-0052",
+    "start_seconds": 1908.599998474121,
+    "text": "about shifting left and changes in the architecture, so it's not only security images, it's also the securing the SBOM from the beginning and making better or the more secure choices, and again, it's not going to be easy. I don't think that any software developer would like to stop using a popular library, but it's another change that we're seeing, and by the way, one of the reasons that we are seeing maybe more insecure use of packages is also AI, so since, I mean, if you write your code with a coding agent,"
+  },
+  {
+    "end_seconds": 1979.6000061035156,
+    "segment_id": "seg-0053",
+    "start_seconds": 1942.6000061035156,
+    "text": "in many cases, you don't even know what's inside it, and like you just use all these dependencies that were added by the coding agent, and you don't really know what you have inside your code, so I feel like this ability is important and also making the right choices, and I hope that coding agents will also understand, and that will be part of what we see from them prioritizing the more secure architecture and more secure SBOM for your environment. Yeah, and like getting into, I guess, actual code analysis, you know, we haven't touched on that sort of in detail yet, but I think this is"
+  },
+  {
+    "end_seconds": 2016.6000061035156,
+    "segment_id": "seg-0054",
+    "start_seconds": 1979.6000061035156,
+    "text": "where things do get super interesting because there have been tools around for a long time, you know, effectively static analysis tools, like you're known as like SAST in the industry, you know, that basically, yeah, would like look at the code and say, oh, like this is a known pattern for why this is going to be a problem. But my understanding is that, you know, now if we look at sort of what like frontier AI models can find, like we're like talking things like complex logic flaws, I think what's going to describe as IDOR, so insecure direct object reference, chain vulnerabilities, and then just a sort of general insecure application flows."
+  },
+  {
+    "end_seconds": 2053.6000061035156,
+    "segment_id": "seg-0055",
+    "start_seconds": 2016.6000061035156,
+    "text": "I think especially those first two are interesting, like complex logic flaws and then IDOR, which I have no idea what it is, so I think we should get into that. Could you like just talk us like what are these things that AI models are finding that was quite hard to find before? That's an area where we actually see this great leap in capabilities of understanding code and understanding what are these, yeah, I mean, some issues that I really think that we didn't have any technology that could have, yeah, that could have found these issues before. We had, so SAST, yeah, it's not a new acronym. It's like these products have been around for years."
+  },
+  {
+    "end_seconds": 2092.6000061035156,
+    "segment_id": "seg-0056",
+    "start_seconds": 2054.6000061035156,
+    "text": "We also, we've built one internally in Wiz, and the goal over there is finding the vulnerabilities in code more in the APSEC level, on the application level, so sometimes it can be even maybe a simple example that people know is a SQL injection, just to see if you have insecure processing of input from your users, if it can maybe lead to issue like SQL injection. And I think that the reason that it was a real scientific academic problem is how to understand languages, and you needed, and you saw that most of the companies that led the efforts there, the work was based on language processing,"
+  },
+  {
+    "end_seconds": 2129.6000061035156,
+    "segment_id": "seg-0057",
+    "start_seconds": 2092.6000061035156,
+    "text": "even trying to understand code flows, building kind of a graph flow, CFG, understanding the flow of your code, and it was just, I mean, from technical perspective, it was something that was extremely difficult to do. Now, AI models, LLMs, they understand text well, and code is also text with structure, with rules, and all that. And we see, I think, yeah, since December, a great leap in capabilities of AI models in understanding code well, and this is why we see that they can be easily used for coding now, and also to find these type of vulnerabilities."
+  },
+  {
+    "end_seconds": 2165.6000061035156,
+    "segment_id": "seg-0058",
+    "start_seconds": 2129.6000061035156,
+    "text": "So when we talk about finding vulnerability, vulnerabilities, I mean, they're not the same. They're different classes of vulnerabilities. So you have memory vulnerabilities, and that's one type of them, trying to find where you have memory leaks or memory issues that you can exploit and kind of inject your code into the memory of the process. Some issues are more on the APSEC side, and even for us here in Wiz, we see them as kind of different efforts. So we have one team working on creating a great, more like, call it a very deep vulnerability engine"
+  },
+  {
+    "end_seconds": 2204.6000061035156,
+    "segment_id": "seg-0059",
+    "start_seconds": 2165.6000061035156,
+    "text": "that focuses on the memory vulnerabilities, and another agent that is more like the AI SAST that will be part of the product. And over there, it's really trying to find these vulnerabilities that are in code, SQL injection like IDOR, the ones that were mentioned before, that are more about whether you can actually understand the code and kind of doing the code review that we know, but more from a security perspective. And the reason that we have a great opportunity now is that AI can actually understand the code. Still, it's not easy. I mean, you can think about systems. I think I can share some of the challenges that we have from building it."
+  },
+  {
+    "end_seconds": 2242.6000061035156,
+    "segment_id": "seg-0060",
+    "start_seconds": 2204.6000061035156,
+    "text": "So you have organizations that work with many different repositories, and you have to start and find, you know, all the references from these different repositories. That's one challenge because you need like AI. In the end, the LLM, it has to get the context, like the full context, and understand the whole system. So if you have now, and we see it, we see that we have, I mean, we see organizations with hundreds of different repos and that their projects are kind of scattered across these different environments. So you have to kind of find all the, like, find this trail and understand it. We also see other projects that are just, like, very large."
+  },
+  {
+    "end_seconds": 2280.6000061035156,
+    "segment_id": "seg-0061",
+    "start_seconds": 2242.6000061035156,
+    "text": "So you have to start kind of writing it down. And the way that we are doing it is kind of separating different tasks to different agents. So we are trying to model the process that we are doing internally to find vulnerabilities, processes that we use as humans to find vulnerabilities, the old classic manual way, and try to, for example, first find, you know, all these different things, then collect data about, you know, where we see references to this issue, then really try to hack it, then test it, validate it, having kind of a judge. Sometimes we even use different models. It's actually a nice technique that we see that different models, they have."
+  },
+  {
+    "end_seconds": 2319.5999755859375,
+    "segment_id": "seg-0062",
+    "start_seconds": 2280.6000061035156,
+    "text": "So Cloud has different advantages. Gemini has different advantages. GPT has different advantages. So we're trying to use actually different models. And when we see that a model is maybe stuck or, like, doesn't find a solution, call the other model and try to do that for help. Like we have different researchers who excel in different domains. So we are trying to build all that and, in the end, to build a system that will be able to find these vulnerabilities. Also to make sure, I think the problem is that also to reduce false positive and understand the real criticality of the issue. One of the problems that we saw with LLMs were that whenever they find something,"
+  },
+  {
+    "end_seconds": 2357.5999755859375,
+    "segment_id": "seg-0063",
+    "start_seconds": 2319.5999755859375,
+    "text": "they usually flag it as super critical. And it's not always. When they say that something is critical, it's not always critical. That's part of, like, a training issue. But we also need to assess the criticality of the vulnerability and make sure that we don't create false alerts. And maybe just one last anecdote there. We see that even models, the other, like, frontier models that are not Mythos or Fable, not from this class of very large – Mythos, in the end, it's a model. I mean, it's great, but it's the largest or, like, it's a very large model. If we talk about the number of parameters, like,"
+  },
+  {
+    "end_seconds": 2393.5999755859375,
+    "segment_id": "seg-0064",
+    "start_seconds": 2357.5999755859375,
+    "text": "completely different order of magnitude from all the others. But we see that this process of, like, building a good harness with these different agents that can work with each other and work on different tasks as part of this flow, you can get to great, like, almost similar results to what you see with Mythos. And it's also something that is important to remember, that whenever we talk about finding vulnerabilities or how good a model is in this task, it's not only about the model. It's also the harness and good harnesses and capabilities of the frontier models today"
+  },
+  {
+    "end_seconds": 2431.7999992370605,
+    "segment_id": "seg-0065",
+    "start_seconds": 2393.5999755859375,
+    "text": "that are not from the same class of Mythos and Fable are also great. in these desks. Yeah, and one thing, just briefly on that as well, is just like the reproducibility of things that have been found. Like how, you know, if... So I guess if I think more of the SAS model, it's like, well, this thing has been found, it's very clear, like here's the steps to recreate it, for example. I get the impression that the AI found vulnerabilities that sort of can tell you what was found and what the impact might be, but actually then for someone to reproduce that,"
+  },
+  {
+    "end_seconds": 2470.4400024414062,
+    "segment_id": "seg-0066",
+    "start_seconds": 2431.840000152588,
+    "text": "I think, isn't that a little bit more challenging? Yeah, it is. Just I was on a call before we started recording the podcast. That was one of the issues that we discussed, that part of building a good AI system today, like every AI system, is how do you create your evals, your evaluations and benchmarks and to understand what you're doing well. And sometimes what happens when you make a change to your system, whether you can actually reproduce the same processes that you saw before. First, I think that we have to remember that LLMs, there is, of course, some random factor there since they are based on probabilistic processes."
+  },
+  {
+    "end_seconds": 2509.5800018310547,
+    "segment_id": "seg-0067",
+    "start_seconds": 2470.4800033569336,
+    "text": "But our goal is to try and make them as deterministic as possible. And I think the honest answer is that we're not there yet. And we see that what we're trying to build, when I talked about harnesses before, is really to make sure that regardless of the probabilistic nature of the LLM, we want to make sure that it actually reproduces the... can run it deterministically. Of course, when you are a vendor that creates products, it's hard to sell something that might give different answers. Honestly, I see more tolerance, I guess, to this randomality that is out there. I think that if you look back four years, it was something that no one accepted."
+  },
+  {
+    "end_seconds": 2547.4400024414062,
+    "segment_id": "seg-0068",
+    "start_seconds": 2509.599998474121,
+    "text": "And I think now people are getting used to AI systems that give you different answers. So there is maybe slightly more tolerance than what we used to see before in cybersecurity. But in the end, in cybersecurity, yeah, you can have these different results for different runs. And part of what we're doing with our engines is trying to reproduce the issue multiple times. We have to remember that some vulnerabilities also have this probabilistic nature, memory vulnerabilities, vulnerabilities that just... Yeah, I mean, vulnerability can... You can run the exploit, or just one out of ten, on average, just one out of ten runs will succeed."
+  },
+  {
+    "end_seconds": 2586.9400024414062,
+    "segment_id": "seg-0069",
+    "start_seconds": 2547.479995727539,
+    "text": "So you have two different mechanisms here that are probabilistic, and that makes it even harder to run. But yeah, it's part of the challenges that we have today. It's part of the work. I think also like the Frontier Labs, they invest great efforts in making the models more deterministic. Yeah, and I think this is it. I mean, it goes outside security, but just keeping it within security, I think the unlock here is people are still... They're more willing to accept the less deterministic aspect on the basis that they'll still get quite a lot of things that would just never have been found"
+  },
+  {
+    "end_seconds": 2626.240005493164,
+    "segment_id": "seg-0070",
+    "start_seconds": 2586.979995727539,
+    "text": "if this had to be a completely deterministic system. So that's what you get. You get the... Yes, it's a larger pool of things to kind of sift through, but equally, some of those literally have been found to be some like crazily problematic things that SAS haven't picked up for many years, for example. So that makes sense why sort of tolerance is a little bit higher, especially at the moment, which is super interesting. As we sort of like cruise to the, I guess sort of to the end of the episode, I mean, I really like the framing again from your article, which is like, it's a very positive framing, which is that AI is available to attackers"
+  },
+  {
+    "end_seconds": 2665.5599975585938,
+    "segment_id": "seg-0071",
+    "start_seconds": 2626.279998779297,
+    "text": "as much as it is on the defense side. But the defense side is looking better, basically. And yeah, I mean, again, if I look at the zero-day clock, I really encourage anyone listening to go check it out. First of all, just to go back on what I said around, we are in 2026, apparently we are actually down to two hours on the time to exploit. So that's just the fact we're not at one yet. So that's why it hadn't been ticked off. But I look at the chart again, it's like, oh, wow, we're down to two hours. So it's not only a day, but it's down to two hours. But the other thing which is interesting is that the exploit rate, so this is like percentage of all published CVEs that are confirmed exploited in the wild"
+  },
+  {
+    "end_seconds": 2700,
+    "segment_id": "seg-0072",
+    "start_seconds": 2665.5799865722656,
+    "text": "versus CVE volume has actually dropped, which kind of backs up, I think, your sort of positive thesis there, right? Where like actually now in 2026, it's down to like, the exploit rate is down to 0.25%. That's like, just to give some relative terms, that's down from 2.2% in 2021. So yeah, that's really interesting. That does kind of suggest that AI being available is actually improving things. Yeah, maybe by the time the episode is over, or, you know, it will be, the exploit time will be shorter. But I think that's it."
+  }
+]

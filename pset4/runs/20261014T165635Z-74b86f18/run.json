@@ -1,0 +1,11 @@
+{
+  "run_id": "20261014T165635Z-74b86f18",
+  "started_at": "2026-10-14T16:56:35.631272Z",
+  "as_of_date": "2026-10-14",
+  "mode": "live",
+  "previous_run_id": "20261013T035421Z-98ff50c1",
+  "phase": "editorial",
+  "development": false,
+  "max_audio_minutes": 45.0,
+  "model": "gpt-4.1-mini"
+}

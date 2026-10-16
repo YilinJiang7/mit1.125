@@ -1,0 +1,133 @@
+{
+  "stage": "fetch-youtube",
+  "status": "failed",
+  "exit_code": 1,
+  "input_count": 3,
+  "output_count": 3,
+  "started_at": "2026-10-13T03:54:22.769214Z",
+  "finished_at": "2026-10-13T03:54:25.222246Z",
+  "tools": [
+    "python3",
+    "yt-dlp"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [
+    {
+      "source_id": "fireship-yt",
+      "status": "failed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "failed",
+          "message": "HTTPError: HTTP 404"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 2,
+          "status": "failed",
+          "message": "HTTPError: HTTP 404"
+        }
+      ],
+      "message": "HTTPError: HTTP 404"
+    },
+    {
+      "source_id": "github-yt",
+      "status": "failed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "failed",
+          "message": "HTTPError: HTTP 500"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 2,
+          "status": "failed",
+          "message": "HTTPError: HTTP 404"
+        }
+      ],
+      "message": "HTTPError: HTTP 404"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "theo-yt",
+      "status": "completed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "completed"
+        }
+      ],
+      "output_count": 3
+    },
+    {
+      "source_id": "fireship-yt",
+      "status": "failed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "failed",
+          "message": "HTTPError: HTTP 404"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 2,
+          "status": "failed",
+          "message": "HTTPError: HTTP 404"
+        }
+      ],
+      "message": "HTTPError: HTTP 404"
+    },
+    {
+      "source_id": "github-yt",
+      "status": "failed",
+      "attempts": [
+        {
+          "endpoint": "handle",
+          "attempt": 1,
+          "status": "completed"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 1,
+          "status": "failed",
+          "message": "HTTPError: HTTP 500"
+        },
+        {
+          "endpoint": "channel-rss",
+          "attempt": 2,
+          "status": "failed",
+          "message": "HTTPError: HTTP 404"
+        }
+      ],
+      "message": "HTTPError: HTTP 404"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "create-series",
+  "status": "failed",
+  "exit_code": 1,
+  "input_count": 44,
+  "output_count": null,
+  "started_at": "2026-10-13T04:01:51Z",
+  "finished_at": "2026-10-13T04:03:20.783548Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [
+    {
+      "stage": "create-briefs",
+      "message": "stage returned exit 1"
+    }
+  ]
+}

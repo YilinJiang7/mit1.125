@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EYwWtTIKfg9kxfC1egdV3Br8niL5R",
+  "object": "chat.completion",
+  "created": 1791996847,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"reject\",\"reason\":\"This podcast episode and transcript focus on microservices, distributed systems, and software architecture with Sam Newman, with no discussion or evidence about AI coding agents, their use by learners, or effects on programming education. It does not address the publication's scope or audience needs.\",\"piece_ids\":[],\"strongest_claim\":\"Sam Newman explains the origins and principles of microservices and distributed systems resilience.\",\"evidence_type\":\"first_hand\",\"perspective\":\"other\",\"commercial_incentive\":false}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4945,
+    "completion_tokens": 102,
+    "total_tokens": 5047,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_13db938a58"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EYwe6sh2gMmyzoiKjpkothwLg0see",
+  "object": "chat.completion",
+  "created": 1791997294,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"reject\",\"reason\":\"The item is a technical blog post about profiling a Python web-edit app using Python 3.15's profiler, focusing on performance details like flame graphs and heatmaps. It does not discuss AI coding agents, their use, impact on learners, or coding workflows relevant to beginner programmers using agents, so it is off-topic for Apprentice Mode.\",\"piece_ids\":[],\"strongest_claim\":\"Profiling the web-edit app with Python 3.15's built-in sampling profiler reveals that mixed line-ending preservation dominates CPU usage.\",\"evidence_type\":\"data\",\"perspective\":\"practitioner\",\"commercial_incentive\":false}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4066,
+    "completion_tokens": 130,
+    "total_tokens": 4196,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_13db938a58"
+}

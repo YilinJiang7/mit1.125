@@ -1,0 +1,23 @@
+{
+  "stage": "store-upsert",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 49,
+  "output_count": 49,
+  "started_at": "2026-10-14T17:00:43.653260Z",
+  "finished_at": "2026-10-14T17:00:43.684716Z",
+  "tools": [
+    "python3",
+    "sqlite3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "store_counts": {
+    "items": 64,
+    "versions": 76,
+    "observations": 93
+  },
+  "read_only_replay": false
+}

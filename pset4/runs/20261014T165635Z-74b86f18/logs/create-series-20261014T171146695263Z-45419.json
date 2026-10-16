@@ -1,0 +1,19 @@
+{
+  "stage": "create-series",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 64,
+  "output_count": 3,
+  "started_at": "2026-10-14T17:09:09Z",
+  "finished_at": "2026-10-14T17:11:46.695285Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "resumed_from": "write_content",
+  "reason": "User-requested resume from write_content using saved upstream artifacts."
+}

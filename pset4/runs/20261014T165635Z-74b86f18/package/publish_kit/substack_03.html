@@ -1,0 +1,75 @@
+<!-- As-of date: 2026-10-14; run ID: 20261014T165635Z-74b86f18 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Learners Should Work with Coding Agents Now: Guide to Delegation, Review, and Cost Management</title>
+<style>
+body { max-width: 48rem; margin: 2rem auto; padding: 0 1.25rem; color: #222; background: #fff; font: 18px/1.65 Georgia, serif; }
+h1 { font-size: 2rem; line-height: 1.2; }
+h2 { font-size: 1.35rem; line-height: 1.3; margin-top: 2rem; }
+.subtitle { font-size: 1.1rem; }
+.as-of, .source { font-size: .9rem; }
+sup { font-size: .7em; line-height: 0; }
+sup + sup { margin-left: .2em; }
+a { color: #174c87; }
+code { font-size: .85em; }
+li { margin-bottom: .7rem; }
+</style>
+</head>
+<body>
+<main><article>
+<header>
+<h1>How Learners Should Work with Coding Agents Now: Guide to Delegation, Review, and Cost Management</h1>
+<p class="subtitle">Guide agents, review their work, manage costs, and watch research.</p>
+<p class="as-of">As of 2026-10-14</p>
+</header>
+<div class="article-body">
+<p>Coding agents like GitHub Copilot, Claude Code, and Codex increasingly plan, edit, and run code. For learners, they can speed up exploration, but delegation still requires knowing what to check and how to manage costs and reliability.</p>
+<p>This edition explains how learners can best work with coding agents today. The key points are: provide agents with clear project-specific instructions; carefully review their outputs due to silent failure risks; manage token costs by choosing models wisely; and watch research on pre-execution intervention. HiSentinel is not a tool learners can adopt from its preprint results. These practices balance delegation with active oversight and cost awareness.</p>
+<h2>Provide Clear Project Context and Instructions</h2>
+<p>Give agents your project’s rules. GitHub Copilot supports a <code>.github/copilot-instructions.md</code> file containing repository-wide architecture preferences, naming conventions, and testing expectations. This reduces repeated explanations and helps produce more relevant code <sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[1]</a></sup><sup><a class="citation" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">[2]</a></sup>.</p>
+<p>Start with one convention and observe Copilot’s next task. “Agent skills” support repeatable procedures, while “custom agents” handle broader tasks spanning multiple files <sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[1]</a></sup><sup><a class="citation" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">[2]</a></sup>.</p>
+<p>Simon Willison built a blog feature almost entirely by voice with Codex, then reviewed and adjusted the code before deploying. His example illustrates delegation with clear goals and context, followed by careful review <sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[1]</a></sup><sup><a class="citation" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">[2]</a></sup>.</p>
+<h2>Review Agent Outputs Carefully: Beware Silent Failures</h2>
+<p>A major risk with coding agents is silent failure. Normally, software failures are loud—error messages, failed tests, or non-zero exit codes signal problems. These help build trust in tools.</p>
+<p>Unattended agents can exit successfully (exit 0) despite producing no useful output. In this “silent green exit,” downstream systems and users see a success signal even though the agent has not completed the work <sup><a class="citation" href="https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened">[3]</a></sup>.</p>
+<p>This breaks the trust feedback loop: an agent’s success signal may be a self-assessment rather than verification. Review outputs yourself instead of relying solely on exit codes or passing tests <sup><a class="citation" href="https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened">[3]</a></sup>.</p>
+<p>Willison also spent time reviewing and fixing agent-generated code before deploying. His example reinforces the need for review rather than reliance on success signals <sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[1]</a></sup><sup><a class="citation" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">[2]</a></sup><sup><a class="citation" href="https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened">[3]</a></sup>.</p>
+<h2>Manage Token Costs by Choosing Models Wisely</h2>
+<p>Using coding agents involves token costs—each input and output token processed costs money. New models vary widely in price and token efficiency.</p>
+<p>For example, Google’s Gemini 4 Argon model launched at $2 per million input tokens and $10 per million output tokens, half or less the price of some other leading models like Claude Opus 5.5 or GPT-6 Astra. However, Argon’s price is set to double soon, matching competitors <sup><a class="citation" href="https://simonwillison.net/2026/Oct/13/llm-gemini">[4]</a></sup><sup><a class="citation" href="https://www.youtube.com/watch?v=vRS2leJLAI0&amp;t=738">[5]</a></sup>.</p>
+<p>Total cost also depends on tokens used per task. A cheaper model that uses more tokens may cost more overall. Argon’s benchmark cost-performance results are relevant to budget-conscious learners <sup><a class="citation" href="https://simonwillison.net/2026/Oct/13/llm-gemini">[4]</a></sup><sup><a class="citation" href="https://www.youtube.com/watch?v=vRS2leJLAI0&amp;t=738">[5]</a></sup>.</p>
+<p>Choosing the right model means balancing cost, speed, and token efficiency. Learners should watch pricing and performance trends and pick models that fit their workload and budget to avoid unexpectedly high bills.</p>
+<h2>HiSentinel Is Research Worth Watching</h2>
+<p>The HiSentinel authors describe lightweight intervention sentinels in a non-peer-reviewed arXiv preprint. Before an agent acts, the sentinel can allow, redirect, or pause it for human help <sup><a class="citation" href="https://arxiv.org/abs/2609.39957v1">[6]</a></sup>.</p>
+<p>On their own benchmarks, the authors report task completion improvements of up to 14% with competitive token usage. This is research worth watching; learners cannot adopt HiSentinel from these results, and learner benefits have not been established <sup><a class="citation" href="https://arxiv.org/abs/2609.39957v1">[6]</a></sup>.</p>
+<p>Thariq Shihipar, an Anthropic employee, describes Anthropic’s own product, Claude Code. He recommends clear effort and verification guidance to avoid costly prompting loops and rate limits. This is vendor advice with a commercial interest, not an independent evaluation <sup><a class="citation" href="https://www.latent.space/p/thariq">[7] 21:52</a></sup><sup><a class="citation" href="https://www.latent.space/p/thariq">[8] 29:44</a></sup>.</p>
+<h2>What to Watch Next</h2>
+<p>Learners should watch advances in agent autonomy, cost control, and operability features. Operability includes observability of agent decisions, cost control mechanisms, model routing and fallback strategies, and kill switches to stop agents quickly if needed <sup><a class="citation" href="https://stackoverflow.blog/2026/10/08/production-grade-llms-and-agents-a-field-guide">[9]</a></sup><sup><a class="citation" href="https://www.latent.space/p/thariq">[10] 14:31</a></sup>.</p>
+<p>These features provide transparency and control over agent actions and costs. As they mature, learners may trust agents with more complex tasks while managing risks.</p>
+<h2>Limitations and Cautions</h2>
+<p>Some evidence comes from experts or vendors with commercial incentives, so claims about cost and reliability may evolve quickly. Simon Willison’s voice-driven coding example is from an expert and may not generalize to beginners who lack his experience or setup.</p>
+<p>Learners should remain cautious and not over-trust agents yet. Active review and understanding of agent outputs remain essential.</p>
+<h2>One Concrete Step This Week</h2>
+<p>If you use GitHub Copilot, add one convention to <code>.github/copilot-instructions.md</code>, such as a test command or naming style. Observe how it applies that guidance in your next session to assess relevance and reduce repeated explanations <sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[1]</a></sup><sup><a class="citation" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">[2]</a></sup>.</p>
+<p>Drafted with AI assistance from a source-tracked pipeline; reviewed and corrected by the editor, Yilin Jiang.</p>
+</div>
+<p><strong>Watch the video:</strong> <a href="VIDEO_LINK">VIDEO_LINK</a></p>
+<section aria-label="Sources">
+<h2>Sources</h2>
+<p class="source" id="source-1"><strong>[1]</strong> <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">GitHub Copilot app for Beginners: How to teach Copilot about your codebase</a> — GitHub; published 2026-10-12; Written source; no timestamp.</p>
+<p class="source" id="source-2"><strong>[2]</strong> <a href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">A new feature for my blog, built using my voice</a> — Simon Willison; published 2026-10-09; Written source; no timestamp.</p>
+<p class="source" id="source-3"><strong>[3]</strong> <a href="https://stackoverflow.blog/2026/10/08/a-green-exit-code-is-not-evidence-that-the-work-happened">A green exit code is not evidence that the work happened</a> — Stack Overflow; published 2026-10-08; Written source; no timestamp.</p>
+<p class="source" id="source-4"><strong>[4]</strong> <a href="https://simonwillison.net/2026/Oct/13/llm-gemini">llm-gemini 0.35</a> — Simon Willison; published 2026-10-13; Written source; no timestamp.</p>
+<p class="source" id="source-5"><strong>[5]</strong> <a href="https://www.youtube.com/watch?v=vRS2leJLAI0&amp;t=738">I thought AI was gonna get cheaper? (12:18–12:56)</a> — Theo; published 2026-10-12; Timestamp 12:18–12:56.</p>
+<p class="source" id="source-6"><strong>[6]</strong> <a href="https://arxiv.org/abs/2609.39957v1">Learning When and How to Intervene: A Hindsight-Distilled Sentinel for Coding Agents</a> — arXiv; published 2026-09-30; Written source; no timestamp.</p>
+<p class="source" id="source-7"><strong>[7]</strong> <a href="https://www.latent.space/p/thariq">Claude Code’s Next Era — Thariq Shihipar, Anthropic (21:52–23:43)</a> — Latent Space; published 2026-09-29; Timestamp 21:52–23:43.</p>
+<p class="source" id="source-8"><strong>[8]</strong> <a href="https://www.latent.space/p/thariq">Claude Code’s Next Era — Thariq Shihipar, Anthropic (29:44–30:31)</a> — Latent Space; published 2026-09-29; Timestamp 29:44–30:31.</p>
+<p class="source" id="source-9"><strong>[9]</strong> <a href="https://stackoverflow.blog/2026/10/08/production-grade-llms-and-agents-a-field-guide">Production-grade LLMs and agents: a field guide</a> — Stack Overflow; published 2026-10-08; Written source; no timestamp.</p>
+<p class="source" id="source-10"><strong>[10]</strong> <a href="https://www.latent.space/p/thariq">Claude Code’s Next Era — Thariq Shihipar, Anthropic (14:31–15:14)</a> — Latent Space; published 2026-09-29; Timestamp 14:31–15:14.</p>
+</section>
+</article></main>
+</body>
+</html>

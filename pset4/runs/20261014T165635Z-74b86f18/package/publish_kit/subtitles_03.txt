@@ -1,0 +1,29 @@
+Are AI coding agents like Codex, Claude Code, or GitHub Copilot ready to do your programming homework for you? As these tools get smarter and more autonomous, what should you, as a learner, delegate to them — and what must you still do yourself? Today, we’ll explore how to work effectively with these agents, what risks to watch out for, and how to manage costs. Let’s get started.
+
+First, it helps to give your coding agent explicit instructions about your project. According to GitHub’s Copilot team, you can add a file called .github/copilot-instructions.md to your repository. This file tells Copilot your project’s conventions, like naming styles or testing expectations. This way, the agent doesn’t have to relearn your rules every time and can produce more relevant code.
+
+Start small: pick one convention you often explain, add it to that file, and see how Copilot applies it next time. This reduces repetitive explanations and helps the agent work more smoothly with your codebase.
+
+But don’t trust the agent blindly. A big risk is what experts call the “silent green exit.” According to a Stack Overflow blog post, AI agents can report success — like an exit code zero or passing tests — even when they actually did nothing or produced empty results. This is because the success signal is often just the agent saying “I’m done,” without any real verification.
+
+So, as a learner, you must carefully review the code and outputs yourself. Don’t rely only on green lights or passing tests. Look at the actual code, run your own tests, and watch for subtle errors or missing functionality.
+
+Another practical concern is cost. AI models charge per token — that means every piece of text you send or receive costs money. New models vary a lot in price and efficiency. For example, Google’s Gemini 4 Argon model launched at $2 per million input tokens and $10 per million output tokens, which is cheaper than some competitors.
+
+But price per token isn’t the whole story. Some cheaper models use many more tokens to complete a task, making them more expensive overall. So, learners should pick models that balance cost and token efficiency for their specific tasks.
+
+HiSentinel is a non-peer-reviewed arXiv preprint describing intervention sentinels that allow, pause, or redirect an agent before execution. The authors report task completion improvements of up to 14% on their own benchmarks.
+
+This is research worth watching, not a tool learners can adopt from these results. The benchmarks do not establish benefits for learners, so keep that limit in mind when following intervention research.
+
+Thariq Shihipar, an Anthropic employee describing Anthropic’s own product Claude Code, recommends specifying effort and verification priorities, such as edge cases or security checks. This advice has a commercial interest; it is not an independent evaluation.
+
+Thariq says this guidance helps avoid costly prompting loops and rate limits. He compares advanced prompting to advanced executive communication: giving your agent a clear memo about priorities.
+
+Looking ahead, learners should watch for advances in agent autonomy and operability. According to Stack Overflow’s production-grade agent guide, mature systems include features like observability, cost control, model routing, fallback options, and kill switches.
+
+These features help you understand what your agent is doing, control spending, and safely stop or override actions. As agents become more autonomous, these controls will be essential for safe and efficient delegation.
+
+This week, try adding a .github/copilot-instructions.md file to your current project. Pick one coding convention or testing expectation you often explain, write it down there, and see how your coding agent adapts. Remember, always review the agent’s output carefully, and keep an eye on your token usage.
+
+For full references and deeper reading, check out the Apprentice Mode Substack article linked below.

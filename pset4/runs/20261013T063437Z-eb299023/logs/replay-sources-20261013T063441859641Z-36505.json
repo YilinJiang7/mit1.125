@@ -1,0 +1,17 @@
+{
+  "stage": "replay-sources",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 44,
+  "output_count": 44,
+  "started_at": "2026-10-13T06:34:37Z",
+  "finished_at": "2026-10-13T06:34:41.860012Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": []
+}

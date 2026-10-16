@@ -1,0 +1,70 @@
+<!-- As-of date: 2026-10-14; run ID: 20261014T165635Z-74b86f18 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Changed This Month: Voice-Driven Development, New Models, and Project-Aware Agents</title>
+<style>
+body { max-width: 48rem; margin: 2rem auto; padding: 0 1.25rem; color: #222; background: #fff; font: 18px/1.65 Georgia, serif; }
+h1 { font-size: 2rem; line-height: 1.2; }
+h2 { font-size: 1.35rem; line-height: 1.3; margin-top: 2rem; }
+.subtitle { font-size: 1.1rem; }
+.as-of, .source { font-size: .9rem; }
+sup { font-size: .7em; line-height: 0; }
+sup + sup { margin-left: .2em; }
+a { color: #174c87; }
+code { font-size: .85em; }
+li { margin-bottom: .7rem; }
+</style>
+</head>
+<body>
+<main><article>
+<header>
+<h1>What Changed This Month: Voice-Driven Development, New Models, and Project-Aware Agents</h1>
+<p class="subtitle">Voice workflows, model costs, and project context for learners.</p>
+<p class="as-of">As of 2026-10-14</p>
+</header>
+<div class="article-body">
+<p>This month’s updates in AI coding agents expand what learners can delegate but also require new habits for review and cost management. An expert developer built a complex blog feature almost entirely by voice using Codex, showing voice-driven coding can handle multi-file, multi-step tasks. Meanwhile, the new Gemini 4 Argon model offers competitive pricing and performance, giving learners more options to balance cost and capability. GitHub Copilot added project-aware features that help agents understand codebase conventions, reducing repetitive explanations and improving output relevance <sup><a class="citation" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">[1]</a></sup><sup><a class="citation" href="https://simonwillison.net/2026/Oct/13/llm-gemini">[2]</a></sup><sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[3]</a></sup>.</p>
+<p>Together, these developments mean learners can delegate more complex coding tasks but must still actively guide agents, review their output, and manage costs. Agents are more capable but not fully autonomous, so human oversight remains essential.</p>
+<h2>Voice-Driven Coding: Complex Features by Speech</h2>
+<p>Simon Willison, an expert developer, built a new “Newsletters” page for his blog almost entirely by voice, interacting with Codex in a local environment while cooking dinner. Over about half an hour, the model asked clarifying questions and modified code across multiple files, including models, migrations, views, templates, and import functions. The feature integrated with the site’s search engine and handled private and public newsletters differently. Willison then reviewed the code in a pull request, made fixes by typing, and deployed the feature <sup><a class="citation" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">[1]</a></sup>.</p>
+<p>This shows voice-driven coding can support multi-file, multi-step workflows for experienced users. However, Willison noted it is better suited for multitasking or prototyping than daily use, requiring visual previews and manual review to ensure correctness. Beginners should not expect to rely solely on voice commands for all coding tasks <sup><a class="citation" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">[1]</a></sup>.</p>
+<h2>Gemini 4 Argon: Pricing and Performance</h2>
+<p>Gemini 4 Argon is a new LLM available via the Gemini API and a $100/month subscription. At launch, its pricing is $2 per million input tokens and $10 per million output tokens, matching GPT-6 Sol, half the price of Claude Opus 5.5, and one-fifth the price of Claude Fable 5.1 and GPT-6 Astra. However, prices will double on December 1st, making Argon as expensive as Opus 5.5 <sup><a class="citation" href="https://simonwillison.net/2026/Oct/13/llm-gemini">[2]</a></sup>.</p>
+<p>Raw price per token is not the full story. What matters is how many tokens a model uses to complete a task within an agentic workflow. Artificial Analysis benchmarked total costs, showing Argon is efficient, costing about $2,407 to run a benchmark, close to GLM-5.3 and cheaper than OpenAI, Anthropic, and Meta’s latest models. Theo, the video’s creator, reports competitive speed and quality from his own testing, alongside delays and hallucinations. This is one creator’s account, not an independent evaluation <sup><a class="citation" href="https://simonwillison.net/2026/Oct/13/llm-gemini">[2]</a></sup><sup><a class="citation" href="https://www.youtube.com/watch?v=NE006pkiAnk&amp;t=1830">[4]</a></sup><sup><a class="citation" href="https://www.youtube.com/watch?v=NE006pkiAnk&amp;t=0">[5]</a></sup><sup><a class="citation" href="https://www.youtube.com/watch?v=NE006pkiAnk&amp;t=782">[6]</a></sup>.</p>
+<p>Learners should balance token price, total tokens used, and output quality. Cheaper models may require more tokens or produce less accurate code, increasing review time. More expensive models might be faster or more reliable but cost more.</p>
+<h2>GitHub Copilot’s Project-Aware Features</h2>
+<p>GitHub Copilot now supports features that help it understand and follow project conventions:</p>
+<ul>
+<li><strong>Custom instructions:</strong> A <code>.github/copilot-instructions.md</code> file defines repository-wide guidance like architecture, naming, and testing expectations.</li>
+<li><strong>Agent skills:</strong> Repeatable procedures (e.g., quality checks) can be packaged as skills in <code>.github/skills/</code> and loaded when relevant.</li>
+<li><strong>Custom agents:</strong> Specialized Copilot versions for complex, multi-file tasks, with profiles in <code>.github/agents/</code>.</li>
+<li><strong>MCP servers:</strong> Connect Copilot to external tools and data sources, such as browsers for UI testing <sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[3]</a></sup>.</li>
+</ul>
+<p>These reduce repetitive explanations and improve output relevance. Adding one convention you often explain to <code>.github/copilot-instructions.md</code> can help Copilot apply it automatically in future tasks <sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[3]</a></sup>.</p>
+<p>Learners must actively guide agents by providing explicit project context to maintain code quality.</p>
+<h2>What Learners Should Know</h2>
+<p>Learners can now delegate more complex tasks, including multi-file features and project-wide changes. Voice-driven coding is useful for multitasking or prototyping but not yet a full replacement for typing workflows. New models like Gemini 4 Argon offer cost-effective options, but learners must consider both token price and usage. Copilot’s project-aware features help agents understand codebase conventions, reducing repetitive explanations and improving output relevance.</p>
+<p>However, learners still need to review agent output carefully, guide agents with instructions, and manage costs. Willison’s voice-driven example required half an hour of manual review and fixes before deployment, showing agents are not fully autonomous <sup><a class="citation" href="https://simonwillison.net/2026/Oct/13/llm-gemini">[2]</a></sup><sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[3]</a></sup><sup><a class="citation" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">[1]</a></sup>. The new Copilot features are promising but not yet independently studied for beginner workflows.</p>
+<h2>Limitations and Uncertainties</h2>
+<p>The voice-driven coding example is from an expert developer and may not generalize to beginners who lack deep codebase knowledge or review skills. Cost and performance claims about Gemini 4 Argon rely partly on vendor sources and influencer demos, which may not reflect all real-world scenarios. GitHub Copilot’s new customization features are recent, and their effects on beginners are not yet independently studied.</p>
+<p>Thus, while agents can do more, human oversight, learning, and cost management remain essential.</p>
+<h2>One Thing to Try This Week</h2>
+<p>If you use GitHub Copilot, add one project convention you often explain to <code>.github/copilot-instructions.md</code>. For example, specify your preferred naming style or testing approach. Then, on your next task, observe how Copilot applies this guidance. This small step reduces repetitive explanations and improves agent suggestions, helping you learn to guide agents effectively <sup><a class="citation" href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">[3]</a></sup>.</p>
+<p>Drafted with AI assistance from a source-tracked pipeline; reviewed and corrected by the editor, Yilin Jiang.</p>
+</div>
+<p><strong>Watch the video:</strong> <a href="VIDEO_LINK">VIDEO_LINK</a></p>
+<section aria-label="Sources">
+<h2>Sources</h2>
+<p class="source" id="source-1"><strong>[1]</strong> <a href="https://simonwillison.net/2026/Oct/9/built-using-my-voice">A new feature for my blog, built using my voice</a> — Simon Willison; published 2026-10-09; Written source; no timestamp.</p>
+<p class="source" id="source-2"><strong>[2]</strong> <a href="https://simonwillison.net/2026/Oct/13/llm-gemini">llm-gemini 0.35</a> — Simon Willison; published 2026-10-13; Written source; no timestamp.</p>
+<p class="source" id="source-3"><strong>[3]</strong> <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase">GitHub Copilot app for Beginners: How to teach Copilot about your codebase</a> — GitHub; published 2026-10-12; Written source; no timestamp.</p>
+<p class="source" id="source-4"><strong>[4]</strong> <a href="https://www.youtube.com/watch?v=NE006pkiAnk&amp;t=1830">So I&#x27;ve been testing Gemini 4... (30:30–31:09)</a> — Theo; published 2026-10-14; Timestamp 30:30–31:09.</p>
+<p class="source" id="source-5"><strong>[5]</strong> <a href="https://www.youtube.com/watch?v=NE006pkiAnk&amp;t=0">So I&#x27;ve been testing Gemini 4... (00:00–00:39)</a> — Theo; published 2026-10-14; Timestamp 00:00–00:39.</p>
+<p class="source" id="source-6"><strong>[6]</strong> <a href="https://www.youtube.com/watch?v=NE006pkiAnk&amp;t=782">So I&#x27;ve been testing Gemini 4... (13:02–13:40)</a> — Theo; published 2026-10-14; Timestamp 13:02–13:40.</p>
+</section>
+</article></main>
+</body>
+</html>

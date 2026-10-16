@@ -1,0 +1,48 @@
+{
+  "stage": "create-briefs",
+  "status": "failed",
+  "exit_code": 1,
+  "input_count": 44,
+  "output_count": 0,
+  "started_at": "2026-10-13T04:02:59.049514Z",
+  "finished_at": "2026-10-13T04:03:20.719411Z",
+  "tools": [
+    "python3",
+    "OpenAI API"
+  ],
+  "models": [
+    {
+      "model": "gpt-4.1-mini",
+      "input_tokens": 27387,
+      "output_tokens": 1785,
+      "cost_usd": 0.012927600000000001,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261013T035421Z-98ff50c1/llm/create-briefs/2026-10-13T040259745453Z-7846801c.request.json",
+      "response_path": "runs/20261013T035421Z-98ff50c1/llm/create-briefs/2026-10-13T040259745453Z-7846801c.response.json",
+      "cached_input_tokens": 2944
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "input_tokens": 31791,
+      "output_tokens": 1783,
+      "cost_usd": 0.0073132,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261013T035421Z-98ff50c1/llm/create-briefs/2026-10-13T040310456737Z-cf605c80.request.json",
+      "response_path": "runs/20261013T035421Z-98ff50c1/llm/create-briefs/2026-10-13T040310456737Z-cf605c80.response.json",
+      "cached_input_tokens": 27520
+    }
+  ],
+  "cost_usd": 0.0202408,
+  "cost_is_estimate": true,
+  "errors": [
+    {
+      "message": "Brief validation failed after one repair: Series must use feed, youtube and podcast; got feed, podcast"
+    }
+  ],
+  "reference_catalog_used": true,
+  "repair_count": 1
+}

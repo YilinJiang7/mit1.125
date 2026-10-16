@@ -1,0 +1,29 @@
+What Changed This Month: Voice-Driven Development, New Models, and Project-Aware Agents
+
+Description:
+Voice-driven coding, new model cost tradeoffs, and GitHub Copilot’s project features affect what learning programmers can delegate. This video explains why expert workflows and Theo’s own testing still call for context, review, and cost awareness.
+
+Read the full article: ARTICLE_LINK
+
+Sources:
+[1] A new feature for my blog, built using my voice — Simon Willison; published 2026-10-09; written source; no timestamp
+https://simonwillison.net/2026/Oct/9/built-using-my-voice
+
+[2] llm-gemini 0.35 — Simon Willison; published 2026-10-13; written source; no timestamp
+https://simonwillison.net/2026/Oct/13/llm-gemini
+
+[3] GitHub Copilot app for Beginners: How to teach Copilot about your codebase — GitHub; published 2026-10-12; written source; no timestamp
+https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase
+
+[4] So I've been testing Gemini 4... — Theo; published 2026-10-14; 30:30–31:09
+https://www.youtube.com/watch?v=NE006pkiAnk&t=1830
+
+[5] So I've been testing Gemini 4... — Theo; published 2026-10-14; 00:00–00:39
+https://www.youtube.com/watch?v=NE006pkiAnk&t=0
+
+[6] So I've been testing Gemini 4... — Theo; published 2026-10-14; 13:02–13:40
+https://www.youtube.com/watch?v=NE006pkiAnk&t=782
+
+As-of date: 2026-10-14
+
+Narration drafted with AI assistance from a source-tracked pipeline; reviewed by the editor, Yilin Jiang. Voice/visuals generated with Google Vids (or HeyGen).

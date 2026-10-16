@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EYwdxiKgFT34ZUeAaIsxmxDltXvxz",
+  "object": "chat.completion",
+  "created": 1791997285,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"reject\",\"reason\":\"The item is a general introduction to Rust programming language and community links, with no content about AI coding agents or their impact on learners, productivity, or workflows. It does not address any aspect of the editorial policy's scope or audience needs.\",\"piece_ids\":[],\"strongest_claim\":\"Rust is an open-source systems programming language focused on performance, type safety, and compile-time memory safety without the runtime overhead of garbage collection.\",\"evidence_type\":\"assertion\",\"perspective\":\"other\",\"commercial_incentive\":false}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3396,
+    "completion_tokens": 110,
+    "total_tokens": 3506,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_13db938a58"
+}

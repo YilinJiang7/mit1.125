@@ -1,0 +1,17 @@
+{
+  "stage": "run-policy-compare",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": null,
+  "output_count": 44,
+  "started_at": "2026-10-14T16:53:23Z",
+  "finished_at": "2026-10-14T16:54:42.036425Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": []
+}

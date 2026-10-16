@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EYweZyTOCSd2NnGrUeArnx7MeXoR2",
+  "object": "chat.completion",
+  "created": 1791997323,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"accept\",\"reason\":\"Simon Willison demonstrates a practical workflow for safely editing sensitive files using a web app built with Codex and GPT-6 Astra, avoiding credential exposure to the LLM. This first-hand demo shows a concrete habit learners can adopt to manage secrets securely when using coding agents remotely.\",\"piece_ids\":[\"01\"],\"strongest_claim\":\"Simon Willison built a Python web app for editing files over a secure network to avoid exposing credentials to the LLM during remote coding sessions.\",\"evidence_type\":\"first_hand\",\"perspective\":\"practitioner\",\"commercial_incentive\":false}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4421,
+    "completion_tokens": 121,
+    "total_tokens": 4542,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": "fp_13db938a58"
+}

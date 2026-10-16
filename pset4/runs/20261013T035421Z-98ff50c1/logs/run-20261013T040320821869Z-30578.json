@@ -1,0 +1,26 @@
+{
+  "stage": "run",
+  "status": "failed",
+  "exit_code": 1,
+  "input_count": null,
+  "output_count": 44,
+  "started_at": "2026-10-13T03:54:21Z",
+  "finished_at": "2026-10-13T04:03:20.821888Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [
+    {
+      "stage": "collect-sources",
+      "message": "stage returned exit 1"
+    },
+    {
+      "stage": "create-series",
+      "message": "stage returned exit 1"
+    }
+  ]
+}

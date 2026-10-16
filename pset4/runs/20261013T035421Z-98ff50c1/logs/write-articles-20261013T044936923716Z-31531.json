@@ -1,0 +1,91 @@
+{
+  "stage": "write-articles",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 3,
+  "output_count": 3,
+  "started_at": "2026-10-13T04:48:43.668043Z",
+  "finished_at": "2026-10-13T04:49:36.923932Z",
+  "tools": [
+    "python3",
+    "OpenAI API"
+  ],
+  "models": [
+    {
+      "model": "gpt-4.1-mini",
+      "input_tokens": 11591,
+      "output_tokens": 1588,
+      "cost_usd": 0.007177200000000001,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044844218971Z-1077a93d.request.json",
+      "response_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044844218971Z-1077a93d.response.json",
+      "cached_input_tokens": 0
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "input_tokens": 13219,
+      "output_tokens": 1432,
+      "cost_usd": 0.0036620000000000003,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044853371761Z-20137ded.request.json",
+      "response_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044853371761Z-20137ded.response.json",
+      "cached_input_tokens": 13056
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "input_tokens": 8670,
+      "output_tokens": 1602,
+      "cost_usd": 0.0060312000000000004,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044901550585Z-2ec5ea06.request.json",
+      "response_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044901550585Z-2ec5ea06.response.json",
+      "cached_input_tokens": 0
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "input_tokens": 10312,
+      "output_tokens": 1455,
+      "cost_usd": 0.0037264,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044910786419Z-f5f29061.request.json",
+      "response_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044910786419Z-f5f29061.response.json",
+      "cached_input_tokens": 9088
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "input_tokens": 15501,
+      "output_tokens": 1664,
+      "cost_usd": 0.0088628,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044918733537Z-093b6696.request.json",
+      "response_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044918733537Z-093b6696.response.json",
+      "cached_input_tokens": 0
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "input_tokens": 17251,
+      "output_tokens": 1474,
+      "cost_usd": 0.0041516,
+      "cost_is_estimate": true,
+      "attempt": 1,
+      "status": "completed",
+      "request_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044928358222Z-d5b3a999.request.json",
+      "response_path": "runs/20261013T035421Z-98ff50c1/llm/write-articles/2026-10-13T044928358222Z-d5b3a999.response.json",
+      "cached_input_tokens": 17024
+    }
+  ],
+  "cost_usd": 0.0336112,
+  "cost_is_estimate": true,
+  "errors": [],
+  "repair_count": 3
+}

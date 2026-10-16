@@ -1,0 +1,356 @@
+[
+  {
+    "end_seconds": 39.04,
+    "segment_id": "seg-0001",
+    "start_seconds": 0.08,
+    "text": "It finally happened. A lab that isn't named OpenAI or Anthropic shipped a model that is in the same tier as Fable and Astra. I know this sounds insane, but it really did happen. Meta's back in a way I never expected to see. I know I was pretty hyped about Muse Spark 1.2. I didn't really cover 13, but it was a decent model. I did not expect Muse Wonder to blow me away the ways that it has. I have been using this model for a few days now, and I really am impressed with it. And when you see the benchmarks, you'll understand. for example, he Wait, that is a sinfully ugly vibecoded UI that Muse made when I was testing it. That That can't be right. Okay, let's go to the benchmark."
+  },
+  {
+    "end_seconds": 78.15899999999999,
+    "segment_id": "seg-0002",
+    "start_seconds": 39.04,
+    "text": "right. Okay, let's go to the benchmark. Oh, that's a pile of horrible things people have been saying about me because I like the model. Theo got super paid off. Zero credibility. Uh, kind of difficult to believe that Meta didn't pay you to say that. Why is this guy tweeting like Meta paid him? How much did they pay you from to Tibo? Not not sure who that is, but uh the real numbers are looking pretty good. Not only has Muse Wonder and Wonderful been a huge jump over where Spark 1.3 was, the Wonder full max run appears to have beaten all OpenAI models on artificial analysis, putting them in third place overall, which is pretty nuts. So, what's up with this model? Has it really dethrone to OpenAI for the second place"
+  },
+  {
+    "end_seconds": 117.36,
+    "segment_id": "seg-0003",
+    "start_seconds": 78.15899999999999,
+    "text": "dethrone to OpenAI for the second place lab? Is it really as good as these benches seem to indicate? Am I full of crap? Am I just paid off to say these things? Well, I let you guys know Meta has not paid me a scent. I am lucky to have early tested this, but the only people paying me for this video are today's sponsor. You've probably noticed the recent surge of personal assistant type tools. Things like the Meta Muse product, Grockbot, Dots from OpenAI, and more. They all have something in common. They're not relying on the knowledge the model already has. If the model could only respond with what it already knew, these tools would be useless. They need detailed, up-to-date context on the things that they are working on and thinking about. The way they all do that is the same. They do it through the web. And if they did it through today's sponsor browser base, they'd probably be much better. I can't even begin to tell"
+  },
+  {
+    "end_seconds": 157.12,
+    "segment_id": "seg-0004",
+    "start_seconds": 117.36,
+    "text": "much better. I can't even begin to tell you how many issues I've run into with tools like Rockbot, where sure, they can navigate the web and find things, but as soon as you need them to sign into one of your accounts, you're kind of screwed. And you often end up having to do crazy things like spinning up a full virtual machine or giving them a dedicated Mac Mini. Browserbase is far ahead with all of this to the point where I honestly hope that XAI or OpenAI buys them because their credential system is great and integrates directly with one password allowing your agents to sign into your things in their browser. And if you don't need proper navigation, you just want to find some things on the web, the search API is great. Trivial for both you and your agents to get the data they need from the web. And if they want to get more detail from a web page, the fetch API is here and ready to go, too. It lets you"
+  },
+  {
+    "end_seconds": 195.599,
+    "segment_id": "seg-0005",
+    "start_seconds": 157.12,
+    "text": "here and ready to go, too. It lets you put in a URL and get back HTML, JSON, or markdown, whatever your agent prefers. Considering the fact that 85% of the APIs on the web can't be accessed through traditional curls, this is essential to making your agents more capable. Give your agents the whole web at soy.link/browserbase. Welcome back. I am going to do something a bit different here and start with the negative because I just want to get it out of the way. The first thing I hate about this model release is that it's not one model, it's two. There is Muse Wonder and Muse Wonderful Full. Yes, Wonderful Full, like a pun, but it's Wonder Space Full. Normally, this wouldn't be too big a deal, just cringe"
+  },
+  {
+    "end_seconds": 235.28,
+    "segment_id": "seg-0006",
+    "start_seconds": 195.599,
+    "text": "wouldn't be too big a deal, just cringe naming, but the gap between these models is insane. Muse Wonder runs at around 120 TPS. The full version runs at around 50, so it's clearly a different, bigger model. This also wouldn't be that cringe of a thing outside of the naming except for the fact that only Muse Wonder is available over API and has a price. The Wonder full version is only available through a Muse code subscription. This makes it really hard to measure in particular to do price versus performance because there is no way to measure the full version of the model in terms of price of performance because they never gave us a price for it. Another kind of cringe thing is they didn't put pricing info anywhere in"
+  },
+  {
+    "end_seconds": 274.56,
+    "segment_id": "seg-0007",
+    "start_seconds": 235.28,
+    "text": "didn't put pricing info anywhere in their announcement post. They did show off how good the numbers are for the full max runs they did, showing that it beat out Fable, Astra, and Opus 55 in a large number of benches. Memory seems to be one of the main focuses in this model. They were talking about how they trained it to know how memory works during post- training to really get these ideas baked into the model, which is cool and novel and interesting. I am curious what this ends up looking like long term. The terminal bench scores are nuts. Absolutely destroying Fable 51's numbers and getting close to Astra and Opus 55s. They got a state-of-the-art in Deep Suite and SW Marathon with the full version. But again, we don't know the"
+  },
+  {
+    "end_seconds": 313.039,
+    "segment_id": "seg-0008",
+    "start_seconds": 274.56,
+    "text": "version. But again, we don't know the price. They just didn't put out the number. Apparently, they're massively constrained in compute, but it would be nice for them to at least say what it would cost so that we have those numbers to reference. It is what it is. We do have pricing for the regular Muse Wonder model. Thankfully, it's $4 per mill in, 20 per mill out in 20 cent cash reads. That puts it at a little cheaper than Opus, which kind of sucks because this isn't the full version that they showed off in a lot of the benchmarks and the one that I am particularly enjoying. This is the much smaller version. This would indicate that Wonder full version is going to be priced way higher, possibly higher than Opus 55. That is not a thing that I think would be worth"
+  },
+  {
+    "end_seconds": 350.72,
+    "segment_id": "seg-0009",
+    "start_seconds": 313.039,
+    "text": "not a thing that I think would be worth paying for at all. We have more negatives to cover and I I promise this will be worth it because once I get all of these out of the way, I can go into glaze mode and explain all of the things I love about this model because I have been really genuinely enjoying it. The other problem is this model's 3D capabilities. I'll be frank, they're not really good. You can see from this tractor demo comparing Opus 5.5 to Muse Wonderful Full that it's not very good. I will also skip to the thing I normally save until the end, which is the fish slop run, because it is also not very good. Is it as bad as Grock 4.7? No, not at all. In fact, the movement and core"
+  },
+  {
+    "end_seconds": 389.12,
+    "segment_id": "seg-0010",
+    "start_seconds": 350.72,
+    "text": "at all. In fact, the movement and core mechanics actually feel decent. It also has animations that uh I've definitely seen before. A lot of models seem to have gotten a similar data set and harness for doing the 3D training. If they did get that harness, they did some of the worst work in using it that I've seen because this model is really bad, ironically enough, at models. The things it made in Blender are absolute garbage. The way it handled the like coloring and lighting on the sides is bad, but at least like the game functions and the movement feels good, which uh Grock did not come close to. That all said, this is better than the like haiku version,"
+  },
+  {
+    "end_seconds": 428.96,
+    "segment_id": "seg-0011",
+    "start_seconds": 389.12,
+    "text": "is better than the like haiku version, but both Sonnet and Opus destroyed it. Fable obviously destroyed it, but Fable's 3D capability isn't quite as high. For what it's worth, Meta even called this out. They have a section about limitations of the model, and they specifically call out that visual and spatial reasoning, especially 3D tasks, remain a known limitation. I posted about this on Twitter already, and people were upset, so I'll double down on it here. The smartest coding model in the world would not be good at 3D stuff unless it was trained specifically for it. I really want to emphasize this point. The recent jump we have seen in the 3D capabilities in models is not because they suddenly got so good that they can do 3D. Things like 3D, things like computer use. A lot of these capabilities that we really like and are excited by aren't things that emerge"
+  },
+  {
+    "end_seconds": 468.08,
+    "segment_id": "seg-0012",
+    "start_seconds": 428.96,
+    "text": "excited by aren't things that emerge from the models getting smarter. They are specifically trained into the models in post training using environments that were created for these particular tasks. It appears as though there is a good 3D training environment that some external company made that they've been selling to the labs. I noticed this initially with Kimmy K3 when I commented on that model being surprisingly good at 3D in Blender. Since then, the models from the Frontier Labs have had a similar jump. The best place to see this though is with Fable 5.1 to Opus 5.5. Obviously, Opus 55 is better for a lot of stuff and way, way cheaper, and most importantly here, newer. Fable 5.1 is smarter sometimes, slightly dumber other times, way more expensive. But nobody would"
+  },
+  {
+    "end_seconds": 506.479,
+    "segment_id": "seg-0013",
+    "start_seconds": 468.08,
+    "text": "way more expensive. But nobody would disagree that Fable 51 is a bigger and potentially more capable model. Which is why despite the like 5% plus or minus gap between those two models, the massive jump for Opus 55's 3D capability is so impressive. But it also showcases that the smartness and intelligence of the model does not map directly to its 3D capabilities. What I'm trying to say is if a model is bad overall but good at 3D, that's kind of impressive. If a model is good overall and bad at 3D, that's still impressive. But if a model is bad overall and bad at 3D Grock 47, sorry I got a cough there, then that model probably sucks. So call me contradictory all you want here. I don't"
+  },
+  {
+    "end_seconds": 545.2,
+    "segment_id": "seg-0014",
+    "start_seconds": 506.479,
+    "text": "contradictory all you want here. I don't think this model should be used for 3D anything. And if 3D use cases are something that you care about, go subscribe to your Cloud Plan and don't complain. It's an unbelievable value for the money. And if you're here trying to find the absolute best way to spend your dollars on AI right now, it's not going to be local GPUs. is not going to be some weird budget plan from some Chinese lab and it's certainly not going to be paying for your tokens on open router. The $200 cloud code plan is unbelievably good of a value. And I guess I should address the final question, which is how much usage can you get on the $50 and $200 Muse code plans. I don't know. I haven't subscribed for either. I'm still using the API key that they sent me. That's a thing I hope to try in the future, but I do not have time and I"
+  },
+  {
+    "end_seconds": 584.32,
+    "segment_id": "seg-0015",
+    "start_seconds": 545.2,
+    "text": "future, but I do not have time and I wanted to get a video out to jump on top of all of the things I've seen people saying on this about this model because a lot of it's kind of dumb and I want to show why I like it so much. But now I think it's time for the positivity to begin a bit. This is a silly one to call out, but I benched it against Skatebench, which I haven't run in my videos for a bit because usually it shows weird things. For example, Opus 5 Max got an 84% and 5.5 Max got a 79%. So RL tends to nerf models on this. I've noticed it's a weird bench, but it's fun to see how models behave on it. The only model line to ever break 90% has been Gemini, and Gemini 31 Pro got a 96 as well as 38 flash high. Nothing else has"
+  },
+  {
+    "end_seconds": 622.56,
+    "segment_id": "seg-0016",
+    "start_seconds": 584.32,
+    "text": "well as 38 flash high. Nothing else has come close to those numbers except for now Muse Wonderful getting a 95%. This might be concerning if you know how I feel about Gemini models, but hear me out. Gemini models have this unbelievable capability to understand complex grammarss, 3D reasoning, not in the like making a 3D game sense, but in the understanding 3D transformations in its like brain, so to speak. It's also good at labeling things in vision. Like you give it a photo, say, label these things, and it can pick the right pixels and do that type of task. For some reason, all of this stuff combined turns out to make the Gemini models good at naming skateboard tricks. Muse seems to"
+  },
+  {
+    "end_seconds": 662.0,
+    "segment_id": "seg-0017",
+    "start_seconds": 622.56,
+    "text": "naming skateboard tricks. Muse seems to have some of that same weirdness baked in. And this got me scared if I'm not lying. Like I was fearful that if they had done whatever Gemini did to have this capability that it might have also nerfed the model other places. So let's take a look at some of those other places. Okay, I I lied. One more negative thing before we dive in on all of this. This model sucks at UI. It isn't just bad. It is atrocious. It's not making UIs that are like wrong the same way that Grock does, but it's making UIs that are slop the same way like Sonnet 3.7 did. So, if you want a model that is an allrounder that can do anything from debugging kernels to"
+  },
+  {
+    "end_seconds": 699.6,
+    "segment_id": "seg-0018",
+    "start_seconds": 662.0,
+    "text": "anything from debugging kernels to making beautiful UIs to building games, go back to Claude. That's where you'll find that. You're not going to find that here. So, what the hell do I like about this model if I just spent the last 10 minutes railing on it? Ah, let me show you. I'm going to start in a kind of weird place. I've been playing a game called Reskate lately. It's an open-source rapper for the version of EA Skate on Steam right now that is peer-to-peer and allows you to mod the game and play old maps and things. I've been enjoying it a lot, but the store for it, specifically Thunder Store, I noticed is very, very slow to index. It's open source and I thought it'd be interesting to throw this new model at"
+  },
+  {
+    "end_seconds": 737.8389999999999,
+    "segment_id": "seg-0019",
+    "start_seconds": 699.6,
+    "text": "interesting to throw this new model at the task of auditing it to find what might be causing the slowness. So, what was I impressed with? Is it how thoughtful the response was? Did it make a really good set of changes? Did it file a PR I like? No, none of that. Let's just read what it said. The audit is done. The full report is in file. Top findings. The CDN setup is fine. The slowness comes from data that does not cache. Well, reskate itself is small. Its index is only 0.48 megabytes and it loads in 0.78 seconds on a warm edge. The problems hit on cold paths and at scale. I don't know if you guys noticed what I've noticed here. I don't hate"
+  },
+  {
+    "end_seconds": 777.519,
+    "segment_id": "seg-0020",
+    "start_seconds": 737.8389999999999,
+    "text": "what I've noticed here. I don't hate reading this. In fact, I almost enjoy it. To be clear, I'm not saying this isn't slop. I'm saying it's a different flavor of slop. It's a flavor I haven't tasted yet. And it doesn't taste like yet another claude distillation, which is rare and very nice, especially when you consider the absurd volume of claude data that Anthropic's been collecting with their absurd bill with Anthropic. I expected whole models from Meta going forward to just talk and act like Claude because they had so much data from Claude. This doesn't. I have also seen from others very different experiences talking with this model. So, I did a real brief test where I removed some of"
+  },
+  {
+    "end_seconds": 816.9590000000001,
+    "segment_id": "seg-0021",
+    "start_seconds": 777.519,
+    "text": "real brief test where I removed some of my call outs in my agent MD around I have ADHD, make your things short and easy to read, vary sentence length a bit, and use simplified technical English where it makes sense to. And it does get a good bit more verbose. I do think the defaults with this model aren't necessarily the most pleasant to interact with. But when I spun it up on my machine, didn't change anything and just use my normal agent MD, it was my favorite model to work with immediately just from how it talked. But am I taking a huge hit in the intelligence when I do that? Depends on the task, but generally speaking, no. One of my fun new side projects is named"
+  },
+  {
+    "end_seconds": 855.279,
+    "segment_id": "seg-0022",
+    "start_seconds": 816.9590000000001,
+    "text": "One of my fun new side projects is named Lust. It is a subset of Rust that should compile 100 times faster. Since I was able to rewrite the Typer compiler in Rust, I figured why not try to write my own compiler for my own language and then recompile TS Rust in that instead. Trying my hardest to find things that the models can't do. You know, this thread's been going for a while. It has spun up over 115 agents throughout its runs in order to split up the work. I asked it at one point to start spinning up every task on Muse and on Opus and then set up a judge panel to review the changes from both so that I could have them to compare. And here I asked for an update on this. Give"
+  },
+  {
+    "end_seconds": 895.12,
+    "segment_id": "seg-0023",
+    "start_seconds": 855.279,
+    "text": "here I asked for an update on this. Give me an update on how Muse versus Opus is going for you here. Short version, Opus does the more correct and deeper work. Muse does more work and faster. Muse is also a surprisingly good reviewer. All three blind judges picked Opus. Mean score is a pretty brutal difference here. 41 versus 30 out of 50. But the Opus build is about 2.5 times faster. His changes made no behavior. Oh, sorry. This is just for one specific task. Uh the Opus version was faster. The Muse version had a bug. Pretty rough. So overall, let's see how it feels. Muse and daily work is producing most of the landings and some of the results are excellent. It fixed a bunch of things that were causing excepts to pass when"
+  },
+  {
+    "end_seconds": 933.279,
+    "segment_id": "seg-0024",
+    "start_seconds": 895.12,
+    "text": "that were causing excepts to pass when they shouldn't have. It made a bunch of changes to the driver layer. uh fixed name bugs. As a reviewer, it's thorough and correct. It wrote 209 probes against the Opus fixes and gave clear fix groups. As a judge, it was fair. It would rank its own entry second. I did have multiple times where I had both Opus and Muse report on something, dig into some code, give me a path forward to fix some issue, and was surprised how often Opus preferred Muse's plan. To be fair, in a lot of those scenarios, Muse preferred Opus' plan. But when I set them up to talk to each other, which uh not to self-plug is a really cool feature in T3 Code now, when they would do their work separately and then interface with each other, they would"
+  },
+  {
+    "end_seconds": 972.959,
+    "segment_id": "seg-0025",
+    "start_seconds": 933.279,
+    "text": "interface with each other, they would often end up agreeing to use Muse's plan as the base with some feedback from Opus, which really surprised me. After a lot of back and forth, Opus, which is running this thread, concluded that Muse would make sense for most of the work, fixers, standard library work, fuzzing, and reviews. Opus does the hardcore pieces where a wrong design is costly, like this T2 speed merge, the trait system fixes, and each of them reviews the others work, and every review gets turned into fixes. Opus rated Muse at a B+ and rated itself at an A minus, saying that it is higher quality at a lower speed and higher cost. That said, we don't actually know what the cost is with Muse yet. So, take that as you"
+  },
+  {
+    "end_seconds": 1011.92,
+    "segment_id": "seg-0026",
+    "start_seconds": 972.959,
+    "text": "with Muse yet. So, take that as you will. Let's talk a bit about how this model delegates and talks to other models because it's been very very impressive to me. I just did a quick test here where I told it to spin up three delegates to explore and analyze various parts of the T3 codebase. Use the current slug for the alpha model in Haiku 55. And now we can hop in and see how it prompts itself. Act as the research sub agent for this task. Explore and analyze the T3 code contracts and provider and agent integration layer. Scope directly describe the scope and how providers in MCP or agents connect to the server. Requirements read actual implementation bodies for every claim you site. Search results only locate candidates do not site a file you did not open. Map yada yada yada. Do not edit any files as"
+  },
+  {
+    "end_seconds": 1050.96,
+    "segment_id": "seg-0027",
+    "start_seconds": 1011.92,
+    "text": "yada yada. Do not edit any files as analysis only. This is a really good thing for a model to send to a sub agent which makes this model really good at orchestration both of itself and of other models. I have found it to be a pretty good commander. The model that is passing messages to and from other things handles steering pretty well and is generally just good at operating with other models. I've been surprised about this cuz this is one of the things that labs that aren't named anthropic and open AAI tend to struggle with. Not the case here at all. This model is quite good actually at getting other models to do things for it. It also handles very large numbers of orchestrated things"
+  },
+  {
+    "end_seconds": 1090.0,
+    "segment_id": "seg-0028",
+    "start_seconds": 1050.96,
+    "text": "large numbers of orchestrated things going at once which is also again a rare skill. All of this is why I think this model really does feel Frontierish. It has its quirks. It's not quite as capable in certain places, which I promise we'll get to a bit more of, but it is the first model, not from one of those labs, that I don't question the ability to run for long tasks on. It's not it's the first model from another lab that I see orchestrating sub agents and workflows this well. What I'm trying to say is this model is a third flavor of Frontier, which has its benefits, has its negatives, will have a cost that probably won't be great, but it's different, and I'm really enjoying the different aspect of it. This is where you should account for my bias. As"
+  },
+  {
+    "end_seconds": 1128.64,
+    "segment_id": "seg-0029",
+    "start_seconds": 1090.0,
+    "text": "you should account for my bias. As somebody who does a lot of reviewing of models, something being different is inherently just going to be nice to me. I can't help but think back to my history in the audio world where somebody who reviews a lot of speakers might like a new speaker more than they should simply because it's different. Maybe even because it's wrong in some ways because they're so used to all the other speakers trying to be the same but slightly louder or slightly marginally better in certain areas that a speaker that just sounds entirely different is exciting to them. And I know that is part of why I'm enjoying this model so much because it just feels and talks and acts a little bit different without being stupid. And that's the other thing I really like about this model, the"
+  },
+  {
+    "end_seconds": 1168.559,
+    "segment_id": "seg-0030",
+    "start_seconds": 1128.64,
+    "text": "I really like about this model, the stupid, well, I guess the lack of. This model has not done any egregious dumb It's kind of strange. I have had fewer dumb experiences with this model in the four to 5 days I've been pushing its limits than I have in the 30 minutes I spent prepping for this video with Soul and Astra. In one given thread, I have more weird with Astra than I've had with this model total. Not exaggerating. It just doesn't do stupid I would go as far as to say it's slightly less dumb than even Opus is. And if I was to rank dumbness, I would say Astra's 10 out of 10. It is so dumb. That doesn't mean it's not smart. I consider smart and dumb different"
+  },
+  {
+    "end_seconds": 1208.16,
+    "segment_id": "seg-0031",
+    "start_seconds": 1168.559,
+    "text": "consider smart and dumb different traits. You can have both. Astra is really smart and really dumb. Opus is even more smart and way less dumb. I would say Opus is like three out of 10 dumb and 10 out of 10 smart feels. Right now, this model takes a hit on the smart. The ceiling's a bit lower. It's like an eight or a nine out of 10, but the dumb is even lower somehow. It's like a one or two out of 10. It just doesn't do dumb It does ugly like it sucks at front end. It sucks at 3D, but it doesn't do dumb things. I would not expect this model to ever do the silly mistakes like deleting a folder or a directory that it's not supposed to or putting itself in a broken state like I've seen every other model do at some point. It just behaves well. I'm going to give a silly example"
+  },
+  {
+    "end_seconds": 1246.72,
+    "segment_id": "seg-0032",
+    "start_seconds": 1208.16,
+    "text": "well. I'm going to give a silly example that I think will really showcase why I've been enjoying this model so much. I recently added a feature in T3 Code where you can remotely update all of your machines and all of their providers with one click. Technically, two clicks. You have to hit the button on the bottom, then hit confirm. And I noticed that it wasn't updating the T3 code runtime itself on all the remote machines. The cause of this ended up being a pretty weird niche bug. I'll show you from my run with Opus. First off, I noticed it being confused because it was checking the history and saw that the instance was updated. So I responded when it was running with a quick steer saying I manually ran the update after so that it knew the update had been run. That's why it was seeing the update. It"
+  },
+  {
+    "end_seconds": 1286.08,
+    "segment_id": "seg-0033",
+    "start_seconds": 1246.72,
+    "text": "That's why it was seeing the update. It wasn't like it was late. It had run just by hand after it didn't run the way it was supposed to. And from here it did things correctly. I found the bug and fixed it. The fix is uncommitted in the work tree. cause yada yada yada what the logs show. Too much text. This particular paragraph is just too much in my opinion. So what did the logs show? It showed all the things that happened. It showed the fix and it showed the checks it did. The check still fails silently. If npm's unreachable, yada yada yada. Should I open a PR for this change? I said full stop should pull in my skill for this. It had soul review it. It put up the PR. All was looking pretty good. Let's compare that to how"
+  },
+  {
+    "end_seconds": 1325.2,
+    "segment_id": "seg-0034",
+    "start_seconds": 1286.08,
+    "text": "pretty good. Let's compare that to how soul handled the task. I sent the same exact prompt here. It ran way too much Said settings in the sidebar use different rules to select remote updates. It did not seem to notice that we had just changed the thing. I even said in the prompt, the new update everything flow does not update remote environments. And it didn't seem to notice the the new part there. And this is part of what I'm not liking about opening models. It almost feels like it drops important words in its own brain sometimes and lost track of the fact that the new changes what matters here. I then hit an error because their async questions tool did not work properly with my proxy. Partially my fault, partially their fault in my opinion, especially because I had soul make these changes to the proxy to support this at"
+  },
+  {
+    "end_seconds": 1364.08,
+    "segment_id": "seg-0035",
+    "start_seconds": 1325.2,
+    "text": "changes to the proxy to support this at all. Regardless, I told it to continue to get out of the broken state. It told me it fixed it locally. The sidebar excludes remote servers while its npm check was pending or failed. Removed the check. That's not the solution here. The solution here is making sure you know which version of the app to update the remote to. What this would have done is updated your local app, updated the muse, cursor, claude and codeexes of the remote machines and then made you after updating your app run it again to update all the remote servers. It would just push the current version of your app to those servers. Not good. Actually quite bad. So I asked it how does this compare to the other PR is fixing it. I asked it"
+  },
+  {
+    "end_seconds": 1403.28,
+    "segment_id": "seg-0036",
+    "start_seconds": 1364.08,
+    "text": "to the other PR is fixing it. I asked it what happens if the host is behind as well and then it just kind of spit Okay, that's a lot about how Opus handled this and how soul handled this. How did Muse handle it? Top finding the flow is broken by one failed web request. A fix is already open and ready. I made no code changes in this work tree for the sidebar flow updated a remote server. It asks mpm is this version published? That check is in here. The check uses effects HTTP client. It adds two trace headers to the request. I ran the current code with a test fetch and saw both headers in the request. Do you see how much more readable this is? Do you understand? But that's not the best part. Let's scroll a little bit. Fix status. Two open PRs fix"
+  },
+  {
+    "end_seconds": 1441.28,
+    "segment_id": "seg-0037",
+    "start_seconds": 1403.28,
+    "text": "little bit. Fix status. Two open PRs fix this with the same oneline change. Turn off trace headers for this one request. There are two PRs here. Are those the ones from Opus and Soul? No. The first one is from somebody else. The second one is the Opus one. So, not only was this model's response much, much much more easy to understand, it also found a much smaller, cleaner PR somebody else had already filed that fixes the problem. None of the other models found a PR that fixed it. None of the other models had a readable output on what the problem was, and none of the other models suggested just merging this other"
+  },
+  {
+    "end_seconds": 1479.76,
+    "segment_id": "seg-0038",
+    "start_seconds": 1441.28,
+    "text": "models suggested just merging this other thing that already fixes it. I hope you can agree with me that without question this is the best response of the three. I don't think any benchmark is going to measure this properly. I'm sorry it's pretty hard to measure this type of thing. God damn, this model is much more pleasant to work with for a lot of realworld stuff and I will be throwing it a lot of bug reports going forward just in case I want to understand what's wrong and maybe somebody else already has a PR. That all said, I have to complain a bit more. I set up some benches. Benches are very, very loose term here where I had different models go through a lot of my giant code bases"
+  },
+  {
+    "end_seconds": 1519.12,
+    "segment_id": "seg-0039",
+    "start_seconds": 1479.76,
+    "text": "go through a lot of my giant code bases and audit them for things that are good, bad, ugly, and help me prioritize what we should work on next. Here is an example where I had the models all go through T3 Code's architecture and make comments on it. Opus smoked here. Opus 55 had an insane score when I ran it through all of this. Sonnet 55 did surprisingly good as well. There we have Soul and Astra and then Muse right under. This is interesting because Muse and Astra ended up being relatively close in their scores, but then the normal Muse Wonder, the nonfall version, dropped to almost half of Opus' score. Yeah, that is a over 30% drop in the"
+  },
+  {
+    "end_seconds": 1557.039,
+    "segment_id": "seg-0040",
+    "start_seconds": 1519.12,
+    "text": "Yeah, that is a over 30% drop in the quality of the findings and analysis that normal Muse Wonder could do versus Muse Wonder Fall. I don't think Muse Wonder makes any sense at all for the price. It does not seem particularly compelling. And I think a lot of the demos people have been showing online are using Muse Wonder because they're taking the API, they're throwing it into whatever tools they normally use, and then they see bad performance. I get it. Muse Wonder appears to be a bad model. Muse Wonderful is neck andneck with Astra and Fable in lots of real world stuff and is really pleasant to work with. I ran a similar audit on Lakebed, my cloud product. This one says 61 Soul was the best analysis by far with a nine"
+  },
+  {
+    "end_seconds": 1596.48,
+    "segment_id": "seg-0041",
+    "start_seconds": 1557.039,
+    "text": "was the best analysis by far with a nine out of 10 across all the judges and Muse Wonder fell quite a bit here getting a 5.75. Opus 5.5, GBD6 Astra and Sonnet were all relatively close in scores. I would be a bit sus here cuz Sonnet 5.5 scoring higher than Opus suggests this might not be the best bench, but again I whipped these together just to see. We are going to see another fun trend with Muse Wonderful. the amount of time it takes and the amount of tokens it takes to get its results. It took 16 minutes to get this result, which puts it at nearly half the time for 61 Soul and way less than half the time for Opus. Sonet took 80 minutes to run this one. Not great. A"
+  },
+  {
+    "end_seconds": 1636.32,
+    "segment_id": "seg-0042",
+    "start_seconds": 1596.48,
+    "text": "80 minutes to run this one. Not great. A similar run I did with TS Rust, which is quite the code base, saw similar gaps in the time to complete. Muse Wonderful Fall scored nearly identically to Fable 51. It took 17 minutes and got not a great score compared to these other things. But considering that it took 10 plus minutes less than some of these other scores and it took comically less than sonnet and opus nearly half the amount of time and muse wonder again not a great score 5 minutes and 9 seconds to complete this though trying to say is these models are fast and relatively token efficient. You can see this on sloppily again we don't have cost for muse wonderful full so we can't do cost versus intelligence here. All we can do"
+  },
+  {
+    "end_seconds": 1675.919,
+    "segment_id": "seg-0043",
+    "start_seconds": 1636.32,
+    "text": "versus intelligence here. All we can do is token output and we can see it uses fewer tokens than Opus 55 on X high in order to get nearly identical scores. This means if we exclude Max from this, which sadly does kick out the Muse Wonder models cuz they're tagged as Max even though they're technically X high if I recall, it is the best scoring model if you exclude the Max models other than of course 5.5x high being just barely above. But again, that means this model is scoring absurdly well. Switch over to the bar chart. You can see here that Gemini 4 argan uses slightly more tokens, but everything other than OpenAI models that matter right now are using quite a bit more tokens, including Opus and Fable. And of"
+  },
+  {
+    "end_seconds": 1714.799,
+    "segment_id": "seg-0044",
+    "start_seconds": 1675.919,
+    "text": "tokens, including Opus and Fable. And of course, if I turn it on, Sonnet all-time high token usage. Impressive. So, even beating out Grock in token efficiency. I would not have expected this level of token efficiency with this release. Also want to call out that both Wonder and Wonderful Full had very similar token usage, 53.8K 8k per task for wonder full and 54.2k tokens per task for the standard Muse Wonder. Weird that these models behave so similarly despite Muse Wonder being so much dumber than the full version. God, I I hate these names so much. Context on what I did here to make this all make a little more sense. I had Opus go find eight random PRs of varying"
+  },
+  {
+    "end_seconds": 1752.08,
+    "segment_id": "seg-0045",
+    "start_seconds": 1714.799,
+    "text": "go find eight random PRs of varying complexity that hadn't merged yet in T3 code and then have all three of these models being Soul 61 wonderf full and Opus 55 review all of them compare the findings verify the findings and see which models had the most novel and accurate results here are those results 5.5 found 23 things across those PRs 21 of which were valid one was plausible and one was wrong. Eight of them were nets. GBD61 Soul only found nine things. Massive gap from what opus found and what soul found there. Seven of them were valid. It had two invalid findings."
+  },
+  {
+    "end_seconds": 1790.24,
+    "segment_id": "seg-0046",
+    "start_seconds": 1752.08,
+    "text": "were valid. It had two invalid findings. So its novel score here is four. Two valid and plausible findings. Then we have Muse. 16 findings. Smack dab in the middle between Opus and Soul. Of those, I found five novel things. So yeah, of course Opus is still finding the most novel stuff, but it's also throwing a shitload of nits into its findings. Soul is not throwing a bunch of nits in, but it's also not finding anywhere near as much stuff. So if Soul is your only reviewer, you should pull other things in. Muse was a weirdly good middle ground here. This does also call out that Muse didn't find as many high severity findings as Soul and Opus did, but I thought this was very useful to"
+  },
+  {
+    "end_seconds": 1828.32,
+    "segment_id": "seg-0047",
+    "start_seconds": 1790.24,
+    "text": "but I thought this was very useful to see. Summary here is that Opus found the most problems no one else found, including four medium severity issues. It writes about one knit per PR, and a one PR, it flagged intended behavior as a bug. O, yeah, this is very opusy. 61 Soul never wrote a knit, so every finding mattered. It found nothing on three of the four small PRs, even where real nits existed. It unique findings came from going deep, like reading the upstream agent device source in the hyperdrive docs. Muse had the most overlap with finding bugs the others found, so if you're going to use just one, it seems to be good there. It found a busy reopen token revoke that Opus missed. Most of its unique findings are low severity and once it asked for changes over a gap the PR description"
+  },
+  {
+    "end_seconds": 1866.88,
+    "segment_id": "seg-0048",
+    "start_seconds": 1828.32,
+    "text": "changes over a gap the PR description had already listed. Not great, but also quite solid. Overall, this comparison might be my favorite of the bunch. I asked both Opus and Muse Wonderful Fall to do an incredibly quote deep dive on the T3 codebase as well as the feedback that we get through channels like GitHub issues, NPRs, discussions, etc. I want your help prioritizing what we should be working on next. It spun up a ton of agents, wrote a bunch of stuff, and uh okay, I sent that at 10:33 and I got my response back at 11:04. So, 30 minutes later, it wrote this big old report. T3 code, what to work on next. 10 agents did the audit. Nine read every open"
+  },
+  {
+    "end_seconds": 1906.32,
+    "segment_id": "seg-0049",
+    "start_seconds": 1866.88,
+    "text": "did the audit. Nine read every open issue, every PR, and every discussion, plus the codebase, a 10th. I I'm sorry. I'm doing my best, but this is just so much text for things that don't actually matter. The short version has four sentences per bullet point says the ship v2 is to stable safely and soon bottleneck is merging uh not writing code about half October yada yada yada users want reliability not features the biggest pain is run stuck on running server resource killing yada yada yada week one merge and small fixes it does an okay job categorizing all these things making rows but it's just so much text then there's the section for shipgate for v2 stable"
+  },
+  {
+    "end_seconds": 1945.2,
+    "segment_id": "seg-0050",
+    "start_seconds": 1906.32,
+    "text": "shipgate for v2 stable This is not the most readable thing. It wrote a lot of text. And now let's compare to what we got out of Muse. I I sent this at 919. I noticed that it got like frozen. I think it's cuz I did a reset around the same time. I actually don't know how long it took overall because of all of that sadly. So I can't get you realistic timestamps. I sent that at 10:24 and then it finished at 10:31. So, if we combine the seven minutes plus that, it ended up being about 17ish minutes, about half the time. And that lines up for my experience overall. It's quite fast and efficient and doesn't burn as many tokens or check as many dumb places before it goes to the right place. The"
+  },
+  {
+    "end_seconds": 1982.88,
+    "segment_id": "seg-0051",
+    "start_seconds": 1945.2,
+    "text": "before it goes to the right place. The best way I can describe this is it has good intuition. It knows where to look for things and it finds the things it's looking for relatively fast. I don't know how the hell they did this. I don't know if they just trained on the giant meta codebase and got a lot of good data, but it's really good at knowing where to check and checking the right places first. It does have a silly call at the start saying this is a plan, not a special mode. I haven't started implementation, so it seems like it was trained on this idea of plan mode and it calls us out. I've seen this a few times when I ask it for plans, but let's read the actual info here. Goal: Pick the next work for T3 code from real evidence. 10 research agents audited GitHub issues, PR, discussions in the code. One critic tried to falsify the top claims. I then reran the key git"
+  },
+  {
+    "end_seconds": 2022.88,
+    "segment_id": "seg-0052",
+    "start_seconds": 1982.88,
+    "text": "top claims. I then reran the key git counts and code checks myself. That is a lot more readable than the top of the last one. State and numbers, open issues, bugs, speed, review. This is still a bit much for my taste. Once we go down here, we see what I like. Key decisions. One, freeze new providers and new services until the P 0 below ships. Provider breath already drives the top issue clusters. Claude 118 and code 76 title hits. Kill the legacy sidebar. Two sidebars double every fix. Do not keep both. Treat discussions as untrusted demand until you check shipped statuses. Discussions never autoc close. Sample the PR backlog before you judge it. Kendall does not prove review starvation. yada yada. Not the best, but"
+  },
+  {
+    "end_seconds": 2060.879,
+    "segment_id": "seg-0053",
+    "start_seconds": 2022.88,
+    "text": "starvation. yada yada. Not the best, but very readable. Now we get into the things it thinks I should do. I find these to be very, very clear and easy to read. There's a P 0 section for what it thinks I should do for the next two weeks. It starts with fix the two server stalls size M plus M. Here is an issue. It says what matters about it. Here's another issue that shows one stuck provider holds all four effect workers. The pool size is four in this file. Add per provider isolation on a stuck worker timeout. Next, stop the PR quota and payload burns. Size small to medium. This issue reports 2,800 Bitbucket calls in 100 minutes and 22,423 GitLab calls in 12.5 hours. Stop refetch"
+  },
+  {
+    "end_seconds": 2100.56,
+    "segment_id": "seg-0054",
+    "start_seconds": 2060.879,
+    "text": "GitLab calls in 12.5 hours. Stop refetch on focus cache per PR back off on quota errors. Another one showing a 17 megabyte thread snapshot. I don't know if I'm just tired of claop. I find this a h 100 times more readable and clear. The way it's using bold at the start of these to say what matters. Fix provider first use. Open code shows only 29 built-in models. This is an issue with certain providers not sending the right models to our app in time. So we show a wrong set. Very good to see. Fix scope stranding at the root, not per scope. Size small for the bug, medium for the system. I'll be real, this one's not as readable or clear as the others. I would probably go look at the issue to see what's wrong. In fact, we can here. Let's see how clear the issue is. iOS"
+  },
+  {
+    "end_seconds": 2139.52,
+    "segment_id": "seg-0055",
+    "start_seconds": 2100.56,
+    "text": "Let's see how clear the issue is. iOS provider accounts fail when missing providers manage on fresh T3 Connect tokens. Okay, so in certain cases, connecting over the iOS app is failing with T3 Connect. Good to see. Fifth, run a oneweek data loss and billing screen. Recent titles named destroyed environment files. Settings edits that revert. Subs keep billing after cancel. Counts are low. Severity is high. Evidence is thin. So repro each one on the current nightly. fair call outs. It specifically said the counts are low, but the severity is high, but there's very little evidence, so we should repro it. Then there's a priority one section with simpler things. Priority 2 saying later or not now. It's so much less text and it's so much more readable. So, what"
+  },
+  {
+    "end_seconds": 2179.52,
+    "segment_id": "seg-0056",
+    "start_seconds": 2139.52,
+    "text": "and it's so much more readable. So, what I'm trying to say with this model is it might not be the smartest. It might not find things the best, but it is way over my bar for what is usable and useful. Far past what I would expect from a Gemini model or a Grock model. It's honestly the first model since Fable that I've used outside of Enthropic and OpenAI that I could see myself daily driving and I'm reaching for it a lot. I still bring in Opus for the hairy stuff. I'll often have this model call opus to double check on its work. I'm accepting slightly less capability because I like the higher floor for stupid where it doesn't do as dumb of things. And I really enjoy the new flavor in its responses. The way it talks to me I personally find way more readable and"
+  },
+  {
+    "end_seconds": 2217.44,
+    "segment_id": "seg-0057",
+    "start_seconds": 2179.52,
+    "text": "personally find way more readable and nice to interact with. Should you drop your Cloud Code sub for this? Absolutely not. I don't even know how good the subsidies are on their subscription plans. Not that we could know because again, they're not releasing the price for the model I like. There is so much cringe about this drop and you can tell that Meta is not used to having a model good enough to care, but I care. I like this model. I will continue using it until they cut off my API key. Then I'll probably go try the subscription, find that it's too limiting, and then churn and go back to Opus. But if the price is right and the usage is right, I could see myself using this model a lot. Congratulations to the team at Meta for pulling this one off. I really didn't see it coming. I did not think that after the small model releases like the"
+  },
+  {
+    "end_seconds": 2254.0,
+    "segment_id": "seg-0058",
+    "start_seconds": 2217.44,
+    "text": "after the small model releases like the Spark line that I would find myself actually reaching for this against other Frontier stuff, but they did it. They kind of cooked. Even if this model isn't that exciting to you, the fact that Meta's caught up should be. This makes the future way more competitive. And if you've seen how much better the models from both Enthropic and OpenAI have been both in intelligence and in cost since they got more competitive, you know how powerful a third player could be. So I guess all that's left is figure out what the hell is going on at DeepMind. Seriously, guys, you've been teasing Gemini 4 Argan for how long now? Where is it? When are we going to get it? When can I talk about it? When can I show the strengths and weaknesses? What?"
+  },
+  {
+    "end_seconds": 2283.839,
+    "segment_id": "seg-0059",
+    "start_seconds": 2254.0,
+    "text": "strengths and weaknesses? What? Seriously, where is this bottle? Ugh. I the list of things that we've gotten before Gemini 4 Argan is going to be longer than the list of things we got before GTA 6 at this point. I don't know what's going on at Google, but I do know what's going on at Meta because it seems to be pretty dang good. I am hyped about this release. I'm curious how y'all feel. Am I overhyping this model? Am I being paid off by my friends at Meta who made React and now made a model I like? What do you guys think? Let me know in the comments. And until next time, he sns."
+  }
+]

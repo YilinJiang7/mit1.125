@@ -1,0 +1,26 @@
+[
+  {
+    "end_seconds": 39.08,
+    "segment_id": "seg-0001",
+    "start_seconds": 0.0,
+    "text": "My name is Bill after we're building applied electrodynamics doing new kind of cameras that can see through us and opaque material. >> How did you get into that idea? >> It actually started from a personal experience during our remodels we discovered a bunch of stuff that existed behind the walls that cost us a lot of money to fix. So we decided that there needs to be something that can see through the walls. My background is in radars and antennas and I figured out we can do with radio waves and we've been building it ever since. If you want to do it right then you have to operate a lot of antennas at really high frequency and all of these chipsets are now become widely available. They move to our FMC walls. And then there's a lot of data comes from these echoes that you have to process in real time and the whole GPU revolution makes it also makes it possible to process them on the go and"
+  },
+  {
+    "end_seconds": 77.92,
+    "segment_id": "seg-0002",
+    "start_seconds": 39.08,
+    "text": "possible to process them on the go and generate these images. >> Amazing. And you said that you only started how long ago on >> So we started full-time at four months ago. >> So you made a lot of progress. >> Yes, we've been building day and night. >> Amazing. Do you want to show us a little bit about >> Sure. So this system captures the whole image it comes in 3D and has depth information. So what you see here is some stickers on the behind a drywall placed on an acrylic. When we first start you get the first face of the drywall. As we go deeper then you pass the drywall and you hit the plane where the acrylic is and then you can see the stickers on the acrylic. On this one we have a a marble slab and behind that we have a couple of construction elements, a stud and a junction box and a couple of the papers. So again you start with the the face of the marble and as you go in"
+  },
+  {
+    "end_seconds": 116.8,
+    "segment_id": "seg-0003",
+    "start_seconds": 77.92,
+    "text": "in deeper then you start to see the stud and the junction box and this is the first plane. You go a little bit deeper and then you start to see the pipes and the cable that comes from the junction box. If you were to measure the pixels everything matches one to one with the physical world dimensions and you have depth information as well. So it creates a 3D model of what's behind an opaque layer. >> Any advice to other companies building in hardware or hard tech? >> I think it's more important thing is is just to keep the iteration speed on. So with hardware you want to wait till you do something that's that's really good and but I think you just have to go constantly building. This is the version three of our device. We've been constantly releasing boards and and and figuring out the bottlenecks and and much you can parallel path. So I think"
+  },
+  {
+    "end_seconds": 123.04,
+    "segment_id": "seg-0004",
+    "start_seconds": 116.8,
+    "text": "much you can parallel path. So I think iteration speed is the is the common wise but I would sort of second that."
+  }
+]

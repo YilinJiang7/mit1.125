@@ -1,0 +1,17 @@
+{
+  "stage": "prepare-package",
+  "status": "completed",
+  "exit_code": 0,
+  "input_count": 9,
+  "output_count": 1,
+  "started_at": "2026-10-16T16:37:52.797880Z",
+  "finished_at": "2026-10-16T16:37:54.392941Z",
+  "tools": [
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [],
+  "review_id": "bdaaa8ca1f727d33dbb9cddba588818b35611f0c72bfec9e7970500a95e8b92a"
+}

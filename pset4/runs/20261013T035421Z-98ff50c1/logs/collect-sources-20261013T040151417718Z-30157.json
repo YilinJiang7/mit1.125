@@ -1,0 +1,22 @@
+{
+  "stage": "collect-sources",
+  "status": "failed",
+  "exit_code": 1,
+  "input_count": 44,
+  "output_count": 44,
+  "started_at": "2026-10-13T03:54:21Z",
+  "finished_at": "2026-10-13T04:01:51.417742Z",
+  "tools": [
+    "bash",
+    "python3"
+  ],
+  "models": [],
+  "cost_usd": 0.0,
+  "cost_is_estimate": false,
+  "errors": [
+    {
+      "stage": "fetch-youtube",
+      "message": "stage returned exit 1"
+    }
+  ]
+}
